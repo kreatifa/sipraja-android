@@ -1,0 +1,114 @@
+<div class="page" data-class="new_ijin_keramaian">
+    <div class="save_button toolbar toolbar-bottom-md">
+      <div class="toolbar-inner">
+        <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+          </a>
+        </div>
+        <div class="title">Form Alamat Pengiriman</div>
+      </div>
+    </div>
+    <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+      <form class="list" id="form_edit_alamat_pengiriman" style="margin: 0 ">
+        <ul>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="col-50 float-right" id="btndeletealamat"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Nama Lengkap*</div>
+                        <input required validate type="text" name="nama_lengkap" id="nama_lengkap">
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">No Telepon*</div>
+                        <input required validate type="number" name="no_telp" id="no_telp">
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Provinsi</div>
+                        <select name="no_prop" id="no_prop" class="form-control">
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Kabupaten</div>
+                        <select name="no_kab" id="no_kab" class="form-control">
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Kecamatan</div>
+                        <select name="no_kec" id="no_kec" class="form-control">
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Kelurahan</div>
+                        <select name="no_kel" id="no_kel" class="form-control">
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Nama Jalan, Gedung, No Rumah</div>
+                        <input required validate type="text" name="nama_jalan" id="nama_jalan">
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Detail Lainnya (contoh : Blok / Unit No., Patokan)</div>
+                        <input required validate type="text" name="detail_alamat" id="detail_alamat">
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Kategori</div>
+                        <select name="kategori" id="kategori" class="form-control" required validate>
+                        <option value="Rumah">RUMAH</option>
+                        <option value="Kantor">KANTOR</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <input type="hidden" id="latitude" name="latitude" required validate>
+                <input type="hidden" id="longitude" name="longitude" required validate>
+                <div id="mapid" style="height: 256px;"></div>
+            </li>
+        </ul>
+      </form>
+    </div>
+</div>

@@ -1,0 +1,936 @@
+<div class="page" data-class="new_layanan_c">
+  <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="/tipe-c/kartupencarikerja" data-force="true" data-ignore-cache="true" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form Kartu Pencari Kerja</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="kartupencarikerja_new">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemohon</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK</div>
+              <input type="text" readonly="readonly" name="nik_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama</div>
+              <input type="text" readonly="readonly" name="nama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Lahir</div>
+              <input type="text" readonly="readonly" name="tempat_lahir_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir</div>
+              <input type="text" readonly="readonly" name="tanggal_lahir_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Berat Badan</div>
+              <input type="number" name="berat_badan" placeholder="Kg" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jenis Kelamin</div>
+              <input type="text" readonly="readonly" name="jenis_kelamin_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Agama</div>
+              <input type="text" readonly="readonly" name="agama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jalan</div>
+              <input type="text" readonly="readonly" name="alamat_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">RT</div>
+              <input type="text" name="rt_pemohon" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">RW</div>
+              <input type="text" name="rw_pemohon" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan</div>
+              <input type="text" readonly="readonly" name="kecamatan_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan</div>
+              <input type="text" readonly="readonly" name="kelurahan_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kode POS</div>
+              <input type="text" name="kode_pos_pemohon" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Telepon</div>
+              <input type="number" name="telp_pemohon" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email</div>
+              <input type="text" readonly="readonly" name="email_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Status Perkawinan</div>
+              <input type="text" readonly="readonly" name="status_kawin_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Umur</div>
+              <input type="number" required name="umur">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Facebook</div>
+              <input type="text" name="facebook">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Linkedin</div>
+              <input type="text" name="linkedin">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Twitter</div>
+              <input type="text" name="twitter">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Instagram</div>
+              <input type="text" name="instagram">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pendidikan</div>
+        </div>
+      </div>
+      <ul>
+        <div class="card">
+          <div class="card-header">SD</div>
+          <div class="card-content">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Sekolah/Universitas</div>
+                  <input type="text" name="sekolah_sd">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jurusan</div>
+                  <select name="jurusan_sd" data-select="1"></select>
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tahun Lulus</div>
+                  <input type="text" name="lulus_sd">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">IPK/NEM</div>
+                  <input type="text" name="ipk_sd">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">SMP</div>
+          <div class="card-content">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Sekolah/Universitas</div>
+                  <input type="text" name="sekolah_smp">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jurusan</div>
+                  <!-- <input type="text" name="jurusan_smp"> -->
+                  <select name="jurusan_smp" data-select="2"></select>
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tahun Lulus</div>
+                  <input type="text" name="lulus_smp">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">IPK/NEM</div>
+                  <input type="text" name="ipk_smp">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">SLTA</div>
+          <div class="card-content">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Sekolah/Universitas</div>
+                  <input type="text" name="sekolah_slta">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jurusan</div>
+                  <select name="jurusan_slta" data-select="3"></select>
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tahun Lulus</div>
+                  <input type="text" name="lulus_slta">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">IPK/NEM</div>
+                  <input type="text" name="ipk_slta">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">D1</div>
+          <div class="card-content">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Sekolah/Universitas</div>
+                  <input type="text" name="sekolah_d1">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jurusan</div>
+                  <select name="jurusan_d1" data-select="4"></select>
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tahun Lulus</div>
+                  <input type="text" name="lulus_d1">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">IPK/NEM</div>
+                  <input type="text" name="ipk_d1">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">D2</div>
+          <div class="card-content">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Sekolah/Universitas</div>
+                  <input type="text" name="sekolah_d2">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jurusan</div>
+                  <select name="jurusan_d2" data-select="5"></select>
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tahun Lulus</div>
+                  <input type="text" name="lulus_d2">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">IPK/NEM</div>
+                  <input type="text" name="ipk_d2">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">D3</div>
+          <div class="card-content">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Sekolah/Universitas</div>
+                  <input type="text" name="sekolah_d3">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jurusan</div>
+                  <select name="jurusan_d3" data-select="6"></select>
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tahun Lulus</div>
+                  <input type="text" name="lulus_d3">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">IPK/NEM</div>
+                  <input type="text" name="ipk_d3">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">AKTA 2</div>
+          <div class="card-content">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Sekolah/Universitas</div>
+                  <input type="text" name="sekolah_akta2">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jurusan</div>
+                  <input type="text" name="jurusan_akta2">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tahun Lulus</div>
+                  <input type="text" name="lulus_akta2">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">IPK/NEM</div>
+                  <input type="text" name="ipk_akta2">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">AKTA 3</div>
+          <div class="card-content">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Sekolah/Universitas</div>
+                  <input type="text" name="sekolah_akta3">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jurusan</div>
+                  <input type="text" name="jurusan_akta3">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tahun Lulus</div>
+                  <input type="text" name="lulus_akta3">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">IPK/NEM</div>
+                  <input type="text" name="ipk_akta3">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">D4</div>
+          <div class="card-content">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Sekolah/Universitas</div>
+                  <input type="text" name="sekolah_d4">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jurusan</div>
+                  <select name="jurusan_d4" data-select="7"></select>
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tahun Lulus</div>
+                  <input type="text" name="lulus_d4">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">IPK/NEM</div>
+                  <input type="text" name="ipk_d4">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">S1</div>
+          <div class="card-content">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Sekolah/Universitas</div>
+                  <input type="text" name="sekolah_s1">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jurusan</div>
+                  <select name="jurusan_s1" data-select="8"></select>
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tahun Lulus</div>
+                  <input type="text" name="lulus_s1">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">IPK/NEM</div>
+                  <input type="text" name="ipk_s1">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">S2</div>
+          <div class="card-content">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Sekolah/Universitas</div>
+                  <input type="text" name="sekolah_s2">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jurusan</div>
+                  <select name="jurusan_s2" data-select="9"></select>
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tahun Lulus</div>
+                  <input type="text" name="lulus_s2">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">IPK/NEM</div>
+                  <input type="text" name="ipk_s2">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">DOKTOR</div>
+          <div class="card-content">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Sekolah/Universitas</div>
+                  <input type="text" name="sekolah_doktor">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jurusan</div>
+                  <select name="jurusan_doktor" data-select="10"></select>
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tahun Lulus</div>
+                  <input type="text" name="lulus_doktor">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">IPK/NEM</div>
+                  <input type="text" name="ipk_doktor">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pekerjaan yang Diinginkan</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kategori</div>
+              <select name="category">
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Sub Kategori</div>
+              <select name="subCategory">
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Lokasi</div>
+              <select name="lokasi_pyd">
+                <option value="Dalam Negeri">Dalam Negeri</option>
+                <option value="Luar Negeri">Luar Negeri</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Besar Upah</div>
+              <select name="upah_pyd">
+                <option value="< 1.000.000">&lt; 1.000.000</option>
+                <option value="1.000.000 - 2.000.000">1.000.000 - 2.000.000</option>
+                <option value="2.500.000 - 5.000.000">2.500.000 - 5.000.000</option>
+                <option value="> 5.000.000">&gt; 5.000.000</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Lokasi yang diinginkan</div>
+              <input type="text" name="jarak_pyd" required validate>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Wilayah Lainnya</div>
+              <input type="text" name="wilayah_lain">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Pengalaman Kerja</div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="row">
+          <div class="col-100">
+            <div class="data-table card" id="pengalaman_kerja_table">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="label-cell"></th>
+                    <th class="label-cell"></th>
+                    <th class="label-cell">Jabatan</th>
+                    <th class="label-cell">Uraian Tugas</th>
+                    <th class="label-cell">Lama Kerja</th>
+                    <th class="label-cell">Pemberi Kerja</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell">Data Kosong</td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a class="button button-round button-fill color-green" id="addpengalamankerja" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>Tambahkan Pengalaman Kerja</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Lain-lain</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Bahasa Asing yang Dikuasai</div>
+              <!-- <textarea name="bahasa_asing" class="resizable"></textarea> -->
+              <div class="row">
+                <div class="col-50">
+                  <input type="checkbox" name="bahasa_asing[]" class="resizable" value="inggris"><label>Inggris</label>
+                </div>
+                <div class="col-50">
+                  <input type="checkbox" name="bahasa_asing[]" class="resizable" value="mandarin"><label>Mandarin</label>
+                </div>
+                <div class="col-50">
+                  <input type="checkbox" name="bahasa_asing[]" class="resizable" value="arab"><label>Arab</label>
+                </div>
+                <div class="col-50">
+                  <input type="checkbox" name="bahasa_asing[]" class="resizable" value="jerman"><label>Jerman</label>
+                </div>
+                <div class="col-50">
+                  <input type="checkbox" name="bahasa_asing[]" class="resizable" value="belanda"><label>Belanda</label>
+                </div>
+                <div class="col-50">
+                  <input type="checkbox" name="bahasa_asing[]" class="resizable" value="jepang"><label>Jepang</label>
+                </div>
+                <div class="col-50">
+                  <input type="checkbox" name="bahasa_asing[]" class="resizable" value="perancis"><label>Perancis</label>
+                </div>
+                <div class="col-50">
+                  <input type="checkbox" name="bahasa_asing[]" class="resizable" value="lainnya"><label>Lainnya.....</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Data Kursus atau Pelatihan</div>
+              <textarea name="data_kursus" class="resizable"></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Keterampilan atau Pengalaman Kerja</div>
+              <textarea name="pengalaman" class="resizable"></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Lampiran</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="row">
+              <div class="col-60">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Pas Foto</div>
+                    <input class="pas_foto" id="pas_foto" type="hidden" name="pas_foto" placeholder="">
+                    <input class="pas_foto_path" id="pas_foto_path" type="text" readonly="readonly" name="pas_foto_path" placeholder="Nama File">
+                  </div>
+                </div>
+              </div>
+              <div class="col-20 preview_pas_foto">
+              </div>
+              <div class="col-20">
+                <a id="pas_foto" onclick="uploadfotokpk()" class="button button-round button-fill" style="margin-top: 10px;">
+                  <i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+          <div class="col-50">
+            <a class="button button-round button-fill color-green" id="addformupload" style="margin-top: 10px;">
+              <i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>New document</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul id="formupload-wrapper-list"></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">Syarat & Ketentuan Lampiran</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul>
+                <li>1. Upload foto Ijazah SD sampai dengan jenjang terakhir
+                  <hr>
+                </li>
+                <li>2. Upload KTP
+                  <hr>
+                </li>
+                <li>3. Upload Pas Photo 3 x 4 berwarna
+                  <hr>
+                </li>
+                <li>4. Upload Foto Piagam atau sertifikat pelatihan (bila ada)
+                  <hr>
+                </li>
+                <li>5. Berkas no 1 sampai 4 di upload ke lampiran SIPRAJA
+                  <hr>
+                </li>
+                <li>6. Berkas no 1 sampai 4 dibawa saat pengambilan surat di Kecamatan setempat
+                  <hr>
+                </li>
+                <li>7. Surat kuasa jika pengambilan berkas dikuasakan ke orang lain
+                  <hr>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

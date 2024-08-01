@@ -1,0 +1,927 @@
+<div class="page" data-class="edit_layanan">
+  <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link bg-color-orange" id="print_preview_button" style="display: none;"><i class="icon f7-icons">zoom_in</i> Cetak</a>
+      <a class="link bg-color-green" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="checked_approval_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link" id="print_button"><i class="icon f7-icons">zoom_in</i> Cetak Surat</a>
+      <a class="link bg-color-green" id="print_form_button"><i class="icon f7-icons">zoom_in</i> Formulir</a>
+      <a class="link bg-color-orange" id="print_form_ubah_button"><i class="icon f7-icons">zoom_in</i> Form Ubah</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="/tipe-b/kartu_keluarga" class="link">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form SP Kartu Keluarga</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="edit_kartu_keluarga">
+      <div class="block-title">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Data Pemohon</div>
+            </div>
+          </div>
+          <div class="col-50" id="btndeletelayanan">
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK</div>
+              <input type="text" readonly="readonly" name="nik_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama</div>
+              <input type="text" readonly="readonly" name="nama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jenis Kelamin</div>
+              <input type="text" readonly="readonly" name="jenis_kelamin_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Lahir</div>
+              <input type="text" readonly="readonly" name="tempat_lahir_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal lahir</div>
+              <input type="text" readonly="readonly" name="tanggal_lahir_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Agama</div>
+              <input type="text" readonly="readonly" name="agama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Status Kawin</div>
+              <input type="text" readonly="readonly" name="status_kawin_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pekerjaan</div>
+              <input type="text" readonly="readonly" name="pekerjaan_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <input type="text" readonly="readonly" name="alamat_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan</div>
+              <input type="text" readonly="readonly" name="kecamatan_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan</div>
+              <input type="text" readonly="readonly" name="kelurahan_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email</div>
+              <input type="text" readonly="readonly" name="email_pelapor">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Telp</div>
+              <input type="text" readonly="readonly" name="telp_pemohon">
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Keluarga</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Kartu Keluarga</div>
+              <input type="text" id="nomor_kk" name="nomor_kk" value="" placeholder="NO Kartu Keluarga">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Kepala Keluarga</div>
+              <input type="number" id="nik_kepala_kk" name="nik_kepala_kk" placeholder="NIK Kepala Keluarga" value="">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Kepala Keluarga</div>
+              <input type="text" id="kepala_kk" name="kepala_kk" placeholder="Nama Kepala Keluarga">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat Keluarga</div>
+              <textarea id="alamat_kk" name="alamat_kk" placeholder="Alamat Keluarga"></textarea>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">RT</div>
+              <input type="text" id="rt" name="rt" placeholder="RT">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">RW</div>
+              <input type="text" id="rw" name="rw" placeholder="RW">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kode Pos</div>
+              <input type="number" id="kodepos_kk" name="kodepos_kk" placeholder="Kode Pos">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Provinsi</div>
+              <div class="item-input-wrap">
+                <select name="id_provinsi" id="id_provinsi">
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kab/Kota</div>
+              <div class="item-input-wrap">
+                <select name="id_kabupaten" id="id_kabupaten">
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kecamatan</div>
+              <div class="item-input-wrap">
+                <select name="id_kecamatan" id="id_kecamatan">
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Desa/Kelurahan</div>
+              <div class="item-input-wrap">
+                <select name="id_desa" id="id_desa">
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Dusun</div>
+              <input type="text" id="dusun" name="dusun" placeholder="Dusun">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Telp</div>
+              <input type="number" id="telepon_kk" name="telepon_kk" placeholder="No Telp">
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Individu</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK</div>
+              <input type="text" id="nik" name="nik" value="" placeholder="NIK">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Lengkap</div>
+              <input type="text" id="nama" name="nama" value="" placeholder="Nama Lengkap">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Tinggal Sebelumnya</div>
+              <input type="text" id="tempat_tinggal" name="tempat_tinggal">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Paspor</div>
+              <input type="number" id="no_paspor_individu" name="no_paspor_individu" placeholder="No Paspor">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Berakhir Paspor</div>
+              <input type="text" id="tgl_berakhir_paspor" name="tgl_berakhir_paspor">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Jenis Kelamin</div>
+              <div class="item-input-wrap">
+                <select name="jenis_kelamin_individu">
+                  <option value="Laki-Laki" selected>Laki-Laki</option>
+                  <option value="Perempuan">Perempuan</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Gol. Darah</div>
+              <select id="gol_darah_individu" name="gol_darah_individu">
+
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Kelahiran</div>
+              <input type="text" id="tempat_lahir_individu" name="tempat_lahir_individu" placeholder="Tempat Kelahiran">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Kelahiran</div>
+              <input type="text" id="tanggal_lahir" name="tanggal_lahir">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jam Kelahiran</div>
+              <input required validate type="text" id="jam_lahir" name="jam_lahir" class="bs-timepicker">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Akta Kelahiran</div>
+              <input type="text" id="no_akta_lahir" name="no_akta_lahir" placeholder="No Akta Kelahiran">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Agama</div>
+              <div class="item-input-wrap">
+                <select name="agama_individu" id="agama_individu">
+                  <option value="Islam" selected>Islam</option>
+                  <option value="Kristen">Kristen</option>
+                  <option value="Katholik">Katholik</option>
+                  <option value="Hindu">Hindu</option>
+                  <option value="Budha">Budha</option>
+                  <option value="Konghucu">Konghucu</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Status Perkawinan</div>
+              <div class="item-input-wrap">
+                <select name="status_kawin" id="status_kawin">
+                  <option value="Kawin" selected>Kawin</option>
+                  <option value="Belum Kawin">Belum Kawin</option>
+                  <option value="Cerai Mati">Cerai Mati</option>
+                  <option value="Cerai Hidup">Cerai Hidup</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pencatatan Perkawinan</div>
+              <input type="text" id="catatan_kawin" name="catatan_kawin" placeholder="Pencatatan Perkawinan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Akta Perkawinan</div>
+              <input type="text" id="no_akta_kawin" name="no_akta_kawin" placeholder="No Akta Perkawinan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Perkawinan</div>
+              <input type="text" id="tanggal_kawin" name="tanggal_kawin">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Akta Perceraian</div>
+              <input type="text" id="no_akta_cerai" name="no_akta_cerai" placeholder="No Akta Perceraian">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Perceraian</div>
+              <input type="text" id="tanggal_cerai" name="tanggal_cerai">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">SHBKEL</div>
+              <select id="hubungan_kel" name="hubungan_kel">
+
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelainan Fisik dan Mental</div>
+              <select id="kelainan_individu" name="kelainan_individu">
+
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Penyandang Cacat</div>
+              <select id="penyandang_cacat" name="penyandang_cacat">
+
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pendidikan Terakhir</div>
+              <select id="pendidikan_terakhir" name="pendidikan_terakhir">
+
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pekerjaan</div>
+              <select id="jenis_pekerjaan" name="jenis_pekerjaan">
+
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email</div>
+              <input type="text" id="email" name="email" placeholder="Email">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Telepon SMS</div>
+              <input type="text" id="no_telp" name="no_telp" placeholder="Telepon SMS">
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Orang Tua</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Ibu</div>
+              <input type="number" id="nik_ibu_ortu" name="nik_ibu_ortu" value="" placeholder="NIK Ibu">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Lengkap Ibu</div>
+              <input type="text" id="nama_ibu" name="nama_ibu" value="" placeholder="Nama Lengkap Ibu">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Ayah</div>
+              <input type="number" id="nik_ayah_ortu" name="nik_ayah_ortu" value="" placeholder="NIK Ayah">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Lengkap Ayah</div>
+              <input type="text" id="nama_ayah" name="nama_ayah" value="" placeholder="Nama Lengkap Ayah">
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Administrasi</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Ketua RT</div>
+              <input type="text" id="ketua_rt" name="ketua_rt" value="" placeholder="Nama Ketua RT">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Ketua RW</div>
+              <input type="text" id="ketua_rw" name="ketua_rw" value="" placeholder="Nama Ketua RW">
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip chip-outline color-blue">
+          <div class="chip-label">Keterangan</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Catatan Tambahan</div>
+              <textarea validate name="keterangan"></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Anggota Keluarga</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kategori</div>
+              <select id="kategori" name="kategori" validate>
+                <option value="MERUBAH DATA">MERUBAH DATA</option>
+                <option value="KELAHIRAN/TAMBAH DATA">KELAHIRAN/TAMBAH DATA</option>
+                <option value="NUMPANG KK">NUMPANG KK</option>
+                <option value="KEMATIAN/KURANG DATA">KEMATIAN/KURANG DATA</option>
+                <option value="PINDAH KK">PINDAH KK</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kategori</div>
+              <select id="alasan_pisah_kk" name="alasan_pisah_kk" validate>
+                <option value="Tidak Pisah KK">Tidak Pisah KK</option>
+                <option value="Membentuk Rumah Tangga Baru">Membentuk Rumah Tangga Baru</option>
+                <option value="Pindah Tempat Tinggal">Pindah Tempat Tinggal</option>
+              </select>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+
+        <div class="row">
+          <div class="col-100">
+            <div class="data-table card" id="anggota_keluarga_table">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="label-cell"></th>
+                    <th class="label-cell"></th>
+                    <th class="label-cell">Nama Lengkap</th>
+                    <th class="numeric-cell">NIK</th>
+                    <th class="label-cell">JK</th>
+                    <th class="label-cell">Tempat Lahir</th>
+                    <th class="label-cell">Tanggal Lahir</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell">Data Kosong</td>
+                    <td class="numeric-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a class="button button-round button-fill color-green" id="addkeluarga" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>Tambahkan Anggota Keluarga</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="block-title">
+
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+          <div class="col-50">
+            <a class="button button-round button-fill color-green" id="addformupload" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>New document</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul id="formupload-wrapper-list"></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header">SYARAT LAMPIRAN PENGANTAR KK (MERUBAH DATA)</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul style="padding-left: 0;">
+                <!-- <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Surat pengantar RT/RW (TTD & Stempel)</a>
+                </li> -->
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Foto Asli KK dan KTP pemohon surat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">2. Foto bukti Surat Nikah</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">3. Mengisi Formulir F-1.105 form di download <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/SURAT_PERNYATAAN_PERUBAHAN_DATA.pdf', '_system');" class="link external">di
+                      sini</a></a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">4. Berkas 1 sampai 3 diupload ke lampiran Sipraja</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">5. Berkas asli nomor 1 sampai 3 dibawah saat pengambilan surat di kecamatan setempat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">6. Surat Kuasa jika pengambilan berkas dikuasakan ke orang lain</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">7. Operator desa mengupload form isian data keluarga ke aplikasi Sipraja ( hanya utk operator desa )</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">SYARAT LAMPIRAN PENGANTAR KK (KELAHIRAN/TAMBAH DATA)</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul style="padding-left: 0;">
+                <!-- <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Surat pengantar RT/RW (TTD & Stempel)</a>
+                </li> -->
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Foto Asli KK dan KTP pemohon surat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">2. Foto bukti Surat Nikah</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">3. Fotokopi Surat Kelahiran</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">4. Fotokopi Surat Kelahiran Bidan/ Dokter /Rumah Sakit</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">5. Berkas 1 sampai 4 diupload ke lampiran Sipraja</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">6. Berkas asli nomor 1 sampai 4 dibawah saat pengambilan surat di kecamatan setempat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">7. Surat Kuasa jika pengambilan berkas dikuasakan ke orang lain</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">8. Operator desa mengupload form isian data keluarga ke aplikasi Sipraja ( hanya utk operator desa )</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">SYARAT LAMPIRAN PENGANTAR KK (NUMPANG KK)</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul style="padding-left: 0;">
+                <!-- <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Surat pengantar RT/RW (TTD & Stempel)</a>
+                </li> -->
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Foto Asli KK dan KTP pemohon surat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">2. Foto Asli KK yang ditumpangi</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">3. Foto bukti Surat Nikah</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">4. Surat keterangan pindah datang (jika tidak satu daerah)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">5. Berkas 1 sampai 4 diupload ke lampiran Sipraja</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">6. Berkas asli nomor 1 sampai 4 dibawah saat pengambilan surat di kecamatan setempat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">7. Surat Kuasa jika pengambilan berkas dikuasakan ke orang lain</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">8. Operator desa mengupload form isian data keluarga ke aplikasi Sipraja ( hanya utk operator desa )</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">SYARAT LAMPIRAN PENGANTAR KK (KEMATIAN/KURANG DATA)</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul style="padding-left: 0;">
+                <!-- <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Surat pengantar RT/RW (TTD & Stempel)</a>
+                </li> -->
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Foto Asli KK dan KTP pemohon surat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">2. Foto bukti Surat Nikah</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">3. Mengisi Formulir F-2.29 form di download <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/SURAT_KETERANGAN_KEMATIAN_DESA.pdf', '_system');" class="link external">di
+                      sini</a></a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">4. Berkas 1 sampai 3 diupload ke lampiran Sipraja</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">5. Berkas asli nomor 1 sampai 3 dibawah saat pengambilan surat di kecamatan setempat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">6. Surat Kuasa jika pengambilan berkas dikuasakan ke orang lain</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">7. Operator desa mengupload form isian data keluarga ke aplikasi Sipraja ( hanya utk operator desa )</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">SYARAT LAMPIRAN PENGANTAR KK (PECAH KK)</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul style="padding-left: 0;">
+                <!-- <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Surat pengantar RT/RW (TTD & Stempel)</a>
+                </li> -->
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Foto Asli KK dan KTP pemohon surat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">2. Foto bukti Surat Nikah</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">3. SK Pindah Datang (Opsional)</a></a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">4. Berkas 1 sampai 3 diupload ke lampiran Sipraja</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">5. Berkas asli nomor 1 sampai 3 dibawah saat pengambilan surat di kecamatan setempat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">6. Surat Kuasa jika pengambilan berkas dikuasakan ke orang lain</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">7. Operator desa mengupload form isian data keluarga ke aplikasi Sipraja ( hanya utk operator desa )</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form class="list" id="approval">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Persetujuan</div>
+        </div>
+      </div>
+
+      <div class="block-title">
+        Status Terakhir Dokumen : <br>
+        <div class="chip color-red">
+          <div class="chip-label" id="std">-</div>
+        </div>
+        <br><br>
+        Posisi Terakhir Dokumen : <br>
+        <div class="chip color-green">
+          <div class="chip-label" id="ptd">-</div>
+        </div><br><br>
+        Tanda Tangan : <br>
+        <div class="lihat-ttd">
+          <canvas id="signature_pad_static" style="border: 1px solid black; border-radius: 5px; width: 100%"></canvas>
+        </div>
+
+      </div>
+      <input required validate type="hidden" name="approve_items_id">
+      <input type="hidden" name="approve_items_id">
+      <input type="hidden" name="type_ttd" id="type_ttd">
+      <input type="hidden" name="base64_ttd" id="base64_ttd">
+      <ul>
+        <li>
+          <a class="item-link smart-select statusaction smart-select-init" data-open-in="sheet">
+            <select name="status" id="statusaction">
+              <option value="2">Disetujui</option>
+              <option value="3">Ditolak</option>
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Pilih Status</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Keterangan</div>
+              <textarea type="text" name="deskripsi"></textarea>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </form>
+    <div class="data-table card">
+      <div class="card-header">Riwayat Approval</div>
+      <div class="card-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Otoriter</th>
+              <th>Nama Operator</th>
+              <th>Keterangan</th>
+              <th>Tanggal Proses</th>
+            </tr>
+          </thead>
+          <tbody class="table-chron">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

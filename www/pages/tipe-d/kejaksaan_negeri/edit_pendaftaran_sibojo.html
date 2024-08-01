@@ -1,0 +1,175 @@
+<div class="page" data-class="edit_layanan">
+  <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link bg-color-orange" id="print_preview_button" style="display: none;"><i class="icon f7-icons">zoom_in</i> Cetak</a>
+      <a class="link bg-color-green" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="checked_approval_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link" id="print_button"><i class="icon f7-icons">zoom_in</i> Cetak Surat</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Edit Pendaftaran SIBOJO</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="edit_pendaftaran_sibojo">
+      <div class="block-title" style="margin-top: 16px">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Data Pemohon</div>
+            </div>
+          </div>
+          <div class="col-50" id="btndeletelayanan">
+            <a class="button button-round button-fill color-red" id="deletelayanan">
+              <i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">xmark_square_fill</i> <span>Hapus
+                Data</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Pelangar</div>
+              <input required validate type="text" name="nama_pelanggar" id="nama_pelanggar">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No reg</div>
+              <input required validate type="number" name="no_reg" id="no_reg">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Sidang</div>
+              <input required validate type="text" name="tanggal_sidang" id="tanggal_sidang">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Barang Bukti yang Disita</div>
+            <div class="item-input-wrap">
+              <select name="barang_bukti" id="barang_bukti">
+                <option value="SIM">SIM</option>
+                <option value="STNK">STNK</option>
+                <option value="BUKU KIR">Buku KIR</option>
+                <option value="SEPEDA MOTOR">Sepeda Motor</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Opsi barang Bukti</div>
+              <input required validate type="text" name="opsi_barang_bukti" id="opsi_barang_bukti">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Pengambilan Tilang</div>
+              <input required validate type="text" name="tanggal_pengambilan" id="tanggal_pengambilan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Whatsapp</div>
+              <input required validate type="number" name="no_wa" id="no_wa">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Sudah Transfer?</div>
+            <div class="item-input-wrap">
+              <select name="status_transfer" id="status_transfer">
+                <option value="0">Belum</option>
+                <option value="1">Sudah</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input" id="status_operator">
+          <div class="item-inner">
+            <div class="item-title item-label">Status</div>
+            <div class="item-input-wrap">
+              <select name="status" id="status">
+                <option value="0">Belum</option>
+                <option value="1">Sudah</option>
+              </select>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">Penjelasan Singkat</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul>
+                <br>
+                <li>SIBOJO
+                  <hr>
+                </li>
+                <li>
+                  Merupakan sistem boking online Kejaksaan Negeri Sidoarjo.
+                  Pelanggar hanya perlu menentukan hari dimana pelanggar akan mengambil berkas tilang.
+                  Untuk dapat diambil sesuai dengan waktu yang disepakati oleh pelanggar atau pemesan
+                  Layanan ini tidak di pungut biaya.
+                  Untuk informasi denda akan diberitahukan oleh petugas sesuai keputusan dari hakim pn sidoarjo
+                  melalui nomer WA.
+                  Untuk layanan pengaduan dapat menghubungi 081312222678
+                  <hr>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form class="list" id="approval">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Persetujuan</div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a class="item-link smart-select smart-select-init" id="select2" data-open-in="sheet">
+            <select name="status" id="status">
+              <option value="0">Belum</option>
+              <option value="1">Sudah</option>
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Pilih Status</div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>

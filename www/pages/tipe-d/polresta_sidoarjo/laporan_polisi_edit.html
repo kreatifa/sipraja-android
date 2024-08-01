@@ -1,0 +1,137 @@
+<div class="page" data-class="null">
+  <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="judul">Laporan Polisi</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="form_laporan_polisi">
+      <div class="block-title">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Data Diri</div>
+            </div>
+          </div>
+          <div class="col-50" id="btndeletelayanan">
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama</div>
+              <input type="text" name="nama" id="nama" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No.Identitas (KTP/SIM/PASPOR)</div>
+              <input type="text" name="no_identitas" id="no_identitas" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jenis Kelamin</div>
+              <select name="jenis_kelamin" id="jenis_kelamin" required validate>
+                <option selected hidden>-Jenis Kelamin-</option>
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Agama</div>
+              <select name="agama" id="agama" required validate>
+                <option selected hidden>-Agama-</option>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Konghucu">Konghucu</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pendidikan Terakhir</div>
+              <input type="text" name="pendidikan_terakhir" id="pendidikan_terakhir" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Lahir</div>
+              <input type="text" name="tempat_lahir" id="tempat_lahir" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir</div>
+              <input type="text" readonly="readonly" required validate id="tgl_lahir" name="tgl_lahir" />
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pekerjaan</div>
+              <input type="text" name="pekerjaan" id="pekerjaan" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kewarganegaraan</div>
+              <select id="kewarganegaraan" name="kewarganegaraan" required validate>
+                <option value="Warga Negara Indonesia">Warga Negara Indonesia</option>
+                <option value="Warga Negara Asing">Warga Negara Asing</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No HP</div>
+              <input type="text" name="no_hp" id="no_hp" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <textarea id="alamat" name="alamat" required validate></textarea>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>

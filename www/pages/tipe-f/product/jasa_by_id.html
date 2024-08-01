@@ -1,0 +1,134 @@
+<div class="page" id="tipe-f" data-class="product_by_id">
+    <div class="navbar color-white">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="/tipe-f/marketplace_jasa/list_all" class="link">
+                    <i class="icon icon-back color-blue"></i>
+                </a>
+            </div>
+            <form class="searchbar">
+                <div class="searchbar-inner">
+                    <div class="searchbar-input-wrap">
+                        <i class="searchbar-icon"></i>
+                        <input type="search" name="pencarian" id="pencarian" placeholder="Search">
+                        <span class="input-clear-button"></span>
+                    </div>
+                    <span class="searchbar-disable-button">Cancel</span>
+                </div>
+            </form>
+            <div class="right">
+                <a href="/tipe-f/marketplace_jasa/keranjang" class="button button-fill color-white icon-only">
+                    <i class="icon f7-icons color-blue">cart_fill<span class="badge color-red check_keranjang"></span></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="search-proto-id" id="search-proto-id" style="display: none;">
+        </div>
+        <div data-pagination='{"el": ".swiper-pagination"}' class="swiper-container swiper-init" width: 100%;">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper" id="foto_produk">
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card card-outline">
+            <div class="card-header" id="harga" style="font-size: 30px;"></div>
+            <div class="card-content card-content-padding" id="nama" style="font-size: 20px;"></div>
+        </div>
+        <div class="card card-outline">
+            <div class="row">
+                <p style="margin-left: 10px;" id="variasi">
+                </p>
+            </div>
+
+        </div>
+        <div class="card card-outline">
+            <div class="card-header">Spesifikasi Jasa</div>
+            <div class="card-content card-content-padding" id="spesifikasi">
+                <div class="row">
+                    <div class="col-33">
+                        Kategori
+                    </div>
+                    <div id="kategori" class="col-66">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span style="margin-top: 15px;">
+                        <div id="masukkan_keranjang" class="button button-outline open-alert">
+                            <i class="icon f7-icons">cart</i> Masukan Keranjang
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="card card-outline">
+            <div class="card-content">
+                <div class="list media-list">
+                    <ul>
+                        <li class="item-content">
+                            <div class="item-media"><img id="logo" src="" width="80" />
+                            </div>
+                            <div class="item-inner">
+                                <div id="nama_usaha" style="margin-left: 5px; margin-bottom: 5px;" class="item-title">
+                                </div>
+                                <a id="detail_toko" class="col button button-fill button-round">Kunjungi
+                                    Toko
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card card-outline">
+            <div class="card-header">Deskripsi Produk</div>
+            <div id="deskripsi" class="card-content card-content-padding"></div>
+        </div>
+    </div>
+</div>
+<style>
+    .custom {
+        height: 62px !important;
+        background-color: white;
+    }
+
+    .toolbar-inner {
+        max-height: 44px;
+        bottom: 0 !important;
+        top: auto;
+    }
+
+    .toolbar-text-container {
+        position: absolute;
+        height: 14px;
+        top: 0;
+        background: #42b833;
+        width: 100%;
+        text-align: center;
+        line-height: 14px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        align-content: center;
+        object-position: center;
+        transition: transform ease-in-out 0.5s;
+    }
+
+    .zoom {
+        z-index: 1;
+        transform: scale(1.5);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>

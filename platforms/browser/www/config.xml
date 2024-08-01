@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="go.id.sidoarjokab.sipraja" version="3.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Sipraja</name>
+    <description>
+        Aplikasi Mobile Sipraja Pemkab Sidoarjo
+    </description>
+    <author email="mitrapurnamakreatifa@gmail.com" href="https://www.sipraja.sidoarjokab.go.id">
+        Pemkab Sidoarjo
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="*" />
+    <allow-navigation href="*" />
+</widget>

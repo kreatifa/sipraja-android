@@ -1,0 +1,130 @@
+<div class="page" data-class="edit_komplain">
+  <div class="save_button toolbar toolbar-bottom-md" id="save_button">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_shield_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Komplain Pengguna</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="card">
+      <div class="card-header bg-color-blue text-color-white">Data Komplain</div>
+      <div class="card-content card-content-padding">
+        <div class="list">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Kode Komplain*</div>
+                  <input type="text" id="kode_komplain" name="kode_komplain" required validate readonly>
+                </div>
+              </div>
+            </li>
+
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Nama*</div>
+                  <input type="text" id="nama" name="nama" required validate readonly>
+                </div>
+              </div>
+            </li>
+
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Layanan*</div>
+                  <input type="text" id="layanan" name="layanan" required validate readonly>
+                </div>
+              </div>
+            </li>
+
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Kode Transaksi*</div>
+                  <input type="text" id="kode_transaksi" name="kode_transaksi" required validate readonly>
+                </div>
+              </div>
+            </li>
+
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Deskripsi Komplain*</div>
+                  <input type="text" id="deskripsi_komplain" name="deskripsi_komplain" required validate readonly>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- <div class="block-title">
+            <div class="row">
+              <div class="col-50">
+                <div class="chip color-blue">
+                  <div class="chip-label">Lampiran</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="formupload-wrapper">
+            <ul id="formupload-wrapper-list"></ul>
+          </div> -->
+        </div>
+      </div>
+      <div class="card-footer bg-color-blue text-color-white">Lampiran</div>
+      <div class="card-content">
+        <div class="list media-list no-ios-edges">
+          <ul id="list_lampiran_komplain"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- List Balasan -->
+    <div id="edit_komplain_page"></div>
+
+    <form class="list" id="komplain_pengguna_form">
+      <div class="card">
+        <div class="card-header bg-color-blue text-color-white">Tambah Keluhan</div>
+        <div class="card-content ">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tambah Keluhan*</div>
+                  <input type="hidden" id="id_komplain" name="id_komplain" required validate>
+                  <input type="text" id="tambah_keluhan" name="tambah_keluhan" required validate>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer bg-color-blue text-color-white">Lampiran Komplain (jika ada)</div>
+        <div class="card-content card-content-padding">
+          <!-- <div class="block-title"> -->
+          <div class="row">
+            <div class="col-50">
+              <div class="chip color-blue">
+                <div class="chip-label">Lampiran</div>
+              </div>
+            </div>
+            <div class="col-50">
+              <a class="button button-round button-fill color-green" id="addformupload" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>New document</span></a>
+            </div>
+          </div>
+          <!-- </div> -->
+          <div id="formupload-wrapper">
+            <ul id="formupload-wrapper-list"></ul>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

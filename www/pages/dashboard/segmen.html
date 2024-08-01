@@ -1,0 +1,108 @@
+<div class="page">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Segmen BPJS</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="card elevation-5 border-radius-8">
+      <div class="card-content card-content-padding">
+        <div class="list no-hairlines-between">
+          <ul>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Bulan</div>
+                  <div class="item-input-wrap">
+                    <input type="text" placeholder="Pilih Bulan" readonly="readonly" id="bulan_segmen"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="item-link smart-select smart-select-init" data-open-in="sheet">
+                <select id="kecamatan_segmen">
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Kecamatan</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link smart-select smart-select-init" data-open-in="sheet">
+                <select id="kelurahan_segmen">
+                  <option value="000">Semua</option>
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Desa/Kelurahan</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link smart-select smart-select-init" data-open-in="sheet">
+                <select id="segmen">
+                  <option value="000">Semua</option>
+                  <option value="ppu">PPU</option>
+                  <option value="pbi_apbn">PBI JK</option>
+                  <option value="pbi_apbd">PD PEMDA</option>
+                  <option value="pbpu">PBPU</option>
+                  <option value="bp">BP</option>
+                  <option value="non">BELUM DAFTAR</option>
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Segmen</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link smart-select smart-select-init" data-open-in="sheet">
+                <select id="subsegmen">
+                  <option value="000">Semua</option>
+                  <option value="aktif">Aktif</option>
+                  <option value="nonaktif">Nonaktif</option>
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Sub Segmen</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-footer" style="justify-content: flex-end;">
+        <div class="float-right">
+          <button class="button button-raised button-fill" id="lihat_grafik_segmen"><i class="icon f7-icons">search</i> Lihat Grafik</button>
+        </div>
+      </div>
+    </div>
+    <div id="layout_data_segmen">
+      <div class="card elevation-5 border-radius-8">
+        <div class="card-content card-content-padding">
+          <center>
+            <div id="chart_segmen_baru"></div>
+          </center>
+          <center style="overflow-x: scroll;">
+            <div id="chart_segmen_h" style="display: none;"></div>
+          </center>
+          <center>
+            <div id="chart_segmen_v"></div>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

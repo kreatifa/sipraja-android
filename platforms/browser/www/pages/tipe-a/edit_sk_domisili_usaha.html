@@ -1,0 +1,385 @@
+<div class="page" data-class="edit_layanan">
+  <div class="savebutton toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link bg-color-orange" id="print_preview_button" style="display: none;"><i class="icon f7-icons">zoom_in</i> Cetak</a>
+      <a class="link bg-color-green" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="checked_approval_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link" id="print_button"><i class="icon f7-icons">zoom_in</i> Cetak Surat</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form SK DOMISILI USAHA</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="edit_sk_domisili_usaha">
+      <div class="block-title">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Data Pemohon</div>
+            </div>
+          </div>
+          <div class="col-50" id="btndeletelayanan">
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Pemohon</div>
+              <input type="text" name="nik_pemohon" disabled>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama</div>
+              <input type="text" name="nama_pemohon" disabled>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Status Perkawinan</div>
+              <input type="text" name="status_kawin_pemohon" disabled>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Lahir</div>
+              <input type="text" name="tempat_lahir_pemohon" disabled>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir</div>
+              <input type="text" name="tanggal_lahir_pemohon" disabled>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pekerjaan</div>
+              <input type="text" name="pekerjaan_pemohon" disabled>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jenis Kelamin</div>
+              <input type="text" name="jenis_kelamin_pemohon" disabled>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat Pemohon</div>
+              <input type="text" name="alamat_pemohon" disabled>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan Pemohon</div>
+              <input type="text" name="kecamatan_pemohon" disabled>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan Pemohon</div>
+              <input type="text" name="kelurahan_pemohon" disabled>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Usaha/Tempat Tinggal</div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Jenis Surat</div>
+              <div class="item-input-wrap">
+                <select id="jenis_surat" name="jenis_surat">
+                  <option value="usaha">Domisili Usaha</option>
+                  <option value="bpum">Domisili Usaha untuk BPUM</option>
+                  <option value="tinggal">Domisili Tempat Tinggal</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="bpum_field">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Nomor Kartu Keluarga (KK)</div>
+              <div class="item-input-wrap">
+                <input validate type="number" id="nomor_kk" name="nomor_kk">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="bpum_field">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">NIB/SKU (bila ada, biarkan jika tidak)</div>
+              <div class="item-input-wrap">
+                <input validate type="text" id="nib" name="nib" value="-">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="usaha_field">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Nama Usaha</div>
+              <div class="item-input-wrap">
+                <input required validate type="text" name="nama_usaha">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="bpum_field">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Pilihan Bidang Usaha</div>
+              <div class="item-input-wrap">
+                <select id="pilihan_bidang" name="pilihan_bidang">
+                  <option value="Makanan">Makanan</option>
+                  <option value="Minuman">Minuman</option>
+                  <option value="Handy Craft">Handy Craft</option>
+                  <option value="Fashion">Fashion</option>
+                  <option value="Jasa">Jasa</option>
+                  <option value="Pedagang">Pedagang</option>
+                  <option value="Batik">Batik</option>
+                  <option value="Pengrajin">Pengrajin</option>
+                  <option value="Lain-lain">Lain-lain</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="bpum_field">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Bidang Usaha</div>
+              <div class="item-input-wrap">
+                <input type="text" id="bidang_usaha" name="bidang_usaha" placeholder="Mohon Isikan Sendiri Bidang Usaha Anda" value="Makanan" readonly>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Alamat Domisili</div>
+              <div class="item-input-wrap">
+                <textarea required validate type="text" name="alamat_usaha"></textarea>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+            <select id="kecamatan" name="kecamatan">
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Kecamatan Domisili</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+            <select id="kelurahan" name="kelurahan">
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Kelurahan Domisili</div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+          <div class="col-50">
+            <a class="button button-round button-fill color-green" id="addformupload" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>New document</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul class="form-item-wrapper" id="formupload-wrapper-list" data-form-item-wrapper=""></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header">Syarat & Ketentuan Lampiran</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul style="padding-left: 0;">
+                <!-- <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Surat pengantar RT/RW (TTD & Stempel) tempat usaha</a>
+                </li> -->
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Foto Asli KK dan KTP Pemilik/Pendiri Badan Usaha</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">2. Akta Pendirian UKM dari Notaris (Fotokopi)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">3. Surat Pernyataan bermaterai Tidak Keberatan dari tetangga (Ditanda tangani minimal 4 orang warga yang bertetangga dengan tempat usaha Anda, dilampiri Fotokopi KTP masing-masing)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">4. Surat Perjanjian Sewa-Menyewa tempat usaha bermaterai (Fotokopi, jika Anda menyewa tempat usaha Anda)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">5. Surat Bukti Kepemilikan Tanah atau Tempat Usaha (Surat Tanah, Akta Jual Beli/Girik) jika tempat usaha Anda milik sendiri</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">6. Berkas 1 sampai 6 diupload ke lampiran Sipraja</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">7. Berkas asli nomor 1 sampai 6 dibawah saat pengambilan surat di desa setempat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">8. Surat Kuasa jika pengambilan berkas dikuasakan ke orang lain</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header">Syarat & Ketentuan Lampiran untuk Pengajuan BPUM</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul style="padding-left: 0;">
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Foto KTP Elektronik Asli Pemilik/Pendiri Badan Usaha</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">2. Foto KK Asli Pemilik/Pendiri Badan Usaha</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">3. Mengisi Surat Pernyataan Tanggung Jawab Mutlak (form bisa didownload <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/SURAT-PERNYATAAN-TANGGUNG-JAWAB-MUTLAK.pdf', '_system');" class="link external">di sini</a>)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">4. Surat Keterangan Usaha (SKU)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">5. Foto Peserta BPUM Di Depan Tempat Usaha</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">6. Berkas 1 sampai 5 diupload ke lampiran Sipraja</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">7. Fotocopy KTP, Fotocopy KK dan Surat Pernyataan Tanggung Jawab Mutlak (Asli) DIKUMPULKAN di Kelurahan sebagai bahan Verifikasi untuk Dinas Koperasi Kab. Sidoarjo</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form class="list" id="approval">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Persetujuan</div>
+        </div>
+      </div>
+      <div class="block-title">
+        Status Terakhir Dokumen : <br>
+        <div class="chip color-red">
+          <div class="chip-label" id="std">-</div>
+        </div>
+        <br><br>
+        Posisi Terakhir Dokumen  : <br>
+        <div class="chip color-green">
+          <div class="chip-label" id="ptd">-</div>
+        </div><br><br>
+        Tanda Tangan : <br>
+        <div class="lihat-ttd">
+          <canvas id="signature_pad_static" style="border: 1px solid black; border-radius: 5px; width: 100%"></canvas>
+        </div>
+      </div>
+      <input required validate type="hidden" name="approve_items_id">
+      <input type="hidden" name="approve_items_id">
+      <input type="hidden" name="type_ttd" id="type_ttd">
+      <input type="hidden" name="base64_ttd" id="base64_ttd">
+       <ul>
+        <li>
+          <a class="item-link smart-select statusaction smart-select-init" data-open-in="sheet">
+            <select name="status" id="statusaction">
+              <option value="2">Disetujui</option> 
+              <option value="3">Ditolak</option>
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Pilih Status</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Keterangan</div>
+              <textarea type="text" name="deskripsi"></textarea>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </form>
+    <div class="data-table card">
+      <div class="card-header">Riwayat Approval</div>
+      <div class="card-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Otoriter</th>
+              <th>Nama Operator</th>
+              <th>Keterangan</th>
+              <th>Tanggal Proses</th>
+            </tr>
+          </thead>
+          <tbody class="table-chron">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

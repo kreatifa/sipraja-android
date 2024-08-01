@@ -1,0 +1,145 @@
+<div class="page">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Data Pendaftar</div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="card elevation-5 border-radius-8">
+      <div class="card-content card-content-padding">
+        <div class="row">
+          <div class="col-100">
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Tanggal</div>
+                <div class="item-input-wrap" style="width: 100%">
+                  <input type="text" id="tanggal_pendaftar" placeholder="Tanggal Mulai - Selesai" readonly style="width: 100%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list no-hairlines-between">
+          <ul>
+            <li>
+              <a class="item-link smart-select smart-select-init" data-open-in="popup" data-search="true" data-searchbar-placeholder="Cari Kecamatan">
+                <select name="kecamatan_pendaftar" id="kecamatan_pendaftar">
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Kecamatan</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link smart-select smart-select-init" data-open-in="popup" data-search="true" data-searchbar-placeholder="Cari Desa/Kelurahan">
+                <select name="kelurahan_pendaftar" id="kelurahan_pendaftar">
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Desa/Kelurahan</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-footer" style="justify-content: flex-end;">
+        <div class="float-right">
+          <button class="col button button-raised button-fill" id="cari_data"><i class="icon f7-icons">search</i> Cari</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="layout_data">
+      <!-- <div class="row">
+        <div class="col-50">
+          <div class="card elevation-5 bg-color-blue text-color-white border-radius-8">
+            <div class="card-content card-content-padding">
+              <h4 style="margin: 0;">Pendaftar di Kecamatan</h4>
+              <h1 id="pendaftaran_kec" style="margin: 0; text-align: right; line-height: 1;">0</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-50">
+          <div class="card elevation-5 bg-color-blue text-color-white border-radius-8">
+            <div class="card-content card-content-padding">
+              <h4 style="margin: 0;">Pendaftar di Kelurahan</h4>
+              <h1 id="pendaftaran_kel" style="margin: 0; text-align: right; line-height: 1;">0</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-50">
+          <div class="card elevation-5 bg-color-green text-color-white border-radius-8">
+            <div class="card-content card-content-padding">
+              <h4 style="margin: 0;">Terverifikasi</h4>
+              <h1 id="data_terverif" style="margin: 0; text-align: right; line-height: 1;">0</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-50">
+          <div class="card elevation-5 bg-color-yellow text-color-white border-radius-8">
+            <div class="card-content card-content-padding">
+              <h4 style="margin: 0;">Menunggu Verifikasi</h4>
+              <h1 id="data_menunggu_verif" style="margin: 0; text-align: right; line-height: 1;">0</h1>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="card elevation-5 border-radius-8">
+        <div class="card-header" style="justify-content: flex-end;">
+          <div class="float-right">
+            <button class="col button button-raised button-fill button-small" id="lihat_grafik"><i class="icon f7-icons">chart_bar_alt_fill</i> Lihat Grafik</button>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="row" style="margin: 10px 20px;">
+            <!-- <div class="col-50">
+              <div class="chip">
+                <div class="chip-media bg-color-blue" id="jml_verif">
+                  <h4>0</h4>
+                </div>
+                <div class="chip-label">Terverifikasi</div>
+              </div>
+            </div>
+            <div class="col-50">
+              <div class="chip">
+                <div class="chip-media bg-color-orange" id="jml_menunggu">
+                  <h4>0</h4>
+                </div>
+                <div class="chip-label">Menunggu Verifikasi</div>
+              </div>
+            </div> -->
+          </div>
+          <div class="card data-table">
+            <table id="datatables" class="display" style="width:100%">
+              <thead>
+                <tr>
+                  <th>KECAMATAN</th>
+                  <th>JUMLAH</th>
+                  <th>VERIFIKASI</th>
+                  <th>BELUM TERVERIFIKASI</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <center>
+            <div id="chart_pendaftar" style="padding-bottom: 10px;"></div>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

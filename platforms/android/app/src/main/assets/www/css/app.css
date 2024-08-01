@@ -1,0 +1,186 @@
+#qr_view {
+    display: none;
+}
+#qr_light {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+}
+#qr_region {
+    position: absolute;
+    width: 80vw;
+    height: 80vw;
+    top: calc(50vh - 40vw - 33px);
+    left: 10vw;
+}
+#qr_cancel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 15px 0;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.logo-wrapper {
+  display: block;
+  width: 50%;
+  float: right;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 60%;
+  padding-top: 30%;
+}
+
+.myblock {
+  margin: 30px;
+  padding: 20px;
+  padding-top: 5px;
+  background: white;
+}
+
+.loginbutton a.link {
+  width: 50%;
+}
+
+.checked_approval_button a.link {
+  width: 50%;
+}
+
+.checked_approval_button .f7-icons {
+  margin-top: -3px;
+  margin-right: 5px;
+}
+
+.loginbutton .f7-icons {
+  margin-left: -10px;
+  margin-top: -3px;
+  margin-right: 10px;
+}
+
+.green-bg {
+  background: #009B4C;
+}
+
+.myblock .list ul:before {
+  background: none;
+}
+
+.myblock .list ul:after {
+  background: none;
+}
+
+.login-form {
+  margin-top: 70px;
+}
+
+.login-form .item-content {
+  display: block;
+}
+
+.md .fab-buttons a,
+.md .fab>a {
+  width: 48px;
+  height: 48px;
+}
+
+.form-siurban tbody td:nth-child(odd) {
+  background-color: #EFEFEF;
+}
+
+.form-siurban .card {
+  margin-bottom: 25px;
+}
+
+.savebutton a.link {
+  width: 100%;
+}
+
+.checked_approval_button a.link {
+  width: 100%;
+}
+
+.savebutton .f7-icons {
+  margin-left: -10px;
+  margin-top: -3px;
+  margin-right: 10px;
+}
+
+.dataTables_empty {
+  text-align: left !important;
+}
+
+#formupload-wrapper-list li ul {
+  padding-left: 0 !important;
+}
+
+.cari_kbli .item-title {
+  font-size: 8pt;
+}
+
+.white-input {
+  background: white !important;
+}
+
+/*.wali_nasab {
+  display: none !important;
+}*/
+
+.pasangan_meninggal {
+  display: none;
+}
+
+.media-list .item-profile .item-title {
+  color: #757575;
+  white-space: normal;
+}
+.media-list .item-profile .item-subtitle {
+  color: black;
+  white-space: normal;
+}
+.size-20 { font-size: 20px }
+
+.grey-border {
+  border: solid 2px #7a7a7a;
+}
+
+#list-product{
+  min-height: 55px;
+}
+
+.product-name {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5c5c5c;
+  max-width: 75%;
+}
+
+.product-price {
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.product-price span {
+  width: 150px;
+  text-align: right;
+  float: right;
+  font-size: 14px;
+  font-weight: normal;
+  color: #5c5c5c;
+}

@@ -1,0 +1,84 @@
+<div class="page" data-class="">
+    <div class="save_button toolbar toolbar-bottom-md">
+        <div class="toolbar-inner">
+          <a class="link green-bg" id="simpan-return"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="/tipe-f/marketplace/menu" class="link">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="title" id="title">Return</div>
+        </div>
+    </div>
+    <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+        <form class="list" id="marketplace_return">
+            <input type="hidden" name="id" id="id">
+            <ul>
+                <li>
+                    <div id="pesanan">
+
+                    </div>
+                </li>
+                <li>
+                    <h5 class="text-align-center">Mengapa kamu ingin mengajukan pengembalian?</h5>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Alasan*</div>
+                            <div class="item-input-wrap">
+                                <select name="alasan" id="alasan">
+                                    <option value="Pesanan sampai tapi tidak lengkap/kosong">Pesanan sampai tapi tidak lengkap/kosong</option>
+                                    <option value="Produk salah (ukuran, warna, beda produk)">Produk salah (ukuran, warna, beda produk)</option>
+                                    <option value="Produk cacat">Produk cacat</option>
+                                    <option value="Produk tidak berfungsi dengan baik">Produk tidak berfungsi dengan baik</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">Deskripsi</div>
+                            <div class="item-input-wrap">
+                                <textarea id="deskripsi" name="deskripsi" placeholder="Berikan penilaianmu dan bantu pengguna lain membuat pilihan yang lebih baik" required validate></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="formupload-wrapper">
+                        <ul id="formupload-wrapper-list">
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="row">
+                                        <div class="col-60">
+                                            <div class="item-inner">
+                                                <div class="item-input-wrap">
+                                                    <div class="item-title item-label">Foto</div>
+                                                    <input type="hidden" id="file_id_return" name="file_id_return">
+                                                    <input type="hidden" class="file_code" id="file_code_return" name="file_code_return">
+                                                    <input type="text" class="file_desc" id="file_desc_return" name="file_desc_return" value="Foto Produk">
+                                                    <input type="text" id="file_url_return" name="file_url_return" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-20 preview_file_return"></div>
+                                        <div class="col-20">
+                                            <a id="return" onClick="upload_foto(this.id)" class="button button-round button-fill" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder_fill</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,561 @@
+<div class="page" data-class="ijin_mendirikan_bangunan_form">
+  <div class="savebutton toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan" style="display: none;"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+      <a class="link blue-bg" id="cek_nop"><i class="icon f7-icons">checkmark_circle_fill</i> Cari NOP</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form Ijin Mendirikan Bangunan</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="new_ijin_mendirikan_bangunan">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Dokumen</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NOP Tanah/Bangunan</div>
+              <input type="text" id="nop" name="nop" required validate>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemohon</div>
+        </div>
+      </div>
+      <ul id="form_pemohon" style="display: none;">
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK</div>
+              <input type="text" readonly="readonly" name="nik_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama</div>
+              <input type="text" readonly="readonly" name="nama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <input type="text" readonly="readonly" name="alamat_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan</div>
+              <input type="text" readonly="readonly" name="kecamatan_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan</div>
+              <input type="text" readonly="readonly" name="kelurahan_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Pengajuan</div>
+              <input type="text" name="tanggal_pengajuan" id="tanggal_pengajuan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Keterangan Pemohon</div>
+              <textarea name="keterangan_pemohon"></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pengiriman</div>
+        </div>
+      </div>
+      <ul id="form_pengiriman" style="display: none;">
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pengiriman</div>
+              <select id="delivery" name="delivery">
+                <option value="1">Ambil di Kecamatan</option>
+                <option value="2">Cash on Delivery (COD)</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Info Pengiriman</div>
+              <textarea class="text-color-red" id="info_delivery" rows="2" readonly>Peneng Dapat Diambil di Kecamatan Setelah SK Selesai</textarea>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input form_penerima">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Penerima</div>
+              <input type="text" name="nama_penerima" id="nama_penerima">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input form_penerima">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Telepon Penerima</div>
+              <input type="text" name="telp_penerima" id="telp_penerima">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input form_penerima">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat Penerima</div>
+              <textarea name="alamat_penerima" id="alamat_penerima" rows="2"></textarea>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Bangunan</div>
+        </div>
+      </div>
+      <ul id="form_bangunan" style="display: none;">
+        <li>
+          <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+            <select id="kode_kecamatan_bangunan" name="kode_kecamatan_bangunan">
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Kecamatan</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+            <select id="kode_kelurahan_bangunan" name="kode_kelurahan_bangunan">
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Kelurahan</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat Bangunan</div>
+              <input type="text" name="alamat_bangunan">
+            </div>
+          </div>
+        </li>
+        <div id="operator_area">
+          <li>
+            <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+              <select id="kegiatan" name="kegiatan">
+                <option value="2" data-value="">Bangunan Baru</option>
+                <option value="3" data-value="">Rehabilitasi/Renovasi Rusak Sedang</option>
+                <option value="4" data-value="">Rehabilitasi/Renovasi Rusak Berat</option>
+                <option value="5" data-value="">Pelestarian/Pemugaran Pratama</option>
+                <option value="6" data-value="">Pelestarian/Pemugaran Madya</option>
+                <option value="7" data-value="">Pelestarian/Pemugaran Utama</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Kegiatan</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+              <select id="fungsi_gedung" name="fungsi_gedung">
+                <option value="8" data-value="">Hunian</option>
+                <option value="9" data-value="">Keagamaan</option>
+                <option value="10" data-value="">Usaha</option>
+                <option value="11" data-value="">Sosial Budaya</option>
+                <option value="12" data-value="">Khusus</option>
+                <option value="13" data-value="">Ganda/Campuran</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Fungsi Gedung</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+              <select id="kompleksitas" name="kompleksitas">
+                <option value="14" data-value="">Sederhana</option>
+                <option value="15" data-value="">Tidak Sederhana</option>
+                <option value="16" data-value="">Khusus</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Kompleksitas</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+              <select id="tingkat_permanensi" name="tingkat_permanensi">
+                <option value="17" data-value="">Darurat</option>
+                <option value="18" data-value="">Semi Permanen</option>
+                <option value="19" data-value="">Permanen</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Tingkat Permanensi</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+              <select id="tingkat_resiko_kebakaran" name="tingkat_resiko_kebakaran">
+                <option value="20" data-value="">Rendah</option>
+                <option value="21" data-value="">Sedang</option>
+                <option value="22" data-value="">Tinggi</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Tingkat Resiko Kebakaran</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+              <select id="tingkat_zonasi" name="tingkat_zonasi">
+                <option value="23" data-value="">Leluasa</option>
+                <option value="24" data-value="">Kurang Leluasa</option>
+                <option value="25" data-value="">Tidak Leluasa</option>
+                <option value="26" data-value="">Tidak Layak/Kawasan Lumpur</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Tingkat Zonasi Gempa</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+              <select id="kepadatan_bangunan" name="kepadatan_bangunan">
+                <option value="27" data-value="">Renggang</option>
+                <option value="28" data-value="">Sedang</option>
+                <option value="29" data-value="">Padat</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Kepadatan Bangunan</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+              <select id="ketinggian_bangunan" name="ketinggian_bangunan">
+                <option value="30" data-value="">Rendah (1-4 Lantai)</option>
+                <option value="31" data-value="">Sedang (5-8 Lantai)</option>
+                <option value="32" data-value="">Tinggi (diatas 8 Lantai)</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Ketinggian Bangunan</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+              <select id="kepemilikan_bangunan" name="kepemilikan_bangunan">
+                <option value="33" data-value="">Negara, Yayasan</option>
+                <option value="34" data-value="">Perorangan</option>
+                <option value="35" data-value="">Badan Usaha</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Kepemilikan Bangunan</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+              <select id="waktu_penggunaan" name="waktu_penggunaan">
+                <option value="36" data-value="">Pemanfaatan Sementara Jangka Pendek (Max. 6 bulan)</option>
+                <option value="37" data-value="">Pemanfaatan Sementara Jangka Menengah (Max. 3 tahun)</option>
+                <option value="38" data-value="">Pemanfaatan Lebih dari 3 Tahun (Tetap)</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Waktu Penggunaan</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+              <select id="kegiatan_non_gedung" name="kegiatan_non_gedung">
+                <option value="40" data-value="">Kegiatan Baru</option>
+                <option value="41" data-value="">Rehabilitasi/Renovasi Rusak Sedang</option>
+                <option value="42" data-value="">Rehabilitasi/Renovasi Rusak Berat</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Kegiatan Non Gedung</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+              <select id="penunjang" name="penunjang">
+                <option value="43" data-value="">Penunjang Fungsi Gedung Keagamaan</option>
+                <option value="44" data-value="">Penunjang Fungsi Gedung Hunian</option>
+                <option value="45" data-value="">Penunjang Fungsi Gedung Usaha</option>
+                <option value="46" data-value="">Penunjang Fungsi Gedung Sosial Budaya Bukan Milik Negara</option>
+                <option value="47" data-value="">Penunjang Fungsi Gedung Sosial Budaya Milik Negara</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Penunjang Fungsi Non Gedung</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Bangunan Rumah Tinggal</div>
+                <input type="text" name="uk_rumah_tinggal">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Bangunan Pagar Tembok</div>
+                <input type="text" name="uk_pagar_tembok">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Bangunan Pagar Besi</div>
+                <input type="text" name="uk_pagar_besi">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Bangunan Saluran Air</div>
+                <input type="text" name="uk_saluran_air">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Bangunan Jalan Rabat</div>
+                <input type="text" name="uk_jalan_rabat">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Bangunan Urugan Tanah</div>
+                <input type="text" name="uk_urugan_tanah">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Bang. Tower/Menara</div>
+                <input type="text" name="uk_menara">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Bang. Reklame</div>
+                <input type="text" name="uk_reklame">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Bang. Kolam Renang</div>
+                <input type="text" name="uk_kolam">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Bang. Silo/Tangki/Menara Air</div>
+                <input type="text" name="uk_tangki">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Pemancangan</div>
+                <input type="text" name="uk_pemancangan">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Pondasi Strous</div>
+                <input type="text" name="uk_pondasi_strous">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Sumur/Septictank</div>
+                <input type="text" name="uk_sumur">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Sebagian dari Luas</div>
+                <input type="text" name="uk_luas">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Keterangan Lain</div>
+                <textarea type="text" name="keterangan_lain"></textarea>
+              </div>
+            </div>
+          </li>
+        </div>
+      </ul>
+      <div class="block-title">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+          <div class="col-50">
+            <a class="button button-round button-fill color-green" id="addformupload" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>New document</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul class="form-item-wrapper" id="formupload-wrapper-list" data-form-item-wrapper=""></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header">SYARAT LAMPIRAN PEMBUATAN DAN PENERBITAN IMB < 400 M</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul style="padding-left: 0;">
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Upload foto Sertifikat / Petok D / Letter C / Akta Jual Beli /IJB (Ikatan Jual Beli) / PPJB (Perjanjian Perikatan Jual Beli) / Surat Keterangan Waris / Surat Keterangan Hibah / Akta Perjanjian Sewa Menyewa</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">2. Upload foto ijin perubahan status tanah bagi pemilik tanah yang tidak sesuai peruntukan</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">3. Upload foto KTP Pemohon yang masih berlaku</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">4. Upload Gambar IMB Syarat lampiran gambar</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button"> - Denah bangunan 1 : 100</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button"> - Tampak bangunan (Depan, samping) Skala 1 : 100</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button"> - Potongan bangunan (Melintang, memanjang skala 1 :100)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button"> - Gambar detail kuda - kuda, pondasi dan pembesian dengan skala 1 :20</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button"> - Gambar situasi dengan skala 1 : 500, 1 :100</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">5. Surat keputusan bagi pengurusan IMB perubahan & balik nama</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">6. Rencana gambar installasi listrik & air (Bagi IMB 2 lantai)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">7. Melampirkan sertifikasi keterampilan kerja / Sertifikat kemampuan ahli (SKA / SKT) bagi 2 lantai</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">8. Melampirkan perhitungan kontruksi (Bagi 2 lantai)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">9. Berkas no 1 sampai 8 diupload ke lampiran Sipraja</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">10. Berkas asli no 1 sampai 8 dibawa setelah mendapat konfirmasi dari kecamatan setempat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">11. Surat kuasa jika pengambilan berkas dikuasakan ke orang lain</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

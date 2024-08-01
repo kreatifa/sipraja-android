@@ -1,0 +1,88 @@
+<div class="page">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Tipe D - PDAM</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <form id="cek_tagihan_pdam_form">
+      <div class="block">
+        <div class="card">
+          <div class="card-content">
+            <div class="list no-hairlines-md">
+              <ul>
+                <div class="row">
+                  <div class="col-100">
+                    <li class="item-content item-input item-input-outline">
+                      <div class="item-media">
+                        <i class="fas fa-book fa-2x icon color-blue"></i>
+                      </div>
+                      <div class="item-inner" style="margin-left: 0;">
+                        <div class="item-title item-floating-label">ID Pelanggan</div>
+                        <div class="item-input-wrap">
+                          <input type="number" name="id" id="id" placeholder="ID Pelanggan" required validate />
+                          <span class="input-clear-button"></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="col button button-large button-fill" id="cek">CEK TAGIHAN</div>
+                      </div>
+                    </li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="block">
+      <div class="card" id="card_tagihan" style="display: none;">
+        <div class="card-header bg-color-blue text-color-white">Detail Tagihan</div>
+        <div class="card-content card-content-padding">
+          <div class="list no-hairlines-md">
+            <ul>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Nama</div>
+                  <div class="item-input-wrap">
+                    <input type="text" id="nama" disabled/>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Alamat</div>
+                  <div class="item-input-wrap">
+                    <textarea id="alamat" class="resizable" rows="2" disabled></textarea>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Nominal Tagihan (Rp.)</div>
+                  <div class="item-input-wrap">
+                    <input type="text" id="nominal" disabled />
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div id="bayar" class="col button button-large button-fill">BAYAR</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

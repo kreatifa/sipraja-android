@@ -1,0 +1,182 @@
+<div class="page" data-class="new_pembukaan_rekening_tabungan">
+  <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form Pembukaan Rekening Tabungan</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="new_pembukaan_rekening_tabungan" style="margin: 0 ">
+      <div class="block-title" style="margin-top: 16px">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemohon</div>
+        </div>
+      </div>
+      <input type="hidden" name="id_kec" id="id_kec" readonly validate>
+      <input type="hidden" name="id_kel" id="id_kel" readonly validate>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Pemohon</div>
+              <input required validate type="text" readonly="readonly" name="nik_pemohon" id="nik_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Pemohon</div>
+              <input required validate type="text" readonly="readonly" name="nama_pemohon" id="nama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Telepon</div>
+              <input required validate type="text" readonly="readonly" name="telepon" id="telepon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email</div>
+              <input required validate type="text" readonly="readonly" name="email" id="email">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Provinsi</div>
+              <div class="item-input-wrap">
+                <select name="provinsi" id="provinsi">
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kab/Kota</div>
+              <div class="item-input-wrap">
+                <select name="kota" id="kota">
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kecamatan</div>
+              <div class="item-input-wrap">
+                <select name="kecamatan" id="kecamatan" readonly>
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Desa/Kelurahan</div>
+              <div class="item-input-wrap">
+                <select name="kelurahan" id="kelurahan">
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <input required validate type="text" readonly="readonly" name="alamat" id="alamat">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Produk</div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Produk</div>
+              <div class="item-input-wrap">
+                <select name="kode_produk" id="kode_produk">
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kantor</div>
+              <div class="item-input-wrap">
+                <select name="kantor" id="kantor">
+                  <option value="Kantor Pusat" selected>Kantor Pusat</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="row">
+          <div class="col-100">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul id="formupload-wrapper-list"></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-green text-color-white">Daftar Layanan</div>
+          <div class="card-content">
+            <div class="list inset">
+              <h3>TAMMARA - Tabungan Masyarakat Menuju Sejahtera</h3>
+              <p>TAMMARA adalah simpanan yang diperuntukkan bagi semua masyarakat secara perorangan maupun non-perorangan atau kelompok.</p>
+
+              <h3>Syarat & Ketentuan</h3>
+              <p><b>SUKU BUNGA</b> sebesar <b>1,00%</b> per tahun</p>
+
+              <p>Syarat yang harus dipenuhi untuk membuka tabungan TAMMARA yaitu:</p>
+              <ul>
+                <li>1. KTP asli</li>
+                <li>2. SK Pengurus atau SK Pejabat Yang Berwenang (bagi Non-Perorangan)</li>
+                <li>3. Setoran awal dari tabungan TAMMARA minimal sebesar Rp. 50.000,- dan setoran selanjutnya minimal Rp. 10.000,-</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

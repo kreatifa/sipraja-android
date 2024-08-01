@@ -1,0 +1,375 @@
+<div class="page" data-class="new_layanan_c">
+  <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="judul">Form UMKM</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="umkm_new">
+      <input type="hidden" id="state" name="state" class="form-control" value="">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemilik</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Pemilik*</div>
+              <input required validate type="number" name="nik_pemilik" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Pemilik*</div>
+              <input required validate type="text" name="nama_pemilik" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat Pemilik*</div>
+              <textarea required validate type="text" name="alamat_pemilik"></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan Pemilik*</div>
+              <select name="kecamatan_pemilik" required validate>
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan Pemilik*</div>
+              <select name="kelurahan_pemilik" required validate>
+              </select>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Usaha</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input kelembagaan">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelembagaan*</div>
+              <select name="kelembagaan" id="kelembagaan" required>
+                <option value="" hidden selected>--Pilih Kelembagaan--</option>
+                <option value="Perseroan Terbatas (PT)">Perseroan Terbatas (PT)</option>
+                <option value="Perseroan Terbatas Belum Berbadan Hukum">Perseroan Terbatas Belum Berbadan Hukum</option>
+                <option value="Persekutuan Comanditer (CV)">Persekutuan Comanditer (CV)</option>
+                <option value="Firma (FA)">Firma (FA)</option>
+                <option value="Koperasi">Koperasi</option>
+                <option value="Perusahaan Perorangan">Perusahaan Perorangan</option>
+                <option value="Yayasan">Yayasan</option>
+                <option value="Usaha Dagang (UD)">Usaha Dagang (UD)</option>
+                <option value="Lain Lainnya">Lain Lainnya</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input nib">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIB</div>
+              <input type="number" name="nib" id="nib" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input tgl_terbit_ijin_usaha">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Terbit Ijin Usaha</div>
+              <input type="text" readonly="readonly" id="tgl_terbit_ijin_usaha" name="tgl_terbit_ijin_usaha" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Usaha Mikro*</div>
+              <input required validate type="text" name="nama_usaha" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input tgl_berdiri">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Berdiri*</div>
+              <input type="text" readonly="readonly" id="tgl_berdiri" required name="tgl_berdiri" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nomor Telepon Perusahaan / Usaha*</div>
+              <input required validate type="number" name="telp" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input pkp">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">PKP</div>
+              <select name="pkp" id="pkp">
+                <option hidden selected>--Pilih PKP--</option>
+                <option value="pkp">PKP</option>
+                <option value="non pkp">NON PKP</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat Usaha*</div>
+              <textarea required validate type="text" name="alamat_usaha"></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Provinsi Usaha</div>
+              <select name="provinsi_usaha" id="provinsi_usaha" required validate>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kabupaten Usaha</div>
+              <select name="kabupaten_usaha" id="kabupaten_usaha" required validate>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan Usaha</div>
+              <select name="kecamatan_usaha" id="kecamatan_usaha" required validate>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan Usaha</div>
+              <select name="kelurahan_usaha" id="kelurahan_usaha" required validate>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input npwp">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NPWP</div>
+              <input placeholder="00.000.000.0-000.000" type="text" name="npwp" id="npwp" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input npwpd">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NPWPD</div>
+              <input type="text" placeholder="00.000.000.0-000.000" name="npwpd" id="npwpd" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Modal / Aset*</div>
+              <input required validate type="number" name="modal_aset" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Omset Perbulan*</div>
+              <input required validate type="number" name="omset" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tenaga Kerja*</div>
+              <input required validate type="text" name="tenaga_kerja" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input tahun_pendataan">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tahun Pendataan*</div>
+              <select name="tahun_pendataan" id="tahun_pendataan" required>
+                <option value="" selected hidden>Pilih Tahun</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input izin_dimiliki">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Izin yang dimiliki*</div>
+              <input required validate type="text" name="izin_dimiliki" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input skala_perusahaan">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Skala Usaha</div>
+              <input type="text" name="skala_perusahaan">
+              <span class=" input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Market Place (Selain TukuoYuk)</div>
+              <input type="text" name="market_place" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Deskripsi Usaha Mikro*</div>
+              <textarea name="deskripsi" id="deskripsi" cols="30" rows="10" required validate></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email Perusahaan</div>
+              <input type="email" name="email" readonly />
+            </div>
+          </div>
+        </li>
+        <!-- <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Password</div>
+              <input type="password" name="password" />
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Titik Koordinat Lokasi Usaha</div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <input type="hidden" id="lat" name="lat" required validate>
+          <input type="hidden" id="lng" name="lng" required validate>
+          <div id="mapid" style="height: 256px;"></div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <ul>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="row">
+                <div class="col-60">
+                  <div class="item-inner">
+                    <div class="item-input-wrap">
+                      <div class="item-title item-label">Logo</div>
+                      <input class="logo" id="logo" type="hidden" name="logo" placeholder=""><input class="logo_path" id="logo_path" type="text" name="logo_path" placeholder="Nama File">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-20 preview_logo">
+                </div>
+                <div class="col-20">
+                  <a id="logo" onclick="uploadLogo()" class="button button-round button-fill" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder</i></a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Berkas Kelengkapan</div>
+            </div>
+          </div>
+          <div class="col-50">
+            <a class="button button-round button-fill color-green" id="addformupload" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>New document</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul id="formupload-wrapper-list"></ul>
+      </div> -->
+
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">Syarat & Ketentuan Lampiran</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul>
+                <li>1. Persyaratan Berkas 1</li>
+                <hr>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

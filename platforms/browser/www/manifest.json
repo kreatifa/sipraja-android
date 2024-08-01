@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Sipraja",
+  "short_name": "Sipraja",
+  "version": "go.id.sidoarjokab.sipraja",
+  "description": "Aplikasi Mobile Sipraja Pemkab Sidoarjo",
+  "author": "Pemkab Sidoarjo",
+  "icons": [],
+  "start_url": "index.html",
+  "theme_color": "#2196f3"
+}

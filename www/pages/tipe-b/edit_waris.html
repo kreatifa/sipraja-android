@@ -1,0 +1,1145 @@
+<div class="page" data-class="edit_waris">
+  <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link bg-color-orange" id="print_preview_button" style="display: none;"><i class="icon f7-icons">zoom_in</i> Preview</a>
+      <a class="link bg-color-green" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="checked_approval_button toolbar toolbar-bottom-md" style="display: none;">
+    <div class="toolbar-inner">
+      <a class="link" id="cetak_semua_report"><i class="icon f7-icons">zoom_in</i> Cetak Surat</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Edit Surat Pernyataan Waris</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="form_edit_waris" style="margin: 0 ">
+      <div class="block-title" style="margin-top: 16px">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Data Dokumen</div>
+            </div>
+          </div>
+          <div class="col-50" id="btndeletelayanan">
+            <a class="button button-round button-fill color-red" id="deletelayanan">
+              <i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">xmark_square_fill</i> <span>Hapus Data</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kode Transaksi</div>
+              <input type="text" name="kode_transaksi" id="kode_transaksi" required validate disabled>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tempat Sidang</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="sidang" id="sidang" placeholder="Pilih Tempat Sidang">
+                <option value="PA">Pengadilan Agama</option>
+                <option value="PN">Pengadilan Negeri</option>
+              </select>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title" style="margin-top: 16px">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemohon</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Pemohon</div>
+              <input required validate readonly type="text" name="nik_pemohon" id="nik_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Pemohon</div>
+              <input required validate readonly type="text" name="nama_pemohon" id="nama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Lahir</div>
+              <input required validate readonly type="text" name="tempat_lahir" id="tempat_lahir">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir</div>
+              <input required validate readonly type="text" name="tanggal_lahir" id="tanggal_lahir">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jenis Kelamin</div>
+              <input required validate readonly type="text" name="jenis_kelamin" id="jenis_kelamin">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Telepon</div>
+              <input required validate readonly type="text" name="telepon" id="telepon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan</div>
+              <input required validate readonly type="text" name="kecamatan" id="kecamatan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan</div>
+              <input required validate readonly type="text" name="kelurahan" id="kelurahan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email</div>
+              <input required validate readonly type="text" name="email" id="email">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <input required validate readonly type="text" name="alamat" id="alamat">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title" style="margin-top: 16px">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pewaris Almarhum / Almarhumah</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Pewaris</div>
+              <input required type="number" name="nik_pewaris" id="nik_pewaris">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Pewaris</div>
+              <input required type="text" name="nama_pewaris" id="nama_pewaris">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jenis Kelamin</div>
+              <select name="jenis_kelamin_pewaris" id="jenis_kelamin_pewaris">
+                <option value="Laki-Laki">Laki - Laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir*</div>
+              <input required type="date" name="tgl_lahir_pewaris" id="tgl_lahir_pewaris">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan</div>
+              <select name="kecamatan_pewaris" id="kecamatan_pewaris">
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan</div>
+              <select name="kelurahan_pewaris" id="kelurahan_pewaris">
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat*</div>
+              <textarea required name="alamat_pewaris" id="alamat_pewaris" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Status Almarhu / Almarhumah</div>
+              <select name="status_keluarga" id="status_keluarga">
+                <option value="Suami">SUAMI</option>
+                <option value="Istri">ISTRI</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Status</div>
+              <select name="status_hidup_pewaris" id="status_hidup_pewaris">
+                <option value="Hidup">HIDUP</option>
+                <option value="Meninggal">MENINGGAL</option>
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <div id="status_meninggal" style="display: none;">
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Tanggal Meninggal*</div>
+                <input type="date" name="tgl_meninggal_pewaris" id="tgl_meninggal_pewaris">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="row">
+                <div class="col-60">
+                  <div class="item-inner">
+                    <div class="item-input-wrap">
+                      <div class="item-title item-label">Akta Kematian</div>
+                      <input class="fileid" id="fileid_ak_pewaris" name="fileid_ak_pewaris" type="hidden">
+                      <input class="filecode" id="filecode_ak_pewaris" name="filecode_ak_pewaris" type="hidden">
+                      <input class="fileurl" id="fileurl_ak_pewaris" name="fileurl_ak_pewaris" type="text" readonly>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-20 preview_file_ak_pewaris">
+                </div>
+                <div class="col-20">
+                  <a id="_ak_pewaris" onclick="uploadfilependukungwaris(this.id)" class="button button-round button-fill" style="margin-top: 10px;">
+                    <i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </div>
+      </ul>
+      <div class="block-title" style="margin-top: 16px">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pasangan Pewaris</div>
+        </div>
+      </div>
+      <div id="status_suami">
+        <div class="block-title">
+          <div class="row">
+            <div class="col-100">
+              <div class="data-table card" id="pasangan_pewaris_table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="label-cell"></th>
+                      <th class="label-cell"></th>
+                      <th class="numeric-cell">NIK</th>
+                      <th class="label-cell">Nama</th>
+                      <th class="label-cell">Tanggal Lahir</th>
+                      <th class="label-cell">Jenis Nikah</th>
+                      <th class="label-cell">Status Hidup</th>
+                      <th class="label-cell">Berkas Pendukung</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="numeric-cell"></td>
+                      <td class="label-cell">Data Kosong</td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <a class="button button-round button-fill color-green" id="addpasanganpewaris" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>Tambahkan Pasangan</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="status_istri" style="display: none;">
+        <ul>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">NIK Pasangan</div>
+                <input type="number" name="nik_pasangan" id="nik_pasangan">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Nama Pasangan*</div>
+                <input type="text" name="nama_pasangan" id="nama_pasangan">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Tanggal Lahir Pasangan*</div>
+                <input type="date" name="tgl_lahir_pasangan" id="tgl_lahir_pasangan">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Jenis Nikah</div>
+                <select name="jenis_nikah_pasangan" id="jenis_nikah_pasangan">
+                  <option value="Resmi">RESMI</option>
+                  <option value="Siri">SIRI</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+                <div class="item-title item-label">Status</div>
+                <select name="status_hidup_pasangan" id="status_hidup_pasangan">
+                  <option value="Hidup">HIDUP</option>
+                  <option value="Meninggal">MENINGGAL</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="row">
+                <div class="col-60">
+                  <div class="item-inner">
+                    <div class="item-input-wrap">
+                      <div class="item-title item-label" id="nikah_resmi">Buku nikah</div>
+                      <div class="item-title item-label" id="nikah_siri" style="display: none;">Foto Ijab Kabul atau Surat - Surat yang diakui oleh Agama Islam</div>
+                      <input class="fileid" id="fileid_nikah_resmi" name="fileid_nikah_resmi" type="hidden">
+                      <input class="filecode" id="filecode_nikah_resmi" name="filecode_nikah_resmi" type="hidden">
+                      <input class="fileurl" id="fileurl_nikah_resmi" name="fileurl_nikah_resmi" type="text" readonly>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-20 preview_file_nikah_resmi">
+                </div>
+                <div class="col-20">
+                  <a id="_nikah_resmi" onclick="uploadfilependukungwaris(this.id)" class="button button-round button-fill" style="margin-top: 10px;">
+                    <i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <div id="status_hidup_pasangan_meninggal" style="display: none;">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="row">
+                  <div class="col-60">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Akta Kematian</div>
+                        <input class="fileid" id="fileid_ak_pasangan" name="fileid_ak_pasangan" type="hidden">
+                        <input class="filecode" id="filecode_ak_pasangan" name="filecode_ak_pasangan" type="hidden">
+                        <input class="fileurl" id="fileurl_ak_pasangan" name="fileurl_ak_pasangan" type="text" readonly>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-20 preview_file_ak_pasangan">
+                  </div>
+                  <div class="col-20">
+                    <a id="_ak_pasangan" onclick="uploadfilependukungwaris(this.id)" class="button button-round button-fill" style="margin-top: 10px;">
+                      <i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder</i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="block-title" style="margin-top: 16px">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Orang Tua Pewaris</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Ayah Pewaris*</div>
+              <input required type="number" name="nik_ayah" id="nik_ayah">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Ayah Pewaris*</div>
+              <input required type="text" name="nama_ayah" id="nama_ayah">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Status Hidup Ayah Pewaris</div>
+              <select name="status_hidup_ayah" id="status_hidup_ayah">
+                <option value="Hidup">HIDUP</option>
+                <option value="Meninggal">MENINGGAL</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <div id="status_hidup_ayah_meninggal" style="display: none;">
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="row">
+                <div class="col-60">
+                  <div class="item-inner">
+                    <div class="item-input-wrap">
+                      <div class="item-title item-label">Akta Kematian Ayah Pewaris</div>
+                      <input class="fileid" id="fileid_ak_ayah" name="fileid_ak_ayah" type="hidden">
+                      <input class="filecode" id="filecode_ak_ayah" name="filecode_ak_ayah" type="hidden">
+                      <input class="fileurl" id="fileurl_ak_ayah" name="fileurl_ak_ayah" type="text" readonly>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-20 preview_file_ak_ayah">
+                </div>
+                <div class="col-20">
+                  <a id="_ak_ayah" onclick="uploadfilependukungwaris(this.id)" class="button button-round button-fill" style="margin-top: 10px;">
+                    <i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </div>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Ibu Pewaris*</div>
+              <input required type="number" name="nik_ibu" id="nik_ibu">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Ibu Pewaris*</div>
+              <input required type="text" name="nama_ibu" id="nama_ibu">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Status Hidup Ibu Pewaris</div>
+              <select name="status_hidup_ibu" id="status_hidup_ibu">
+                <option value="Hidup">HIDUP</option>
+                <option value="Meninggal">MENINGGAL</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <div id="status_hidup_ibu_meninggal" style="display: none;">
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="row">
+                <div class="col-60">
+                  <div class="item-inner">
+                    <div class="item-input-wrap">
+                      <div class="item-title item-label">Akta Kematian Ibu Pewaris</div>
+                      <input class="fileid" id="fileid_ak_ibu" name="fileid_ak_ibu" type="hidden">
+                      <input class="filecode" id="filecode_ak_ibu" name="filecode_ak_ibu" type="hidden">
+                      <input class="fileurl" id="fileurl_ak_ibu" name="fileurl_ak_ibu" type="text" readonly>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-20 preview_file_ak_ibu">
+                </div>
+                <div class="col-20">
+                  <a id="_ak_ibu" onclick="uploadfilependukungwaris(this.id)" class="button button-round button-fill" style="margin-top: 10px;">
+                    <i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </div>
+      </ul>
+      <div class="block-title" style="margin-top: 16px">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Anak Kandung Pewaris</div>
+        </div>
+      </div>
+      <div class="block-header">Anak Kandung Pewaris</div>
+      <div class="block">
+        <div class="row">
+          <div class="col-100">
+            <div class="data-table card" id="anak_kandung_pewaris_table">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="label-cell"></th>
+                    <th class="label-cell"></th>
+                    <th class="numeric-cell">NIK</th>
+                    <th class="label-cell">Nama</th>
+                    <th class="label-cell">Tanggal Lahir</th>
+                    <th class="label-cell">Umur</th>
+                    <th class="label-cell">Alamat</th>
+                    <th class="label-cell">Status Kawin</th>
+                    <th class="label-cell">Status Hidup</th>
+                    <th class="label-cell">Nama Wali</th>
+                    <th class="label-cell">Hubungan Perwalian</th>
+                    <th class="label-cell">KTP</th>
+                    <th class="label-cell">KK</th>
+                    <th class="label-cell">Berkas Pendukung</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="numeric-cell"></td>
+                    <td class="label-cell">Data Kosong</td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a class="button button-round button-fill color-green" id="addanakkadungpewaris" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>Tambahkan Anak Kandung</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="cucu_pewaris" style="display:none;">
+        <div class="block-header">Cucu Pewaris</div>
+        <div class="block">
+          <div class="row">
+            <div class="col-100">
+              <div class="data-table card" id="cucu_anak_kandung_pewaris_table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="label-cell"></th>
+                      <th class="label-cell"></th>
+                      <th class="label-cell">Orang Tua</th>
+                      <th class="numeric-cell">NIK</th>
+                      <th class="label-cell">Nama</th>
+                      <th class="label-cell">Tanggal Lahir</th>
+                      <th class="label-cell">Umur</th>
+                      <th class="label-cell">Alamat</th>
+                      <th class="label-cell">Status Kawin</th>
+                      <th class="label-cell">Status Hidup</th>
+                      <th class="label-cell">Nama Wali</th>
+                      <th class="label-cell">Hubungan Perwalian</th>
+                      <th class="label-cell">KTP</th>
+                      <th class="label-cell">KK</th>
+                      <th class="label-cell">Berkas Pendukung</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell">Data Kosong</td>
+                      <td class="numeric-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <a class="button button-round button-fill color-green" id="addcucukadungpewaris" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>Tambahkan Cucu</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Anak Angkat Pewaris</div>
+        </div>
+      </div>
+      <div class="block-header">Anak Angkat Pewaris</div>
+      <div class="block">
+        <div class="row">
+          <div class="col-100">
+            <div class="data-table card" id="anggota_anak_angkat_pewaris_table">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="label-cell"></th>
+                    <th class="label-cell"></th>
+                    <th class="numeric-cell">NIK</th>
+                    <th class="label-cell">Nama</th>
+                    <th class="label-cell">Tanggal Lahir</th>
+                    <th class="label-cell">Umur</th>
+                    <th class="label-cell">Alamat</th>
+                    <th class="label-cell">Status Kawin</th>
+                    <th class="label-cell">Status Hidup</th>
+                    <th class="label-cell">Nama Wali</th>
+                    <th class="label-cell">Hubungan Perwalian</th>
+                    <th class="label-cell">KTP</th>
+                    <th class="label-cell">KK</th>
+                    <th class="label-cell">Berkas Pendukung</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="numeric-cell"></td>
+                    <td class="label-cell">Data Kosong</td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a class="button button-round button-fill color-green" id="addanakangkatpewaris" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>Tambahkan Anak Angkat</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="cucu_angkat_pewaris" style="display: none;">
+        <div class="block-header">Cucu Pewaris Dari Anak Angkat</div>
+        <div class="block">
+          <div class="row">
+            <div class="col-100">
+              <div class="data-table card" id="anggota_cucu_angkat_pewaris_table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="label-cell"></th>
+                      <th class="label-cell"></th>
+                      <th class="label-cell">Orang Tua</th>
+                      <th class="numeric-cell">NIK</th>
+                      <th class="label-cell">Nama</th>
+                      <th class="label-cell">Tanggal Lahir</th>
+                      <th class="label-cell">Umur</th>
+                      <th class="label-cell">Alamat</th>
+                      <th class="label-cell">Status Kawin</th>
+                      <th class="label-cell">Status Hidup</th>
+                      <th class="label-cell">Nama Wali</th>
+                      <th class="label-cell">Hubungan Perwalian</th>
+                      <th class="label-cell">KTP</th>
+                      <th class="label-cell">KK</th>
+                      <th class="label-cell">Berkas Pendukung</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell">Data Kosong</td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <a class="button button-round button-fill color-green" id="addcucuangkatpewaris" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>Tambahkan Cucu</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Saudara Kandung Pewaris</div>
+        </div>
+      </div>
+      <div class="block-header">Saudara Kandung Pewaris</div>
+      <div class="block">
+        <div class="row">
+          <div class="col-100">
+            <div class="data-table card" id="anggota_saudara_kandung_pewaris_table">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="label-cell"></th>
+                    <th class="label-cell"></th>
+                    <th class="numeric-cell">NIK</th>
+                    <th class="label-cell">Nama</th>
+                    <th class="label-cell">Tanggal Lahir</th>
+                    <th class="label-cell">Umur</th>
+                    <th class="label-cell">Alamat</th>
+                    <th class="label-cell">Status Kawin</th>
+                    <th class="label-cell">Status Hidup</th>
+                    <th class="label-cell">Nama Wali</th>
+                    <th class="label-cell">Hubungan Perwalian</th>
+                    <th class="label-cell">KTP</th>
+                    <th class="label-cell">KK</th>
+                    <th class="label-cell">Berkas Pendukung</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="numeric-cell"></td>
+                    <td class="label-cell">Data Kosong</td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a class="button button-round button-fill color-green" id="addsaudarakandungpewaris" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>Tambahkan Saudara Kandung</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="keponakan_pewaris" style="display: none;">
+        <div class="block-header">Keponakan Pewaris</div>
+        <div class="block">
+          <div class="row">
+            <div class="col-100">
+              <div class="data-table card" id="anggota_keponakan_pewaris_table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="label-cell"></th>
+                      <th class="label-cell"></th>
+                      <th class="label-cell">Orang Tua</th>
+                      <th class="numeric-cell">NIK</th>
+                      <th class="label-cell">Nama</th>
+                      <th class="label-cell">Tanggal Lahir</th>
+                      <th class="label-cell">Umur</th>
+                      <th class="label-cell">Alamat</th>
+                      <th class="label-cell">Status Kawin</th>
+                      <th class="label-cell">Status Hidup</th>
+                      <th class="label-cell">Nama Wali</th>
+                      <th class="label-cell">Hubungan Perwalian</th>
+                      <th class="label-cell">KTP</th>
+                      <th class="label-cell">KK</th>
+                      <th class="label-cell">Berkas Pendukung</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell">Data Kosong</td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                      <td class="label-cell"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <a class="button button-round button-fill color-green" id="addkeponakanpewaris" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>Tambahkan Keponakan</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Berkas Pernyataan Waris</div>
+        </div>
+      </div>
+      <div class="block">
+        <ul>
+          <li data-index="_spw">
+            <ul>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="row">
+                    <div class="col-40">
+                      <div class="item-inner">
+                        <div class="item-input-wrap">
+                          <div class="item-title item-label">Surat Pernyataan Waris</div>
+                          <input class="fileid" id="fileid_spw" name="fileid_spw" type="hidden">
+                          <input class="filecode" id="filecode_spw" name="filecode_spw" type="hidden" readonly>
+                          <input class="fileurl" id="fileurl_spw" name="fileurl_spw" type="text" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-20 preview_files_spw">
+                    </div>
+                    <div class="col-20">
+                      <a id="_spw" onclick="uploadfilependukungwaris(this.id)" class="button button-round button-fill" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder_fill</i></a>
+                    </div>
+                    <div class="col-20">
+                      <a id="template_pernyataan_waris" class="button button-round button-fill color-green" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">arrow_down_doc_fill</i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li data-index="_basw">
+            <ul>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="row">
+                    <div class="col-40">
+                      <div class="item-inner">
+                        <div class="item-input-wrap">
+                          <div class="item-title item-label">Berita Acara Sidang Waris</div>
+                          <input id="fileid_basw" class="fileid" type="hidden" name="fileid_basw">
+                          <input class="filecode" id="filecode_basw" type="hidden" readonly name="filecode_basw">
+                          <input class="fileurl" id="fileurl_basw" type="text" name="fileurl_basw" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-20 preview_files_basw">
+                    </div>
+                    <div class="col-20">
+                      <a id="_basw" onclick="uploadfilependukungwaris(this.id)" class="button button-round button-fill" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder_fill</i></a>
+                    </div>
+                    <div class="col-20">
+                      <a onclick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/WARIS-SIPRAJA-BERITA-ACARA-SIDANG-WARIS.pdf', '_system');" class="button button-round button-fill color-green" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">arrow_down_doc_fill</i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li data-index="_dhsw">
+            <ul>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="row">
+                    <div class="col-40">
+                      <div class="item-inner">
+                        <div class="item-input-wrap">
+                          <div class="item-title item-label">Daftar Hadir Sidang Waris</div>
+                          <input id="fileid_dhsw" class="fileid" type="hidden" name="fileid_dhsw">
+                          <input class="filecode" id="filecode_dhsw" type="hidden" readonly name="filecode_dhsw">
+                          <input class="fileurl" id="fileurl_dhsw" type="text" name="fileurl_dhsw" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-20 preview_files_dhsw">
+                    </div>
+                    <div class="col-20">
+                      <a id="_dhsw" onclick="uploadfilependukungwaris(this.id)" class="button button-round button-fill" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder_fill</i></a>
+                    </div>
+                    <div class="col-20">
+                      <a onclick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/WARIS-SIPRAJA-DAFTAR-HADIR-SIDANG-WARIS.pdf', '_system');" class="button button-round button-fill color-green" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">arrow_down_doc_fill</i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li data-index="_dsw">
+            <ul>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="row">
+                    <div class="col-40">
+                      <div class="item-inner">
+                        <div class="item-input-wrap">
+                          <div class="item-title item-label">Dokumentasi Penanda Tanganan Surat Pernyataan Waris</div>
+                          <input id="fileid_dsw" class="fileid" type="hidden" name="fileid_dsw">
+                          <input class="filecode" id="filecode_dsw" type="hidden" readonly name="filecode_dsw">
+                          <input class="fileurl" id="fileurl_dsw" type="text" name="fileurl_dsw" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-20 preview_files_dsw">
+                    </div>
+                    <div class="col-20">
+                      <a id="_dsw" onclick="uploadfilependukungwaris(this.id)" class="button button-round button-fill" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder_fill</i></a>
+                    </div>
+                    <div class="col-20">
+                      <a onclick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/WARIS-SIPRAJA-DOKUMENTASI-WARIS.pdf', '_system');" class="button button-round button-fill color-green" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">arrow_down_doc_fill</i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- end -->
+      <div class="block-title" style="margin-top: 16px">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+          <div class="col-50">
+            <a class="button button-round button-fill color-green" id="addformupload" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>New document</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul id="formupload-wrapper-list"></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">Syarat & Ketentuan Lampiran</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul>
+                <li>1. Surat pengantar RT dan RW</li>
+                <hr>
+                <li>2. Foto copy surat kematian</li>
+                <hr>
+                <li>3. Foto copy KTP dan KSK semua ahli waris (KTP dan KSK NIK nya harus sama, cek nama orang tuanya apabila tidak sama dibuatkan surat keterangan)</li>
+                <hr>
+                <li>4. Foto copy akte kelahiran apabila ahli waris usia dibawah umur</li>
+                <hr>
+                <li>5. Foto copy surat nikah almarhum</li>
+                <hr>
+                <li>6. Foto copy obyek</li>
+                <hr>
+                <li>7. Pelunasan PBB Tahun berjalan</li>
+                <hr>
+                <li>8. Surat keterangan waris, berita acara proses waris 1 dan 2 bermaterai Rp. 10.000,-</li>
+                <hr>
+                <li>9. Daftar Hadir (Penandatanganan Berita Acara Proses Waris di tingkat Desa)</li>
+                <hr>
+                <li>10. Melampirkan surat Pernyataan Ahli Waris</li>
+                <hr>
+                <li>11. Untuk yang di Kecamatan harus dihadirkan perwakilan ahli waris</li>
+                <hr>
+                <li>12. Harap disidangkan tingkat Desa/Kelurahan</li>
+                <hr>
+                <li>13. Dokumentasi penandatanganan surat keterangan waris</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form class="list" id="approval">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Persetujuan</div>
+        </div>
+      </div>
+
+      <div class="block-title">
+        Status Terakhir Dokumen : <br>
+        <div class="chip color-red">
+          <div class="chip-label" id="std">-</div>
+        </div>
+        <br><br>
+        Posisi Terakhir Dokumen : <br>
+        <div class="chip color-green">
+          <div class="chip-label" id="ptd">-</div>
+        </div><br><br>
+        Tanda Tangan : <br>
+        <div class="lihat-ttd">
+          <canvas id="signature_pad_static" style="border: 1px solid black; border-radius: 5px; width: 100%"></canvas>
+        </div>
+        <div id="qrcode" style="display: none;"></div>
+        <div id="qrcode_camat" style="display: none;"></div>
+        <div id="qrcode_kades" style="display: none;"></div>
+      </div>
+      <input required validate type="hidden" name="approve_items_id">
+      <input type="hidden" name="approve_items_id">
+      <input type="hidden" name="type_ttd" id="type_ttd">
+      <input type="hidden" name="base64_ttd" id="base64_ttd">
+      <ul>
+        <li>
+          <a class="item-link smart-select statusaction smart-select-init" data-open-in="sheet">
+            <select name="status" id="statusaction">
+              <option value="2">Disetujui</option>
+              <option value="3">Ditolak</option>
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Pilih Status</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Keterangan</div>
+              <textarea type="text" name="deskripsi"></textarea>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </form>
+    <form class="list dokumen_hasil" id="dokumen_hasil" style="display: none;">
+      <div class="block-title" style="margin-top: 16px">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Dokumen Hasil Penetapan Pengadilan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Proses</div>
+              <input readonly type="text" name="tanggal_proses" id="tanggal_proses">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Sidang Pengadilan</div>
+              <input readonly type="text" name="tanggal_sidang_pengadilan" id="tanggal_sidang_pengadilan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Terbit Penetapan</div>
+              <input readonly type="text" name="tanggal_terbit_penetapan" id="tanggal_terbit_penetapan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nomor Surat Penetapan</div>
+              <input readonly type="text" name="nomor_surat_penetapan" id="nomor_surat_penetapan">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button id="file_pengadilan" class="button button-outline">Dokumen Hasil Penetapan Pengadilan</button>
+    </form>
+    <div class="row">
+      <div class="col-100">
+        <button class="button button-fill bg-color-yellow" id="resume" style="display: none;">Cetak Resume Surat Pernyataan Waris</button>
+      </div>
+    </div>
+    <div class="data-table card">
+      <div class="card-header">Riwayat Approval</div>
+      <div class="card-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Otoriter</th>
+              <th>Nama Operator</th>
+              <th>Keterangan</th>
+              <th>Tanggal Proses</th>
+            </tr>
+          </thead>
+          <tbody class="table-chron">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

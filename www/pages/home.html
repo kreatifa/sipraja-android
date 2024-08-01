@@ -1,0 +1,988 @@
+<!-- Page, data-name contains page name which can be used in page callbacks -->
+<div class="page" id="home_page" data-name="home">
+  <div class="fab fab-right-bottom">
+    <a href="/menu/">
+      <i class="icon f7-icons">person_fill</i>
+      <i class="icon f7-icons">xmark</i>
+    </a>
+    <!-- <div class="fab-buttons fab-buttons-left">
+      <a href="/pusat_informasi/" class="fab-label-button">
+        <span><i class="icon f7-icons speaker-icon">speaker_1_fill</i></span>
+        <span class="fab-label">Informasi <span class="informasi"></span></span>
+      </a>
+    </div>
+    <div class="fab-buttons fab-buttons-top">
+      <a class="fab-label-button" id="reload">
+        <span><i class="icon f7-icons">arrow_counterclockwise_circle_fill</i></span>
+        <span class="fab-label">Reload</span>
+      </a>
+      <a href="/change_pass/" class="fab-label-button">
+        <span><i class="icon f7-icons">person_alt</i></span>
+        <span class="fab-label">Profile</span>
+      </a>
+      <a href="/gen_token/" class="fab-label-button" id="gen_token">
+        <span><i class="icon f7-icons">alarm_fill</i></span>
+        <span class="fab-label">Token Notif</span>
+      </a>
+      <a href="/notif_surat/" class="fab-label-button" id="notif_surat">
+        <span><i class="icon f7-icons">alarm_fill</i></span>
+        <span class="fab-label">Notif Surat</span>
+      </a>
+      <a href="/scanner/" class="fab-label-button">
+        <span><i class="icon f7-icons">camera_viewfinder</i></span>
+        <span class="fab-label">Scanner</span>
+      </a>
+      <a href="/move_dom/" class="fab-label-button" id="move_dom">
+        <span><i class="icon f7-icons">paperplane_fill</i></span>
+        <span class="fab-label">Pindah Domisili</span>
+      </a>
+      <a href="/list_komplain/" class="fab-label-button" id="list_komplain">
+        <span><i class="icon f7-icons">bubble_left_bubble_right_fill</i></span>
+        <span class="fab-label">Komplain</span>
+      </a>
+      <a onclick="logout()" class="fab-label-button" id="logout">
+        <span><i class="icon f7-icons">person_crop_circle_fill_badge_xmark</i></span>
+        <span class="fab-label">Keluar</span>
+      </a>
+    </div> -->
+  </div>
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="row" style="width: 100%">
+        <!-- <a href="/saldo_sipraja/index">
+          <div class="title">
+            <div class="row">
+              <i class="fas fa-wallet" style="margin-top: 21px; font-size: 28px;"></i>
+              <div style="margin-left: 10px; margin-top: 10px;">
+                <span style="font-size: 10px;">Sisa Saldo :</span>
+                <div id="saldo_text" style="font-size: 14px; font-weight: bold;">Rp. 1.000.000</div>
+              </div>
+            </div>
+          </div>
+        </a> -->
+        <div class="title" style="width: 100%; text-align: center;">
+          <img src="images/logo-icon-white.png" height="40px;" style="margin-top:15px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toolbar tabbar-labels">
+    <div class="toolbar-inner">
+      <a href="#tipe-a" class="tab-link tab-link-active" id="button-a">
+        <!-- Different icons for iOS and MD themes -->
+        <i class="icon f7-icons">doc_on_clipboard_fill<span class="badge color-red" id="count_tipe_a">0</span></i>
+        <!-- Label text -->
+        <span class="tabbar-label">Tipe A</span>
+      </a>
+      <a href="#tipe-b" class="tab-link" id="button-b">
+        <i class="icon f7-icons">creditcard_fill<span class="badge color-red" id="count_tipe_b">0</span></i>
+        <span class="tabbar-label">Tipe B</span>
+      </a>
+      <a href="#tipe-c" class="tab-link" id="button-c">
+        <i class="icon f7-icons">briefcase_fill<span class="badge color-red" id="count_tipe_c">0</span></i>
+        <span class="tabbar-label">Tipe C</span>
+      </a>
+      <a href="#tipe-d" class="tab-link" id="button-d">
+        <i class="icon f7-icons">building_2_fill</i>
+        <span class="tabbar-label">Tipe D</span>
+      </a>
+      <!-- <a href="#tipe-e" class="tab-link" id="button-e">
+        <i class="icon f7-icons">cart_fill</i>
+        <span class="tabbar-label">Tipe E</span>
+      </a> -->
+      <!-- <a href="/tipe-f/marketplace/list_all" class="tab-link" id="button-f">
+        <i class="icon f7-icons">archivebox_fill</i>
+        <span class="tabbar-label">Tipe F</span>
+      </a> -->
+      <!-- <a href="#tipe-f" class="tab-link" id="button-f">
+        <i class="icon f7-icons">archivebox_fill</i>
+        <span class="tabbar-label">Tipe F</span>
+      </a> -->
+      <!-- <a href="#tipe-g" class="tab-link" id="button-g">
+        <i class="icon f7-icons">person_2_square_stack_fill</i>
+        <span class="tabbar-label">Tipe G</span>
+      </a> -->
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <!-- First tab, active -->
+    <div class="page-content tab tab-active" id="tipe-a">
+      <div class="block">
+        <div class="row">
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-a/suratkelahiran">
+                  <center>
+                    <img src="images/baby.png" width="75%">
+                    <span class="badge color-red" id="count_surat_kelahiran">0</span>
+                    <h5>Surat Keterangan<br>Kelahiran</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-a/suratkematian">
+                  <center>
+                    <img src="images/tombstone.png" width="75%">
+                    <span class="badge color-red" id="count_surat_kematian">0</span>
+                    <h5>Surat Keterangan<br>Kematian</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-a/sk_tidak_mampu">
+                  <center>
+                    <img src="images/approved.png" width="75%">
+                    <span class="badge color-red" id="count_sk_tidak_mampu">0</span>
+                    <h5>Surat Keterangan<br>Tidak Mampu</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-a/sk_biodata_penduduk">
+                  <center>
+                    <img src="images/id-card-green.png" width="75%">
+                    <span class="badge color-red" id="count_sk_biodata_penduduk">0</span>
+                    <h5>Surat Keterangan<br>Biodata Penduduk</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-a/sk_umum_desa">
+                  <center>
+                    <img src="images/signature.png" width="75%">
+                    <span class="badge color-red" id="count_sk_umum_desa">0</span>
+                    <h5>Surat Keterangan<br>Umum Desa</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50" id="dom_single" style="display: none;">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-a/sk_domisili_usaha">
+                  <center>
+                    <img src="images/online-store.png" width="75%">
+                    <span class="badge color-red" id="count_sk_domisili_usaha">0</span>
+                    <h5>Surat Keterangan<br>Domisili</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50" id="dom_multi" style="display: none;">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-a/sk_domisili_usaha/index/">
+                  <center>
+                    <img src="images/online-store.png" width="75%">
+                    <span class="badge color-red" id="count_sk_domisili_usaha">0</span>
+                    <h5>Surat Keterangan<br>Domisili</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50" id="domi_luar">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-a/sk_domisili_luar">
+                  <center>
+                    <img src="images/store.png" width="75%">
+                    <span class="badge color-red" id="count_sk_domisili_luar">0</span>
+                    <h5>Surat Keterangan<br>Domisili Luar</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-a/surat_pengantar_kua">
+                  <center>
+                    <img src="images/wedding-contract.png" width="75%">
+                    <span class="badge color-red" id="count_surat_pengantar_kua">0</span>
+                    <h5>Surat Permohonan<br>KUA</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second tab -->
+    <div class="page-content tab" id="tipe-b">
+      <div class="block">
+        <div class="row">
+          <div class="col-50 not_dinsos">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-b/kartu_keluarga">
+                  <center>
+                    <img src="images/contract.png" width="75%">
+                    <span class="badge color-red" id="count_kartu_keluarga">0</span>
+                    <h5>Surat Permohonan<br>KK</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50 not_dinsos">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-b/permohonan_ktp">
+                  <center>
+                    <img src="images/id-card.png" width="75%">
+                    <span class="badge color-red" id="count_permohonan_ktp">0</span>
+                    <h5>Surat Permohonan<br>KTP</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-50 not_dinsos">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-b/skck">
+                  <center>
+                    <img src="images/contract2.png" width="75%">
+                    <span class="badge color-red" id="count_skck">0</span>
+                    <h5>Surat Permohonan<br>SKCK</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-50 not_dinsos">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-b/sk_pindah">
+                  <center>
+                    <img src="images/moving-truck.png" width="75%">
+                    <span class="badge color-red" id="count_sk_pindah">0</span>
+                    <h5>Surat Keterangan<br>Pindah</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50 not_dinsos">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-b/sk_umum_kecamatan">
+                  <center>
+                    <img src="images/signature.png" width="75%">
+                    <span class="badge color-red" id="count_sk_umum_kecamatan">0</span>
+                    <h5>Surat Keterangan<br>Umum Kecamatan</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50 not_dinsos">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-b/sktm_kecamatan">
+                  <center>
+                    <img src="images/approved.png" width="75%">
+                    <span class="badge color-red" id="count_sktm_kecamatan">0</span>
+                    <h5>SK Tidak Mampu<br>Kecamatan</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50" id="sktm_dinsos" style="display: none;">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-b/sktm_dinsos">
+                  <center>
+                    <img src="images/approved.png" width="75%">
+                    <span class="badge color-red" id="count_sktm_dinsos">0</span>
+                    <h5>SK Tidak Mampu<br>Dinas Sosial</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50 not_dinsos">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-b/waris">
+                  <center>
+                    <img src="images/license.png" width="75%">
+                    <span class="badge color-red" id="count_waris">0</span>
+                    <h5>Waris</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50 not_dinsos">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-b/waarmeking">
+                  <center>
+                    <img src=" images/license.png" width="75%">
+                    <span class="badge color-red" id="count_waarmeking">0</span>
+                    <h5>Waarmeking</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50 ijin_keramaian not_dinsos">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-b/ijin_keramaian">
+                  <center>
+                    <img src="images/license.png" width="75%">
+                    <span class="badge color-red" id="count_ijin_keramaian">0</span>
+                    <h5>Ijin Keramaian</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third tab -->
+    <div class="page-content tab" id="tipe-c">
+      <div class="block">
+        <div class="row">
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-c/ijin_mendirikan_bangunan">
+                  <center>
+                    <img src="images/sketch.png" width="75%">
+                    <span class="badge color-red" id="count_imb">0</span>
+                    <h5>Izin Mendirikan<br>Bangunan</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50" id="imb_luar">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-c/ijin_mendirikan_bangunan_luar">
+                  <center>
+                    <img src="images/online-store.png" width="75%">
+                    <span class="badge color-red" id="count_imb_luar">0</span>
+                    <h5>Izin Mendirikan<br>Bangunan Luar</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-c/kartupencarikerja">
+                  <center>
+                    <img src="images/cv.png" width="75%">
+                    <span class="badge color-red" id="count_kpk">0</span>
+                    <h5>Kartu Pencari Kerja<br>(AK-I)</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-c/siup">
+                  <center>
+                    <img src="images/store.png" width="75%">
+                    <span class="badge color-red" id="count_siup">0</span>
+                    <h5>Izin Usaha<br>Mikro Kecil<br>(IUMK)</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-c/tanda_daftar_perusahaan">
+                  <center>
+                    <img src="images/license.png" width="75%">
+                    <span class="badge color-red" id="count_tdp">0</span>
+                    <h5>Tanda Daftar<br>Perusahaan Usaha<br>Mikro</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content tab" id="tipe-d">
+      <div class="block">
+        <div class="row">
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/atr_bpn/index/">
+                  <center>
+                    <img src="images/tipe_d/atr_bpn.png" width="75%">
+                    <h5>ATR / BPN</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/bank_jatim/index/">
+                  <center>
+                    <img src="images/tipe_d/bank_jatim.png" width="75%">
+                    <h5>BANK JATIM</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/bpbd/index/">
+                  <center>
+                    <img src="images/tipe_d/bpbd.png" width="75%">
+                    <h5>BPBD</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/bpjs_ketenagakerjaan/index/">
+                  <center>
+                    <img src="images/tipe_d/bpjs_ketenagakerjaan.png" width="75%">
+                    <h5>BPJS Ketenagakerjaan</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/bppd_pajak/index/">
+                  <center>
+                    <img src="images/sidoarjo.png" width="75%">
+                    <h5>BPPD (Pajak)</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50" style="display: none;">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/bpr_delta_artha/index/">
+                  <center>
+                    <img src="images/tipe_d/bpr_delta_artha.png" width="75%">
+                    <h5>BPR Delta Artha</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/dinas_koperasi/index/">
+                  <center>
+                    <img src="images/tipe_d/dinas_koperasi.png" width="75%">
+                    <h5>Dinas Koperasi</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/dinsos/index/">
+                  <center>
+                    <img src="images/sidoarjo.png" width="75%">
+                    <h5>DINSOS</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/disnaker/index/">
+                  <center>
+                    <img src="images/sidoarjo.png" width="75%">
+                    <h5>DISNAKER</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/disperindag/index/">
+                  <center>
+                    <img src="images/sidoarjo.png" width="75%">
+                    <h5>DISPERINDAG</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/dpmptsp/index/">
+                  <center>
+                    <img src="images/sidoarjo.png" width="75%">
+                    <h5>DPMPTSP</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/kantor_imigrasi/index/">
+                  <center>
+                    <img src="images/tipe_d/kantor_imigrasi.png" width="75%">
+                    <h5>Kantor Imigrasi Kelas I Juanda</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/kejaksaan_negeri/index/">
+                  <center>
+                    <img src="images/tipe_d/kejaksaan_negeri.png" width="75%">
+                    <h5>Kejaksaan Negeri</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/lhk/index/">
+                  <center>
+                    <img src="images/sidoarjo.png" width="75%">
+                    <h5>LHK</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/pdam/index/">
+                  <center>
+                    <img src="images/tipe_d/pdam.png" width="75%">
+                    <h5>PDAM</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/pengadilan_agama/index/">
+                  <center>
+                    <img src="images/sidoarjo.png" width="75%">
+                    <h5>Pengadilan Agama</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/pln/index/">
+                  <center>
+                    <img src="images/tipe_d/pln.png" width="75%">
+                    <h5>PLN</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/polresta_sidoarjo/index/">
+                  <center>
+                    <img src="images/tipe_d/polresta_sidoarjo.png" width="75%">
+                    <h5>Polresta Sidoarjo</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/rsud_sidoarjo/index/">
+                  <center>
+                    <img src="images/tipe_d/rsud_sidoarjo.png" width="75%">
+                    <h5>RSUD Sidoarjo</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/samsat/index/">
+                  <center>
+                    <img src="images/tipe_d/samsat.png" width="75%">
+                    <h5>SAMSAT</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/telkom/index/">
+                  <center>
+                    <img src="images/tipe_d/telkom.png" width="75%">
+                    <h5>TELKOM</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content tab" id="tipe-e">
+      <div class="block-title">Pembelian</div>
+      <div class="block">
+        <div class="row">
+          <div class="col">
+            <a class="link" href="/tipe-e/pulsa">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/pulsa.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_pulsa">0</span>
+                  </div>
+                </div>
+                <h5>Pulsa</h5>
+              </center>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link" href="/tipe-e/paket_data">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/paket_data.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_paket_data">0</span>
+                  </div>
+                </div>
+                <h5>Paket Data</h5>
+              </center>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link" href="/tipe-e/token_listrik">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/token_listrik.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_token_listrik">0</span>
+                  </div>
+                </div>
+                <h5>Token Listrik</h5>
+              </center>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link" href="/tipe-e/paket_telepon_sms">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/tlp_sms.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_pulsa">0</span>
+                  </div>
+                </div>
+                <h5>Paket Telepon dan SMS</h5>
+              </center>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="link" href="/tipe-e/pulsa_transfer">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/tf_pulsa.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_pulsa_transfer">0</span>
+                  </div>
+                </div>
+                <h5>Pulsa Transfer</h5>
+              </center>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link" href="">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/voucher_game.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_pulsa">0</span>
+                  </div>
+                </div>
+                <h5>Voucher Game</h5>
+              </center>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link" href="">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/tv.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_pulsa">0</span>
+                  </div>
+                </div>
+                <h5>TV Berbayar</h5>
+              </center>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link" href="/tipe-e/e_wallet">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/wallet.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_pulsa">0</span>
+                  </div>
+                </div>
+                <h5>Top Up E-Wallet</h5>
+              </center>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-title"> Pembayaran</div>
+      <div class="block">
+        <div class="row">
+          <div class="col">
+            <a class="link" href="/tipe-e/listrik_pascabayar">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/pln.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_listrik_pascabayar">0</span>
+                  </div>
+                </div>
+                <h5>Listrik Pascabayar</h5>
+              </center>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link" href="/tipe-e/listrik_nontaglis">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/listrik_prabayar.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_listrik_nontaglis">0</span>
+                  </div>
+                </div>
+                <h5>Listrik Non Taglis</h5>
+              </center>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link" href="/tipe-e/telkom">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/telkom.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_telkom">0</span>
+                  </div>
+                </div>
+                <h5>Telkom</h5>
+              </center>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link" href="/tipe-e/pdam/0">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/pdam.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_pdam">0</span>
+                  </div>
+                </div>
+                <h5>PDAM</h5>
+              </center>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="link" href="/tipe-e/bpjs">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/bpjs.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_bpjs">0</span>
+                  </div>
+                </div>
+                <h5>BPJS Kesehatan</h5>
+              </center>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link" href="/tipe-e/seluler_pascabayar">
+              <center>
+                <div class="card">
+                  <div class="card-content card-content-padding" style="padding: 8px">
+                    <img src="images/tipe_e/hp.png" width="75%" style="aspect-ratio: 1/1;">
+                    <span class="badge color-red" id="count_seluler_pascabayar">0</span>
+                  </div>
+                </div>
+                <h5>Seluler Pascabayar</h5>
+              </center>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content tab" id="tipe-f">
+      <div class="block">
+        <div class="row">
+          <div class="col-100">
+            <div class="card" style="height: 210px;">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/dinas_koperasi/umkm/" data-id="26">
+                  <center>
+                    <img src="images/tipe_d/UMKM.png" width="50%">
+                    <h5>UMKM</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-f/marketplace/list_all" data-id="28">
+                  <center>
+                    <img src="images/tipe_f/Product_sipraja.png" width="75%">
+                    <h5>Marketplace Produk</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-f/marketplace_jasa/list_all" data-id="28">
+                  <center>
+                    <img src="images/tipe_f/Jasa_sipraja.png" width="75%">
+                    <h5>Marketplace Jasa</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-f/marketplace_food/list_all" data-id="28">
+                  <center>
+                    <img src="images/tipe_f/Food_sipraja.png" width="75%">
+                    <h5>Marketplace Food</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content tab" id="tipe-g">
+      <div class="block">
+        <div class="row">
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" id="cek_lowongan" data-id="26">
+                  <center>
+                    <img src="images/job.png" width="75%">
+                    <h5>Cek Lowongan</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <a class="link" href="/tipe-d/disnaker/buka_lowongan/" data-id="28">
+                  <center>
+                    <img src="images/job.png" width="75%">
+                    <h5>Buka Lowongan</h5>
+                  </center>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

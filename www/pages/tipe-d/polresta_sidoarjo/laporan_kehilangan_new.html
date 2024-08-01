@@ -1,0 +1,305 @@
+<div class="page" data-class="laporan_kehilangan">
+  <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Laporan Kehilangan</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="form_laporan_kehilangan">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemohon</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Pemohon</div>
+              <input type="text" name="nik" id="nik" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Pemohon</div>
+              <input type="text" name="nama_pemohon" id="nama_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Lahir Pemohon</div>
+              <input type="text" name="tempat_lahir_pemohon" id="tempat_lahir_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir Pemohon</div>
+              <input type="text" name="tgl_lahir_pemohon" id="tgl_lahir_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jenis Kelamin Pemohon</div>
+              <input type="text" name="jenis_kelamin_pemohon" id="jenis_kelamin_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Status Kawin Pemohon</div>
+              <input type="text" name="status_kawin_pemohon" id="status_kawin_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pekerjaan Pemohon</div>
+              <input type="text" name="pekerjaan_pemohon" id="pekerjaan_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kewarganegaraan Pemohon</div>
+              <input type="text" name="kewarganegaraan_pemohon" id="kewarganegaraan_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan</div>
+              <input type="text" name="kecamatan_pemohon" id="kecamatan_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan</div>
+              <input type="text" name="kelurahan_pemohon" id="kelurahan_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <!-- <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email Pemohon</div>
+              <input type="text" name="email_pemohon" id="email_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li> -->
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat Pemohon</div>
+              <input type="text" name="alamat_pemohon" id="alamat_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Telp Pemohon</div>
+              <input type="text" name="telp_pemohon" id="telp_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pengajuan</div>
+        </div>
+      </div>
+      <ul class="form-group">
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Lengkap</div>
+              <input type="text" name="nama" id="nama" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <input type="text" name="alamat" id="alamat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NO HP</div>
+              <input type="number" name="no_hp" id="no_hp" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Lahir</div>
+              <input type="text" name="tempat_lahir" id="tempat_lahir" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir</div>
+              <input type="date" name="tgl_lahir" id="tgl_lahir" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kewarganegaraan</div>
+              <input type="text" name="kewarganegaraan" id="kewarganegaraan" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kebangsaan</div>
+              <input type="text" name="kebangsaan" id="kebangsaan" value="INDONESIA" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Agama</div>
+              <input type="text" name="agama" id="agama" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pekerjaan</div>
+              <input type="text" name="pekerjaan" id="pekerjaan" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Kejadian</div>
+              <input type="date" name="tgl_kejadian" id="tgl_kejadian" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Waktu Kejadian</div>
+              <input type="time" name="waktu_kejadian" id="waktu_kejadian" required validate>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a class="item-link smart-select smart-select-init" data-open-in="popover">
+            <select name="jenis_kehilangan" id="jenis_kehilangan" required validate multiple>
+              
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Jenis Kehilangan (bisa lebih dari satu)*</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Lokasi Kejadian</div>
+              <input type="text" name="lokasi" id="lokasi" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan Lokasi Kejadian</div>
+              <select name="kec_list" id="kec_list" required validate></select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tujuan Berkas</div>
+              <select name="tujuan_berkas" id="tujuan_berkas" required validate></select>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title" style="margin-top: 16px">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+          <div class="col-50">
+            <a class="button button-round button-fill color-green" id="addformupload" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>New document</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul id="formupload-wrapper-list">
+        </ul>
+      </div>
+      <div class="block">
+        <label class="item-checkbox">
+          <input type="checkbox" id="pernyataan_kehilangan">
+          <i class="icon icon-checkbox"></i>
+        </label>
+        <label for="pernyataan_kehilangan">
+          Saya dengan sungguh-sungguh serta penuh rasa sadar tanpa tekanan/paksaan dari pihak manapun menyatakan kehilangan sebuah/sejumlah dokumen dan/atau barang berharga yang berupa <span></span>. Dan saya bersedia menerima sanksi sesuai hukum yang berlaku apabila di kemudian hari ditemukan ketidakbenaran atas pernyataan saya ini.
+        </label>
+        <!-- <input type="checkbox" id="pernyataan_kehilangan"> -->
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">
+            Syarat & Ketentuan Lampiran
+            Catatan: Jika ada Persyaratan Tambahan akan dijelaskan oleh Petugas Kepolisian di Kantor.
+          </div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul id="persyaratan">
+                <li>Pilih jenis kehilangan terlebih dahulu</li>
+                <hr>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

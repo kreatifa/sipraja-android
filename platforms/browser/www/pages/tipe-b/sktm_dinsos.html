@@ -1,0 +1,54 @@
+<div class="page form-siurban" >
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Tipe B - SKTM Dinsos</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="card data-table data-table-collapsible data-table-init">
+      <div class="card-header">
+        <div class="data-table-title">List SKTM Dinsos</div>
+      </div>
+    </div>
+    <div class="list" id="filter_layanan">
+      <ul>
+        <li>
+          <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+            <select id="statusselect">
+              <option value="1">Belum Verif</option>
+              <option value="2">Terverifikasi</option>
+              <option value="9">Tertolak</option>
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Filter Status</div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="card data-table">
+      <table id="datatables" class="display" style="width:100%">
+        <thead>
+          <tr>
+            <th>Aksi</th>
+            <th>Kode Transaksi</th>
+            <th>Nomor Dokumen</th>
+            <th>Nama Pemohon</th>
+            <th>Tujuan</th>
+            <th>Kecamatan</th>
+            <th>Tanggal Pengajuan</th>
+            <th>Tanggal Verifikasi</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+</div>

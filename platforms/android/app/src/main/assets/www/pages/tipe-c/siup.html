@@ -1,0 +1,59 @@
+<div class="page form-siurban" >
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Tipe C - IUMK</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="card data-table data-table-collapsible data-table-init">
+      <div class="card-header">
+        <div class="data-table-title">List IUMK</div>
+        <div class="data-table-actions">
+          <a href="/tipe-c/siup_new/" id="btnnew" style="margin-left: 7px" class="button button-small button-fill color-green"><i class="icon f7-icons" style="font-size: 23px;">plus_app_fill</i> New</a>
+          <a href="/tipe-c/siup_sub/perpanjangan" id="btnperpanjangan" style="margin-left: 7px" class="button button-small button-fill color-blue"><i class="icon f7-icons" style="font-size: 23px;"></i> Perpanjangan</a>
+          <a href="/tipe-c/siup_sub/perubahan" id="btnperubahan" style="margin-left: 7px" class="button button-small button-fill color-red"><i class="icon f7-icons" style="font-size: 23px;"></i> Perubahan</a>
+        </div>
+      </div>
+    </div>
+    <div class="list" id="filter_layanan">
+      <ul>
+        <li>
+          <a class="item-link smart-select statusselect smart-select-init" data-open-in="sheet">
+            <select id="statusselect">
+              <option value="1">Berjalan</option>
+              <option value="2">Disetujui</option>
+              <option value="3">Ditolak</option>
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Filter Status</div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="card data-table">
+      <table id="datatables" class="display" style="width:100%">
+        <thead>
+            <tr>
+              <th>Aksi</th>
+              <th>Kode Transaksi</th>
+              <th>Nomor Dokumen</th>
+              <th>Nama Perusahaan</th>
+              <th>Tanggal Berlaku</th>
+              <th>Tipe Dokumen </th>
+              <th>Posisi Dokumen</th>
+              <th>Status Approval</th>
+              <th>Status Dokumen</th>
+            </tr>
+        </thead>
+    </table>
+    </div>
+  </div>
+</div>

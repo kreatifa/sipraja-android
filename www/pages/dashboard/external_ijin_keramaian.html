@@ -1,0 +1,98 @@
+<div class="page">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Ijin Keramaian</div>
+      <div class="right">
+        <a class="link popover-open" href="#" data-popover=".popover-akun">
+          <i class="icon f7-icons">person_alt_circle_fill</i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page-content ptr-content">
+    <div class="ptr-preloader">
+      <div class="preloader"></div>
+      <div class="ptr-arrow"></div>
+    </div>
+    <div class="card elevation-5 border-radius-8">
+      <div class="card-content card-content-padding">
+        <div class="row">
+          <div class="col-100">
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Tanggal</div>
+                <div class="item-input-wrap" style="width: 100%">
+                  <input type="text" id="tanggal_external_ijin_keramaian" placeholder="Tanggal Mulai - Selesai" readonly style="width: 100%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list no-hairlines-between">
+          <ul>
+            <li>
+              <a class="item-link smart-select smart-select-init" data-open-in="popup" data-search="true" data-searchbar-placeholder="Cari Kecamatan">
+                <select name="kecamatan_external_ijin_keramaian" id="kecamatan_external_ijin_keramaian">
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Kecamatan</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link smart-select smart-select-init" data-open-in="popup" data-search="true" data-searchbar-placeholder="Cari Desa/Kelurahan">
+                <select name="kelurahan_external_ijin_keramaian" id="kelurahan_external_ijin_keramaian">
+                  <option value="">-</option>
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Desa/Kelurahan</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-footer" style="justify-content: flex-end;">
+        <div class="float-right">
+          <button class="button button-raised button-fill" id="cari_data_external_ijin_keramaian"><i class="icon f7-icons">search</i> Cari</button>
+        </div>
+      </div>
+    </div>
+    <div id="layout_data_external_ijin_keramaian">
+      <div class="card elevation-5 border-radius-8">
+        <div class="card-header" style="justify-content: flex-end;">
+          <div class="float-right">
+            <button class="col button button-raised button-fill button-small" id="lihat_grafik_external_ijin_keramaian"><i class="icon f7-icons">chart_bar_alt_fill</i> Lihat Grafik</button>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card data-table">
+            <table id="datatables" class="display" style="width:100%">
+              <thead>
+                <tr>
+                  <th>KECAMATAN</th>
+                  <th>JUMLAH</th>
+                  <th>Laki - Laki</th>
+                  <th>Perempuan</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <center>
+            <div id="chart_external_ijin_keramaian" style="padding-bottom: 10px;"></div>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

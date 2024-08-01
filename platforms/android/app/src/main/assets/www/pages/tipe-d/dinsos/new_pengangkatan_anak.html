@@ -1,0 +1,212 @@
+<div class="page" data-class="new_pengangkatan_anak">
+  <div class="savebutton toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Pengangkatan Anak</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="new_pengangkatan_anak">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemohon</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Pemohon</div>
+              <input type="text" name="nik_pemohon" id="nik_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Pemohon</div>
+              <input type="text" name="nama_pemohon" id="nama_pemohon" readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Lahir</div>
+              <input type="text" name="tempat_lahir" id="tempat_lahir" readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir</div>
+              <input type="text" name="tanggal_lahir" id="tanggal_lahir" readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jenis Kelamin</div>
+              <input type="text" name="jenis_kelamin" id="jenis_kelamin" readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan</div>
+              <input type="text" name="kec_pemohon" id="kec_pemohon" readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan</div>
+              <input type="text" name="kel_pemohon" id="kel_pemohon" readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <input type="text" name="alamat_pemohon" id="alamat_pemohon" readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Telepon</div>
+              <input type="text" name="telp_pemohon" id="telp_pemohon" readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email</div>
+              <input type="text" name="email_pemohon" id="email_pemohon" required validate readonly>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pendukung</div>
+        </div>
+      </div>
+      <ul class="form-group">
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Pemohon</div>
+              <input type="text" name="nama" id="nama" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Calon Anak Asuh</div>
+              <input type="text" name="anak_asuh" id="anak_asuh" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No. Telp Pemohon</div>
+              <input type="text" name="telp" id="telp" required validate>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul class="form-item-wrapper" id="formupload-wrapper-list" data-form-item-wrapper=""></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">Syarat & Ketentuan Lampiran</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul>
+                <li>
+                  1. Permohonan Ijin Pengangkatan Anak kepada Instansi Sosial setempat.<br>
+                  <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/DINSOS-SURAT-IJIN-PENGANGKATAN-ANAK.pdf', '_system');" class="link external">(Download di Sini)</a><hr>
+                </li>
+                <li>2. Surat Keterangan Sehat COTA dari Rumah Sakit Pemerintah (Asli).<hr></li>
+                <li>3. Surat Keterangan Kesehatan Jiwa COTA dari Dokter Spesialis Jiwa dari Rumah Sakit Pemerintah (Asli).<hr></li>
+                <li>4. Surat Keterangan tentang Fungsi Organ Reproduksi COTA dari Dokter Spesialis Obstetri dan Ginekologi Rumah Sakit Pemerintah (Asli).<hr></li>
+                <li>5. Copy Akta Kelahiran COTA.<hr></li>
+                <li>6. Surat Keterangan Catatan Kepolisisn (SKCK) setempat (Asli).<hr></li>
+                <li>7. Surat Keterangan Bebas Narkoba.<hr></li>
+                <li>8. Copy Surat Nikah/Akta Perkawinan COTA (Legalisir).<hr></li>
+                <li>9. Kartu Keluarga (KK) COTA.<hr></li>
+                <li>10. Kartu Tanda Penduduk (KTP) COTA.<hr></li>
+                <li>11. Copy Akta Kelahiran (CAA).<hr></li>
+                <li>12. Keterangan Penghasilan dari Tempat Bekerja COTA (Asli).<hr></li>
+                <li>13. Surat Pernyataan Persetujuan CAA di atas Kertas Bermaterai cukup bagi Anak yang telah Mampu Menyampaikan Pendapatnya.<hr></li>
+                <li>
+                  14. Surat Pernyataan Motivasi COTA di Kertas Bermaterai cukup yang Menyatakan bahwa Pengangkatan Anak demi Kepentingan terbaik bagi Anak dan Perlindungan Anak.<br>
+                  <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/DINSOS-SURAT-PERNYATAAN-MOTIVASI.pdf', '_system');" class="link external">(Download di Sini)</a><hr>
+                </li>
+                <li>
+                  15. Surat Pernyataan COTA akan Memperlakukan Anak Angkat dan Anak Kandung tanpa Diskriminasi sesuai dengan Hak-hak dan Kebutuhan Anak di atas Kertas Bermaterai cukup.<br>
+                  <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/DINSOS-SURAT-PERNYATAAN-MEMBERIKAN-HAK-DAN-STATUS-YANG-SAMA.pdf', '_system');" class="link external">(Download di Sini)</a><hr>
+                </li>
+                <li>
+                  16. Surat Pernyataan bahwa COTA akan Memberitahukan kepada Anak Angkatnya mengenai Asal Usulnya dan Orang Tua Kandungnya dengan Memperhatikan Kesiapan Anak.<br>
+                  <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/DINSOS-SURAT-PERNYATAAN-AKAN-MEMBERITAHUKAN-TENTANG-ASAL-USUL-ANAK-ANGKAT-DAN-ORANG-TUA-KANDUNG.pdf', '_system');" class="link external">(Download di Sini)</a><hr>
+                </li>
+                <li>
+                  17. Surat Pernyataan COTA bahwa COTA tidak Berhak menjadi Wali Nikah bagi Anak Angkat Perempuan dan Memberi Kuasa kepada Wali Hakim.<br>
+                  <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/DINSOS-SURAT-PERNYATAAN-TIDAK-AKAN-MENJADI-WALI-PADA-SAAT-ANAK-ANGKAT-MENIKAH.pdf', '_system');" class="link external">(Download di Sini)</a><hr>
+                </li>
+                <li>
+                  18. Surat Pernyataan COTA bahwa COTA untuk Memberikan Hibah sebagian Hartanya bagi Anak Angkatnya.<br>
+                  <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/DINSOS-SURAT-PERNYATAAN-AKAN-PEMBERIAN-HIBAH.pdf', '_system');" class="link external">(Download di Sini)</a><hr>
+                </li>
+                <li>
+                  19. Surat Pernyataan Persetujuan Adopsi dari Pihak Keluarga COTA.<br>
+                  <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/DINSOS-SURAT-PERNYATAAN-PERSETUJUAN-ADOPSI-DARI-PIHAK-KELUARGA-COTA.pdf', '_system');" class="link external">(Download di Sini)</a><hr>
+                </li>
+                <li>
+                  20. Surat Pernyataan Dokumentasi Adopsi adalah Dokumen yang Sah.<br>
+                  <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/DINSOS-SURAT-PERNYATAAN-DOKUMENTASI-ADOPSI-ADALAH-DOKUMEN-YANG-SAH.pdf', '_system');" class="link external">(Download di Sini)</a><hr>
+                </li>
+                <li>21. Foto COTA dan Calon Anak Angkat Ukuran 4x6 masing-masing 2 Lembar.<hr></li>
+                <li>
+                  22. Rekomendasi Proses Pengangkatan Anak dari Instansi Sosial setempat.<br>
+                  <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/DINSOS-SURAT-REKOMENDASI-PENGADOPSIAN-ANAK.pdf', '_system');" class="link external">(Download di Sini)</a><hr>
+                </li>
+                <li>23. Foto Depan Rumah dan Foto Anak Angkat Ukuran 4R sebanyak 2 Lembar.<hr></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

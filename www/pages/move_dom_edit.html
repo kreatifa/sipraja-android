@@ -1,0 +1,226 @@
+<div class="page" data-class="move_dom">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Detail Pindah Domisili</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <form class="list" id="move_dom_form">
+      <div class="block-title">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Data Pemohon</div>
+            </div>
+          </div>
+          <div class="col-50" id="btndeletelayanan">
+            <a class="button button-round button-fill color-red" id="deletelayanan" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">xmark_square_fill</i> <span>Hapus</span></a>
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama*</div>
+              <input type="text" id="nama" name="nama" required validate readonly>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat, Tanggal Lahir*</div>
+              <input type="text" id="ttl" name="ttl" required validate readonly>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jenis Kelamin*</div>
+              <input type="text" id="jenis_kelamin" name="jenis_kelamin" required validate readonly>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Agama*</div>
+              <input type="text" id="agama" name="agama" required validate readonly>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Status Perkawinan*</div>
+              <input type="text" id="status_kawin" name="status_kawin" required validate readonly>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan*</div>
+              <input type="text" id="nama_kec_asal" name="nama_kec_asal" required validate readonly>
+              <input type="hidden" id="kec_asal" name="kec_asal" required validate readonly>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan*</div>
+              <input type="text" id="nama_kel_asal" name="nama_kel_asal" required validate readonly>
+              <input type="hidden" id="kel_asal" name="kel_asal" required validate readonly>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat*</div>
+              <input type="text" id="alamat_asal" name="alamat_asal" required validate readonly>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">RW*</div>
+              <input type="text" id="rw_asal" name="rw_asal" required validate readonly>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">RT*</div>
+              <input type="text" id="rt_asal" name="rt_asal" required validate readonly>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pindah</div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kecamatan Baru*</div>
+              <div class="item-input-wrap">
+                <select id="kec_baru" name="kec_baru">
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kelurahan Baru*</div>
+              <div class="item-input-wrap">
+                <select id="kel_baru" name="kel_baru">
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat Baru*</div>
+              <input type="text" id="alamat_baru" name="alamat_baru" required validate>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">RW Baru (Contoh : 001)*</div>
+              <input type="text" id="rw_baru" name="rw_baru" required validate>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">RT Baru (Contoh : 001)*</div>
+              <input type="text" id="rt_baru" name="rt_baru" required validate>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Titik Koordinat Lokasi Tempat Tinggal</div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <input type="hidden" id="lat" name="latitude" required validate>
+          <input type="hidden" id="lng" name="longitude" required validate>
+          <div id="mapid" style="height: 256px;"></div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul id="formupload-wrapper-list"></ul>
+      </div>
+    </form>
+
+    <div class="data-table card">
+      <div class="card-header">Riwayat Approval</div>
+      <div class="card-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Otoriter</th>
+              <th>Nama Operator</th>
+              <th>Keterangan</th>
+              <th>Tanggal Proses</th>
+            </tr>
+          </thead>
+          <tbody class="table-chron">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

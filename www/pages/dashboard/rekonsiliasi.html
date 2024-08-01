@@ -1,0 +1,79 @@
+<div class="page">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Rekonsiliasi</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="card elevation-5 border-radius-8">
+      <div class="card-content card-content-padding">
+        <div class="list no-hairlines-between">
+          <ul>
+            <li>
+              <a class="item-link smart-select smart-select-init" data-open-in="sheet">
+                <select id="rekonsiliasi">
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Rekonsiliasi</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link smart-select smart-select-init" data-open-in="sheet">
+                <select id="kecamatan_rekonsiliasi">
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Kecamatan</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="item-link smart-select smart-select-init" data-open-in="sheet">
+                <select id="kelurahan_rekonsiliasi">
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Desa/Kelurahan</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-footer" style="justify-content: flex-end;">
+        <div class="float-right">
+          <button class="button button-raised button-fill" id="cari_data_rekonsiliasi"><i class="icon f7-icons">search</i> CARI</button>
+        </div>
+      </div>
+    </div>
+    <div id="layout_data_usulan">
+      <div class="card elevation-5 border-radius-8">
+        <div class="card-content">
+          <div class="card data-table">
+            <table id="datatables" class="display" style="width:100%">
+              <thead>
+                <tr>
+                  <th>KECAMATAN</th>
+                  <th>JUMLAH</th>
+                  <th>Laki - Laki</th>
+                  <th>Perempuan</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

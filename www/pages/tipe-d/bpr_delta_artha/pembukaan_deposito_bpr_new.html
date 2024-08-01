@@ -1,0 +1,206 @@
+<div class="page" data-class="pembukaan_deposito_bpr_new">
+  <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form Pembukaan Deposito</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="pembukaan_deposito_bpr_new" style="margin: 0 ">
+      <div class="block-title" style="margin-top: 16px">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemohon</div>
+        </div>
+      </div>
+      <input type="hidden" name="id_kec" id="id_kec" readonly validate>
+      <input type="hidden" name="id_kel" id="id_kel" readonly validate>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Pemohon</div>
+              <input required validate type="text" readonly="readonly" name="nik_pemohon" id="nik_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Pemohon</div>
+              <input required validate type="text" readonly="readonly" name="nama_pemohon" id="nama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Telepon</div>
+              <input required validate type="text" readonly="readonly" name="telepon" id="telepon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email</div>
+              <input required validate type="text" readonly="readonly" name="email" id="email">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Provinsi</div>
+              <div class="item-input-wrap">
+                <select name="provinsi" id="provinsi">
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kab/Kota</div>
+              <div class="item-input-wrap">
+                <select name="kota" id="kota">
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kecamatan</div>
+              <div class="item-input-wrap">
+                <select name="kecamatan" id="kecamatan" readonly>
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Desa/Kelurahan</div>
+              <div class="item-input-wrap">
+                <select name="kelurahan" id="kelurahan">
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <input required validate type="text" readonly="readonly" name="alamat" id="alamat">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Produk</div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Produk</div>
+              <div class="item-input-wrap">
+                <select name="kode_produk" id="kode_produk">
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kantor</div>
+              <div class="item-input-wrap">
+                <select name="kantor" id="kantor">
+                  <option value="Kantor Pusat" selected>Kantor Pusat</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="row">
+          <div class="col-100">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul id="formupload-wrapper-list"></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-green text-color-white">Daftar Layanan</div>
+          <div class="card-content">
+            <div class="list inset">
+              <h3>DEPOSITO - Deposito BPR Delta Artha</h3>
+              <p>Deposito BPR Delta Artha merupakan simpanan berjangka dalam mata uang rupiah dengan bunga menarik dan merupakan produk khusus bagi anda yang ingin berinvestasi
+                dengan keuntungan lebih dan rasa aman dengan hasil optimal</p>
+
+              <h3>Syarat & Ketentuan</h3>
+              <h5>BUNGA DEPOSITO</h5>
+              <ol>
+                <li>Jangka waktu 1 bulan sebesar <b>5,25%</b> per tahun</li>
+                <li>Jangka waktu 3 bulan sebesar <b>5,50%</b> per tahun</li>
+                <li>Jangka waktu 6 bulan sebesar <b>5,50%</b> per tahun</li>
+                <li>Jangka waktu 12 bulan sebesar <b>5,50%</b> per tahun</li>
+              </ol>
+
+              <h5>PERSYARATAN PEMBUKAAN DEPOSITO</h5>
+
+              <h5>PERSEORANGAN</h5>
+              <ol>
+                <li>KTP asli dan fotokopi</li>
+                <li>SIUP, NPWP, Akte Pendirian Perusahaan dan perubahannya yang terakhir</li>
+              </ol>
+
+              <h5>NON-PERSEORANGAN/PERUSAHAAN/INSTANSI</h5>
+              <ol>
+                <li>Fotocopy KTP pejabat yang berwenang</li>
+                <li>SIUP, NPWP, Akte Pendirian Perusahaan dan perubahannya yang terakhir</li>
+              </ol>
+
+              <h5>PEMBUKAAN DAN PENCAIRAN DEPOSITO</h5>
+              <ol>
+                <li>Setoran awal minimal Rp. 1.000.000,-</li>
+                <li>Pada penyetoran awal tidak dikenakan biaya materai</li>
+                <li>Deposito diperpanjang secara Automatic Roll Over (ARO)</li>
+                <li>Bunga deposito dilimpahkan ke tabungan setiap bulanny</li>
+                <li>Pembukaan deposito tidak dikenakan biaya administrasi</li>
+                <li>Pencairan dapat dilakukan pada saat jatuh tempo dan sebelum jatuh tempo. Apabila dilakukan sebelum jatuh tempo, akan terkena biaya penalti.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

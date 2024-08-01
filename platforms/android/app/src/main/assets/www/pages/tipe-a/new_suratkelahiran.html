@@ -1,0 +1,805 @@
+<div class="page" data-class="new_layanan">
+  <div class="savebutton toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form Surat Kelahiran</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="new_suratkelahiran">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Keluarga</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Kartu Keluarga</div>
+              <input validate type="number" name="no_kk">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Kepala Keluarga</div>
+              <input validate type="text" name="nama_kepkel">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Bayi / Anak</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK</div>
+              <input placeholder="NIK" validate type="number" name="nik_anak">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Lengkap</div>
+              <input placeholder="Nama Lengkap" validate type="text" name="nama_anak">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Jenis Kelamin</div>
+              <div class="item-input-wrap">
+                <select name="jenis_kelamin">
+                  <option value="Laki-Laki" selected>Laki-Laki</option>
+                  <option value="Perempuan">Perempuan</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Tempat Dilahirkan</div>
+              <div class="item-input-wrap">
+                <select name="tempat_dilahirkan_anak">
+                  <option value="Rumah Sakit/Rumah Bersalin" selected>Rumah Sakit/Rumah Bersalin</option>
+                  <option value="Puskesmas">Puskesmas</option>
+                  <option value="Polindes">Polindes</option>
+                  <option value="Puskesmas">Puskesmas</option>
+                  <option value="Rumah">Rumah</option>
+                  <option value="Lainya">Lainya</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Penolong Kelahiran</div>
+              <div class="item-input-wrap">
+                <select name="penolong_kelahiran_anak">
+                  <option value="Dokter" selected>Dokter</option>
+                  <option value="Bidan/Perawat">Bidan/Perawat</option>
+                  <option value="Puskesmas">Puskesmas</option>
+                  <option value="Rumah">Rumah</option>
+                  <option value="Lainya">Lainya</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Kelahiran</div>
+              <input validate type="text" name="tempat_lahir" placeholder="Tempat Kelahiran">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Provinsi</div>
+              <div class="item-input-wrap">
+                <select name="provinsi_anak" id="provinsi_anak">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kab/Kota</div>
+              <div class="item-input-wrap">
+                <select name="kota_anak" id="kota_anak">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kecamatan</div>
+              <div class="item-input-wrap">
+                <select name="kecamatan_anak" id="kecamatan_anak">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Desa/Kelurahan</div>
+              <div class="item-input-wrap">
+                <select name="kelurahan_anak" id="kelurahan_anak">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir</div>
+              <input validate type="text" id="tanggal_lahir" name="tanggal_lahir">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jam Lahir</div>
+              <input required validate type="text" id="jam_lahir_anak" name="jam_lahir_anak" class="bs-timepicker">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Jenis Kelahiran</div>
+              <div class="item-input-wrap">
+                <select name="jenis_lahir_anak" id="jenis_lahir_anak">
+                  <option value="Tunggal" selected>Tunggal</option>
+                  <option value="Kembar Dua">Kembar Dua</option>
+                  <option value="Kembar Tiga">Kembar Tiga</option>
+                  <option value="Kembar Empat">Kembar Empat</option>
+                  <option value="Kembar Banyak/Lainnya">Kembar Banyak/Lainnya</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jumlah Kembar</div>
+              <input validate type="number" value="1" name="jumlah_kembar_anak" id="jumlah_kembar_anak">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelahiran Ke</div>
+              <input validate type="number" name="jumlah_kelahiran_anak">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Berat Lahir (gram)</div>
+              <input validate type="number" name="berat_lahir_anak">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Panjang Lahir (cm)</div>
+              <input validate type="number" name="panjang_lahir_anak">
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip chip-outline color-blue">
+          <div class="chip-label">Data Ibu</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK</div>
+              <input validate type="number" name="nik_ibu">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Lengkap</div>
+              <input validate type="text" name="nama_ibu" id="nama_ibu">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir</div>
+              <input validate type="text" id="tgl_lahir_ibu" name="tgl_lahir_ibu">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pekerjaan</div>
+              <select id="pekerjaan_ibu" name="pekerjaan_ibu">
+                  
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <textarea validate name="alamat"></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Provinsi</div>
+              <div class="item-input-wrap">
+                <select id="provinsi_ibu" name="provinsi_ibu">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kab/Kota</div>
+              <div class="item-input-wrap">
+                <select id="kota_ibu" name="kota_ibu">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kecamatan</div>
+              <div class="item-input-wrap">
+                <select id="kecamatan_ibu" name="kecamatan_ibu">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Desa/Kelurahan</div>
+              <div class="item-input-wrap">
+                <select id="kelurahan_ibu" name="kelurahan_ibu">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kewarganegaraan</div>
+              <div class="item-input-wrap">
+                <select name="kewarganegaraan_ibu">
+                  <option value="WNI" selected>WNI</option>
+                  <option value="WNA">WNA</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kebangsaan</div>
+              <input validate type="text" name="kebangsaan_ibu" id="kebangsaan_ibu">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Pencatatan Perkawinan</div>
+              <input validate type="text" id="tgl_pencatatan_kawin" name="tgl_pencatatan_kawin">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Akta Perkawinan</div>
+              <input validate type="text" name="no_akta_kawin" id="no_akta_kawin">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip chip-outline color-blue">
+          <div class="chip-label">Data Ayah</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK</div>
+              <input validate type="number" name="nik_ayah">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Lengkap</div>
+              <input validate type="text" name="nama_suami" id="nama_suami">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir</div>
+              <input validate type="text" id="tgl_lahir_ayah" name="tgl_lahir_ayah">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pekerjaan</div>
+              <select id="pekerjaan_ayah" name="pekerjaan_ayah">
+                  
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <textarea validate name="alamat_ayah"></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Provinsi</div>
+              <div class="item-input-wrap">
+                <select id="provinsi_ayah" name="provinsi_ayah">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kab/Kota</div>
+              <div class="item-input-wrap">
+                <select id="kota_ayah" name="kota_ayah">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kecamatan</div>
+              <div class="item-input-wrap">
+                <select id="kecamatan_ayah" name="kecamatan_ayah">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Desa/Kelurahan</div>
+              <div class="item-input-wrap">
+                <select id="kelurahan_ayah" name="kelurahan_ayah">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kewarganegaraan</div>
+              <div class="item-input-wrap">
+                <select name="kewarganegaraan_ayah">
+                  <option value="WNI" selected>WNI</option>
+                  <option value="WNA">WNA</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kebangsaan</div>
+              <input validate type="text" name="kebangsaan_ayah" id="kebangsaan_ayah">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pelapor</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK</div>
+              <input required validate type="text" name="nik_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Lengkap</div>
+              <input required validate type="text" name="nama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email</div>
+              <input required validate type="email" name="email_pelapor">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Telp</div>
+              <input required validate type="text" name="telp_pemohon">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Hubungan</div>
+              <div class="item-input-wrap">
+                <select name="hubungan_pemohon" id="hubungan_pemohon">
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip chip-outline color-blue">
+          <div class="chip-label">Data Saksi</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK</div>
+              <input validate type="number" name="nik_saksi">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Lengkap</div>
+              <input validate type="text" name="nama_saksi" id="nama_saksi">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Umur</div>
+              <input validate type="number" id="umur_saksi" name="umur_saksi">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pekerjaan</div>
+              <select id="pekerjaan_saksi" name="pekerjaan_saksi">
+                  
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <textarea validate name="alamat_saksi"></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Provinsi</div>
+              <div class="item-input-wrap">
+                <select id="provinsi_saksi" name="provinsi_saksi">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kab/Kota</div>
+              <div class="item-input-wrap">
+                <select id="kota_saksi" name="kota_saksi">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kecamatan</div>
+              <div class="item-input-wrap">
+                <select id="kecamatan_saksi" name="kecamatan_saksi">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Desa/Kelurahan</div>
+              <div class="item-input-wrap">
+                <select id="kelurahan_saksi" name="kelurahan_saksi">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip chip-outline color-blue">
+          <div class="chip-label">Keterangan</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Catatan Tambahan</div>
+              <textarea validate name="catatan"></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Kelahiran</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Lahir</div>
+              <input required validate type="text" name="tempat_lahir">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Anak</div>
+              <input required validate type="text" name="nama_anak">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Ayah</div>
+              <input required validate type="text" name="nama_suami">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Ibu</div>
+              <input required validate type="text" name="nama_ibu">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <textarea required validate name="alamat" placeholder="Alamat isi ya"></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+      </ul> -->
+
+      <div class="block-title">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+          <div class="col-50">
+
+            <a class="button button-round button-fill color-green" id="addformupload" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>New document</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul class="form-item-wrapper" id="formupload-wrapper-list" data-form-item-wrapper=""></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header">Syarat & Ketentuan Lampiran</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul style="padding-left: 0;">
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Surat Lahir Dokter/Bidan/Penolong Lahir</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">2. Surat Nikah/Akta Kawin</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">3. Kartu Keluarga</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">4. KTP Ayah</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">5. KTP Ibu</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">6. KTP Pelapor</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">7. KTP Saksi</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">8. SPTJM (jika Surat Lahir dan Surat Nikah tidak terpenuhi)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">9. SKTT (untuk orang asing)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">10. Paspor (untuk orang asing)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">11. Formulir F-1.01 yang sudah diisi dan ditandatangani (jika anak belum memiliki NIK)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">12. Pengantar RT/RW (jika anak belum memiliki NIK)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">13. Formulir F-1.04 jika anak sudah berusia di atas 12 tahun (jika anak belum memiliki NIK)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">14. Lain-lain 1</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">15. Lain-lain 2</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">116. Lain-lain 3</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

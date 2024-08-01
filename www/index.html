@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="worker-src blob:; default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+
+    <!-- App title -->
+    <title>SIPRAJA</title>
+
+    <link rel="stylesheet" type="text/css" href="star-rating-main/dist/star-rating.css">
+    <link rel="stylesheet" href="css/signature-pad.css">
+    <link rel="stylesheet" href="js/plugins/leaflet/leaflet.css">
+    <link rel="stylesheet" href="css/timepicker.min.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <link rel="stylesheet" href="css/framework7.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="icon" href="images/logo.png">
+</head>
+
+<body class="color-theme-blue">
+    <div id="app">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+        </div>
+    </div>
+
+    <!-- QR Scanner view/tab -->
+    <div id="qr_view">
+        <img src="images/light_off.png" id="qr_light">
+        <img src="images/qr_rectangle.png" id="qr_region">
+        <a id="qr_cancel">Batalkan</a>
+    </div>
+
+    <!-- Cordova Scripts -->
+    <script src="cordova.js" async></script>
+    <!-- <script src="cordova_plugins.js"></script> -->
+
+    <!-- Plugin Scripts -->
+    <script src="js/plugins/framework7.min.js"></script>
+    <script src="js/plugins/jquery.min.js"></script>
+    <script src="js/plugins/jquery.dataTables.min.js"></script>
+    <script src="js/plugins/timepicker.min.js"></script>
+    <script src="js/plugins/moment.min.js"></script>
+    <script src="js/plugins/fontawesome.js"></script>
+    <script src="js/plugins/signature_pad.umd.js"></script>
+    <script src="js/plugins/leaflet/leaflet-src.js"></script>
+    <script src="js/plugins/leaflet/leaflet-rotate-src.js"></script>
+    <script src="js/plugins/leaflet/Polyline.encoded.js"></script>
+    <script src="js/plugins/socket.io.js"></script>
+    <script src="js/plugins/pdf-lib.min.js"></script>
+    <script src="js/plugins/easy.qrcode.min.js"></script>
+    <script src="js/plugins/crypto/crypto-js.js"></script>
+    <script src="js/plugins/crypto/cryptojs-aes-format.js"></script>
+    <script src="js/plugins/chart.min.js"></script>
+    <!-- <script src="js/plugins/chartjs-plugin-datalabels.min.js"></script> -->
+    <script src="js/plugins/plotly-2.12.1.min.js"></script>
+    <script src="star-rating-main/dist/star-rating.js"></script>
+
+    <!-- Aplikasi Dashboard Admin -->
+    <script src="js/dashboard/login_admin.js"></script>
+    <script src="js/dashboard/home.js"></script>
+    <script src="js/dashboard/sub_menu_dashboard.js"></script>
+    <script src="js/dashboard/data_pendaftar.js"></script>
+    <script src="js/dashboard/kelahiran.js"></script>
+    <script src="js/dashboard/kematian.js"></script>
+    <script src="js/dashboard/penyebaran_penduduk.js"></script>
+    <script src="js/dashboard/pindah.js"></script>
+    <script src="js/dashboard/segmen.js"></script>
+    <script src="js/dashboard/alokasi.js"></script>
+    <script src="js/dashboard/alokasi_detail.js"></script>
+    <script src="js/dashboard/usulan_penambahan.js"></script>
+    <script src="js/dashboard/survey.js"></script>
+    <script src="js/dashboard/rekonsiliasi.js"></script>
+    <script src="js/dashboard/pelayanan_eksternal.js"></script>
+    <script src="js/dashboard/sktm.js"></script>
+
+    <!-- Aplikasi Segmen -->
+    <script src="js/segmen/home.js"></script>
+    <script src="js/segmen/login_segmen.js"></script>
+    <script src="js/segmen/segmen.js"></script>
+    <script src="js/segmen/alokasi.js"></script>
+    <script src="js/segmen/alokasi_detail.js"></script>
+
+    <!-- Aplikasi Dashboard Kurir -->
+    <script src="js/kurir/master.js"></script>
+
+    <!-- Saldo -->
+    <script src="js/saldo/saldo_sipraja.js"></script>
+
+    <!-- Tipe A -->
+    <script src="js/tipe-a/surat_kelahiran.js"></script>
+    <script src="js/tipe-a/surat_kematian.js"></script>
+    <script src="js/tipe-a/sk_tidak_mampu.js"></script>
+    <script src="js/tipe-a/sk_biodata_penduduk.js"></script>
+    <script src="js/tipe-a/sk_umum_desa.js"></script>
+    <script src="js/tipe-a/sk_domisili_usaha.js"></script>
+    <script src="js/tipe-a/sk_domisili_kurma.js"></script>
+    <script src="js/tipe-a/sk_domisili_kurma_table.js"></script>
+    <script src="js/tipe-a/sk_domisili_revisi_kurma.js"></script>
+    <script src="js/tipe-a/sk_domisili_luar.js"></script>
+    <script src="js/tipe-a/surat_pengantar_kua.js"></script>
+    <script src="js/tipe-a/surat_pengantar_kua_luar.js"></script>
+
+    <!-- Tipe B -->
+    <script src="js/tipe-b/kartu_keluarga.js"></script>
+    <script src="js/tipe-b/permohonan_ktp.js"></script>
+    <script src="js/tipe-b/sk_pindah.js"></script>
+    <script src="js/tipe-b/sk_umum_kecamatan.js"></script>
+    <script src="js/tipe-b/sktm_kecamatan.js"></script>
+    <script src="js/tipe-b/sktm_dinsos.js"></script>
+    <script src="js/tipe-b/waris.js"></script>
+    <script src="js/tipe-b/waris_table.js"></script>
+    <script src="js/tipe-b/waarmeking.js"></script>
+    <script src="js/tipe-b/waarmeking_table.js"></script>
+    <script src="js/tipe-b/ijin_keramaian.js"></script>
+
+    <!-- Tipe C -->
+    <script src="js/tipe-c/kartupencarikerja.js"></script>
+    <script src="js/tipe-c/ijin_mendirikan_bangunan.js"></script>
+    <script src="js/tipe-c/ijin_mendirikan_bangunan_luar.js"></script>
+    <script src="js/tipe-c/siup.js"></script>
+    <script src="js/tipe-c/tanda_daftar_perusahaan.js"></script>
+
+    <!-- Tipe D -->
+    <script src="js/tipe-d/bppd_pajak/cek_pbb.js"></script>
+    <script src="js/tipe-d/disnaker/cek_lowongan.js"></script>
+    <script src="js/tipe-d/disnaker/siap_kerja.js"></script>
+    <script src="js/tipe-d/disnaker/cek_lowongan.js"></script>
+    <script src="js/tipe-d/kejaksaan_negeri/konsultasi.js"></script>
+    <script src="js/tipe-d/rsud_sidoarjo/ketersediaan_kamar.js"></script>
+    <script src="js/tipe-d/rsud_sidoarjo/antrian_klinik.js"></script>
+    <script src="js/tipe-d/dinsos/pengunduran_jkn_kis.js"></script>
+    <script src="js/tipe-d/dinsos/penerbitan_stp.js"></script>
+    <script src="js/tipe-d/dinsos/pengangkatan_anak.js"></script>
+    <script src="js/tipe-d/pengadilan_agama/perceraian.js"></script>
+    <script src="js/tipe-d/polresta_sidoarjo/skck.js"></script>
+    <script src="js/tipe-d/polresta_sidoarjo/laporan_kehilangan.js"></script>
+    <script src="js/tipe-d/polresta_sidoarjo/laporan_polisi.js"></script>
+    <script src="js/tipe-d/pdam/cek_tagihan.js"></script>
+    <script src="js/tipe-d/bpr_delta_artha/pembukaan_rekening_tabungan.js"></script>
+    <script src="js/tipe-d/bpr_delta_artha/pembukaan_deposito_bpr.js"></script>
+    <script src="js/tipe-d/bpr_delta_artha/pembukaan_kredit_bpr.js"></script>
+    <script src="js/tipe-d/pdam/daftar_pasang_baru.js"></script>
+    <script src="js/tipe-d/pdam/new_daftar_pasang_baru.js"></script>
+    <script src="js/tipe-d/dinas_koperasi/umkm.js"></script>
+    <script src="js/tipe-d/kejaksaan_negeri/sibojo.js"></script>
+    <script src="js/tipe-d/kejaksaan_negeri/sipatas.js"></script>
+
+    <!-- Tipe E -->
+    <script src="js/tipe-e/pulsa.js"></script>
+    <script src="js/tipe-e/paket_data.js"></script>
+    <script src="js/tipe-e/pulsa_transfer.js"></script>
+    <script src="js/tipe-e/listrik_pascabayar.js"></script>
+    <script src="js/tipe-e/listrik_nontaglis.js"></script>
+    <script src="js/tipe-e/telkom.js"></script>
+    <script src="js/tipe-e/pdam.js"></script>
+    <script src="js/tipe-e/bpjs.js"></script>
+    <script src="js/tipe-e/seluler_pascabayar.js"></script>
+    <script src="js/tipe-e/paket_telepon_sms.js"></script>
+    <script src="js/tipe-e/token_listrik.js"></script>
+    <script src="js/tipe-e/e_wallet.js"></script>
+
+    <!-- Tipe F -->
+    <script src="js/tipe-f/seller_marketplace.js"></script>
+    <script src="js/tipe-f/marketplace.js"></script>
+    <script src="js/tipe-f/marketplace_jasa.js"></script>
+    <script src="js/tipe-f/marketplace_food.js"></script>
+    <script src="js/tipe-f/product.js"></script>
+    <script src="js/tipe-f/shop.js"></script>
+    <script src="js/tipe-f/alamat.js"></script>
+    <script src="js/tipe-f/packing.js"></script>
+    <script src="js/tipe-f/packing_jasa.js"></script>
+    <script src="js/tipe-f/packing_food.js"></script>
+
+    <!-- App Misc Scripts -->
+    <script src="js/config/scanner.js"></script>
+    <script src="js/config/routes.js"></script>
+    <script src="js/config/setup.js"></script>
+    <script src="js/config/uploader.js"></script>
+    <script src="js/config/chatter.js"></script>
+    <script src="js/config/bypass.js"></script>
+    <!-- <script src="js/config/matomo.js" defer></script> -->
+
+    <!-- App DB Scripts -->
+    <script src="js/db/kt_reg_provinces.js"></script>
+    <script src="js/db/kt_reg_regencies.js"></script>
+    <script src="js/db/kt_reg_districts.js"></script>
+    <script src="js/db/kt_reg_villages.js"></script>
+    <script src="js/config/storage.js"></script>
+
+    <!-- App Custom Scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

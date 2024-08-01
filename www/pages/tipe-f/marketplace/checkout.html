@@ -1,0 +1,136 @@
+<div class="page" data-class="">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="/tipe-f/marketplace/keranjang" class="link">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="title">Checkout</div>
+        </div>
+    </div>
+    <div class="page-content" id="checkout_reload">
+        <div class="card">
+            <div class="card-header">
+                <div class="title">Alamat Pengiriman</div>
+                <a class="link button button-fill" id="maps" style="color: white;">Maps</a>
+            </div>
+            <a class="card-content card-content-padding link" id="alamat"></a>
+        </div>
+
+        <div class="list media-list">
+            <div id="checkout">
+            </div>
+            <div class="my-scolling-content ptr-watch-scrollable">
+            
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content card-content-padding">
+                <form class="list" id="form_checkout">
+                    <!-- HIDDEN POST -->
+					<input type="hidden" id="id_alamat_pengiriman" name="id_alamat_pengiriman" class="form-control" value="">
+					<input type="hidden" id="biaya_ongkir" name="biaya_ongkir" class="form-control" value="">
+					<input type="hidden" id="harga_barang" name="harga_barang" class="form-control" value="">
+					<input type="hidden" id="biaya_service" name="biaya_service" class="form-control" value="">
+					<input type="hidden" id="total_biaya" name="total_biaya" class="form-control" value="">
+					<input type="hidden" id="total_berat" name="total_berat" class="form-control" value="">
+					<input type="hidden" id="total_volume" name="total_volume" class="form-control" value="">
+					<input type="hidden" id="jarak_tempuh" name="jarak_tempuh" class="form-control" value="">
+					<!-- HIDDEN POST -->
+                    <ul>
+                        <li>
+                            <div class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">CATATAN</div>
+                                <div class="item-input-wrap">
+                                    <input type="text" name="catatan" placeholder="Catatan">
+                                </div>
+                            </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                  <div class="item-input-wrap">
+                                    <div class="item-title item-label">OPSI PENGIRIMAN</div>
+                                    <select name="opsi_pengiriman">
+                                      <option value="Kurir Sipraja">Kurir Sipraja</option>
+                                    </select>
+                                  </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                  <div class="item-input-wrap">
+                                    <div class="item-title item-label">METODE PEMBAYARAN</div>
+                                    <select name="metode_pembayaran">
+                                        <option value="COD">COD</option>
+                                        <option value="DEBIT">DEBIT</option>
+                                        <option value="PAYMENT">PAYMENT</option>
+                                    </select>
+                                  </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">TOTAL PRODUK</div>
+                                <div class="item-input-wrap">
+                                    <input type="text" id="total_produk" readonly>
+                                </div>
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-50">
+                                <p style="margin-left: 20px;">Total</p>
+                            </div>
+                            <div class="col-50">
+                                <p id="total" style="font-weight: bold;"></p>
+                            </div>
+    
+                            <div class="col-50">
+                                <p style="margin-left: 20px;">Biaya Service</p>
+                            </div>
+                            <div class="col-50">
+                                <p id="service" style="font-weight: bold;"></p>
+                            </div>
+    
+                            <div class="col-50">
+                                <p style="margin-left: 20px;">Ongkir</p>
+                            </div>
+                            <div class="col-50">
+                                <p id="ongkir" style="font-weight: bold;"></p>
+                            </div>
+    
+                            <div class="col-50">
+                                <p style="margin-left: 20px; font-weight: bold;">Total Pembayaran</p>
+                            </div>
+                            <div class="col-50">
+                                <p id="pembayaran" style="font-weight: bold;"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer" id="action">
+                <div id="pembatalan" class="col button button-fill color-red">Pembatalan</div>
+                <div id="save_checkout" class="col button button-fill">Checkout</div>
+            </div>
+        </div>
+    </div>
+</div>

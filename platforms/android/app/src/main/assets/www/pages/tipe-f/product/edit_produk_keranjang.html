@@ -1,0 +1,104 @@
+<div class="page" data-class="">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="title">Edit Produk Keranjang</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div data-pagination='{"el": ".swiper-pagination"}' class="swiper-container swiper-init" width: 100%;">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper" id="foto_produk">
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="card card-outline">
+            <div class="card-header" id="harga" style="font-size: 30px;"></div>
+            <div class="card-content card-content-padding" id="nama" style="font-size: 20px;"></div>
+        </div>
+        <div class="card card-outline">
+            <div class="row">
+                <p style="margin-left: 10px;" id="variasi">
+                </p>
+            </div>
+
+        </div>
+        <div class="card card-outline">
+            <div class="card-header">Spesifikasi Produk</div>
+            <div class="card-content card-content-padding" id="spesifikasi">
+                <div class="row">
+                    <div class="col-33">
+                        Merk
+                    </div>
+                    <div id="merk" class="col-66">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-33">
+                        Bahan
+                    </div>
+                    <div id="bahan" class="col-66">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-33">
+                        Stock
+                    </div>
+                    <div class="col-66">
+                        <input type="text" id="stock" value="" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-33">
+                        Kuantitas
+                    </div>
+                    <div class="col-66">
+                        <div class="stepper stepper-fill stepper-init">
+                            <button class="stepper-button-minus" id="kuantitas_minus"></button>
+                            <input style="width: 50%; color: #2196f3; height: 100%; font-size: 14px;
+                                font-weight: 500;
+                                text-align: center; border: 1px solid;" type="text" value="1" width="20px"
+                                id="kuantitas_input" readonly>
+                            <button class="stepper-button-plus" id="kuantitas_plus"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span style="margin-top: 15px;">
+                        <a id="simpan" class="button button-outline open-alert">
+                            <i class="icon f7-icons">cart</i> Simpan
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="card card-outline">
+            <div class="card-content">
+                <div class="list media-list">
+                    <ul>
+                        <li class="item-content">
+                            <div class="item-media"><img id="logo" src="" width="80" />
+                            </div>
+                            <div class="item-inner">
+                                <div id="nama_usaha" style="margin-left: 5px; margin-bottom: 5px;" class="item-title">
+                                </div>
+                                <a id="detail_toko" href="" class="col button button-fill button-round">Kunjungi
+                                    Toko
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card card-outline">
+            <div class="card-header">Deskripsi Produk</div>
+            <div id="deskripsi" class="card-content card-content-padding"></div>
+        </div>
+    </div>
+</div>

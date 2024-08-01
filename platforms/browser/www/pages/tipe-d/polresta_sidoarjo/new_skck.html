@@ -1,0 +1,442 @@
+<div class="page" data-class="new_skck">
+  <div class="savebutton toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Lanjutkan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">SKCK Online</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="new_skck" style="margin: 16px 0;">
+      <ul>
+        <input type="hidden" name="status" id="status" value="0" readonly>
+        <li>
+          <label class="item-checkbox item-content">
+            <input type="checkbox" name="cb_keperluan_manual" id="cb_keperluan_manual" value="manual"/>
+            <i class="icon icon-checkbox" style="margin-right: 12px"></i>
+            <div class="item-inner">
+              <div class="item-title">Input Keperluan MANUAL?</div>
+            </div>
+          </label>
+        </li>
+        <li class="item-content item-input otomatis">
+          <div class="item-inner">
+            <div class="item-title item-label">Keperluan*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="keperluan" id="keperluan" required validate>
+                <option value selected disabled>- PILIH KEPERLUAN -</option>
+                <option data-tingkat="POLRES" value="PERSYARATAN TES PENGAWAS SEKOLAH">POLRES - PERSYARATAN TES PENGAWAS SEKOLAH</option>
+                <option data-tingkat="POLRES" value="PERSYARATAN PENGAWAS SEKOLAH">POLRES - PERSYARATAN PENGAWAS SEKOLAH</option>
+                <option data-tingkat="POLSEK" value="MENYEWA RUSUN NAWA">POLSEK - MENYEWA RUSUN NAWA</option>
+                <option data-tingkat="POLSEK" value="PERSYARATAN PENDIDIKAN PROFESI GURU DALAM JABATAN (PPGDJ)">POLSEK - PERSYARATAN PENDIDIKAN PROFESI GURU DALAM JABATAN (PPGDJ)</option>
+                <option data-tingkat="POLSEK" value="ADOPSI ANAK">POLSEK - ADOPSI ANAK</option>
+                <option data-tingkat="POLSEK" value="MELAMAR PEKERJAAN">POLSEK - MELAMAR PEKERJAAN</option>
+                <option data-tingkat="POLSEK" value="PENCALONAN KEPALA DESA">POLSEK - PENCALONAN KEPALA DESA</option>
+                <option data-tingkat="POLSEK" value="PENCALONAN SEKRETARIS DESA">POLSEK - PENCALONAN SEKRETARIS DESA</option>
+                <option data-tingkat="POLSEK" value="PINDAH ALAMAT">POLSEK - PINDAH ALAMAT</option>
+                <option data-tingkat="POLSEK" value="MELANJUTKAN SEKOLAH">POLSEK - MELANJUTKAN SEKOLAH</option>
+                <option data-tingkat="POLRES" value="MELAMAR SEBAGAI PNS">POLRES - MELAMAR SEBAGAI PNS</option>
+                <option data-tingkat="POLRES" value="MELAMAR SEBAGAI ANGGOTA TNI / POLRI">POLRES - MELAMAR SEBAGAI ANGGOTA TNI / POLRI</option>
+                <option data-tingkat="POLRES" value="PENCALONAN PEJABAT PUBLIK">POLRES - PENCALONAN PEJABAT PUBLIK</option>
+                <option data-tingkat="POLRES" value="KEPEMILIKAN SENJATA API">POLRES - KEPEMILIKAN SENJATA API</option>
+                <option data-tingkat="POLRES" value="MELAMAR PEKERJAAN">POLRES - MELAMAR PEKERJAAN</option>
+                <option data-tingkat="POLRES" value="PENCALONAN KEPALA DAERAH TINGKAT KABUPATEN / KOTA">POLRES - PENCALONAN KEPALA DAERAH TINGKAT KABUPATEN / KOTA</option>
+                <option data-tingkat="POLDA" value="MELAMAR PEKERJAAN">POLDA - MELAMAR PEKERJAAN</option>
+                <option data-tingkat="POLDA" value="MEMPEROLEH PASPOR / VISA">POLDA - MEMPEROLEH PASPOR / VISA</option>
+                <option data-tingkat="POLDA" value="MENJADI NOTARIS">POLDA - MENJADI NOTARIS</option>
+                <option data-tingkat="POLDA" value="PENCALONAN PEJABAT PUBLIK">POLDA - PENCALONAN PEJABAT PUBLIK</option>
+                <option data-tingkat="POLDA" value="MELANJUTKAN SEKOLAH">POLDA - MELANJUTKAN SEKOLAH</option>
+                <option data-tingkat="POLDA" value="PENCALONAN ANGGOTA LEGISLATIF TINGKAT PROVINSI">POLDA - PENCALONAN ANGGOTA LEGISLATIF TINGKAT PROVINSI</option>
+                <option data-tingkat="POLDA" value="PENCALONAN KEPALA DAERAH TINGKAT PROVINSI">POLDA - PENCALONAN KEPALA DAERAH TINGKAT PROVINSI</option>
+                <option data-tingkat="MABES POLRI" value="PENCALONAN PRESIDEN DAN WAKIL PRESIDEN">MABES POLRI - PENCALONAN PRESIDEN DAN WAKIL PRESIDEN</option>
+                <option data-tingkat="MABES POLRI" value="PENCALONAN ANGGOTA LEGISLATIF, EKSEKUTIF, YUDIKATIF, DAN LEMBAGA PEMERINTAHAN TINGKAT PUSAT">MABES POLRI - PENCALONAN ANGGOTA LEGISLATIF, EKSEKUTIF, YUDIKATIF, DAN LEMBAGA PEMERINTAHAN TINGKAT PUSAT</option>
+                <option data-tingkat="MABES POLRI" value="PENERBITAN VISA">MABES POLRI - PENERBITAN VISA</option>
+                <option data-tingkat="MABES POLRI" value="IZIN TINGGAL TETAP DI LUAR NEGERI (PERMANENT RESIDENT)">MABES POLRI - IZIN TINGGAL TETAP DI LUAR NEGERI (PERMANENT RESIDENT)</option>
+                <option data-tingkat="MABES POLRI" value="NATURALISASI KEWARGANEGARAAN">MABES POLRI - NATURALISASI KEWARGANEGARAAN</option>
+                <option data-tingkat="MABES POLRI" value="ADOPSI ANAK BAGI PEMOHON WNA">MABES POLRI - ADOPSI ANAK BAGI PEMOHON WNA</option>
+                <option data-tingkat="MABES POLRI" value="MELANJUTKAN SEKOLAH LUAR NEGERI">MABES POLRI - MELANJUTKAN SEKOLAH LUAR NEGERI</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input otomatis">
+          <div class="item-inner">
+            <div class="item-title item-label">Tingkat Kewenangan*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="tingkat" id="tingkat" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input manual">
+          <div class="item-inner">
+            <div class="item-title item-label">Keperluan*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="keperluan_manual" id="keperluan_manual">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input manual">
+          <div class="item-inner">
+            <div class="item-title item-label">Tingkat Kewenangan*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="tingkat_manual" id="tingkat_manual">
+                <option value selected disabled>- PILIH TINGKAT -</option>
+                <option value="POLSEK">POLSEK</option>
+                <option value="POLRES">POLRES</option>
+                <option value="POLDA">POLDA</option>
+                <option value="MABES POLRI">MABES POLRI</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Jenis Identitas*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="jenis_identitas" id="jenis_identitas" required validate>
+                <option value="E-KTP">E-KTP</option>
+                <option value="Passport">Passport</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nomor Identitas*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nomor_identitas" id="nomor_identitas" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nomor Passport</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nomor_passport" id="nomor_passport">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nomor KITAS</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nomor_kitas" id="nomor_kitas">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Lengkap*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nama_lengkap" id="nama_lengkap" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nomor HP*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="no_hp" id="no_hp" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Pekerjaan*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="pekerjaan" id="pekerjaan" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tanggal Lahir*</div>
+            <div class="item-input-wrap">
+              <input type="date" name="tanggal_lahir" id="tanggal_lahir" autocomplete="off" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tempat Lahir*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="tempat_lahir" id="tempat_lahir" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Jenis Kelamin*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="jenis_kelamin" id="jenis_kelamin" required validate>
+                <option value="L">Laki-Laki</option>
+                <option value="P">Perempuan</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Status Pernikahan*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="status_nikah" id="status_nikah" required validate>
+                <option value="Belum Kawin">Belum Kawin</option>
+                <option value="Kawin">Kawin</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Agama*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="agama" id="agama" required validate>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+                <option value="Konghucu">Konghucu</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Warga Negara*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kebangsaan" id="kebangsaan" required validate>
+                <option value="WNI">INDONESIA</option>
+                <option value="WNA">WNA</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Berat Badan*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="berat_badan" id="berat_badan" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Bentuk Muka*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="bentuk_muka" id="bentuk_muka" required validate>
+                <option value="oval">Wajah Oval</option>
+                <option value="bulat">Wajah Bulat</option>
+                <option value="persegi">Wajah Persegi</option>
+                <option value="segitiga">Wajah Segitiga</option>
+                <option value="panjang">Wajah Panjang</option>
+                <option value="segitigaterbalik">Wajah Segitiga Terbalik</option>
+                <option value="belahketupat">Belah Ketupat</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kulit*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kulit" id="kulit" required validate>
+                <option value="kuninglangsat">Kuning Langsat</option>
+                <option value="hitam">Kulit Hitam</option>
+                <option value="sawomatang">Sawo Matang</option>
+                <option value="putihgading">Putih Gading</option>
+                <option value="putihporcelain">Putih Porcelain</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tinggi*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="tinggi" id="tinggi" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Rambut*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="rambut" id="rambut" required validate>
+                <option value="rambutlurus">Rambut Lurus</option>
+                <option value="gelombang">Rambut Bergelombang</option>
+                <option value="keriting">Rambut Keriting</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tanda Istimewa</div>
+            <div class="item-input-wrap">
+              <input type="text" name="tanda_istimewa" id="tanda_istimewa">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Alamat KTP*</div>
+            <div class="item-input-wrap">
+              <textarea class="resizable" name="alamat_ktp" id="alamat_ktp" required validate></textarea>
+            </div>
+          </div>
+        </li>
+        <div class="row">
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">RT*</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="alamat_rt_ktp" id="alamat_rt_ktp" required validate>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">RW*</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="alamat_rw_ktp" id="alamat_rw_ktp" required validate>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Provinsi*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="provinsi_ktp" id="provinsi_ktp">
+                <option value="">- Pilih Provinsi -</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kabupaten*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kabupaten_ktp" id="kabupaten_ktp">
+                <option value="">- Pilih Kabupaten -</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kecamatan*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kecamatan_ktp" id="kecamatan_ktp">
+                <option value="">- Pilih Kecamatan -</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Desa/Kelurahan*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kelurahan_ktp" id="kelurahan_ktp">
+                <option value="">- Pilih Kelurahan -</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li>
+          <label class="item-checkbox item-content">
+            <input type="checkbox" id="alamat_sama"/>
+            <i class="icon icon-checkbox" style="margin-right: 12px"></i>
+            <div class="item-inner">
+              <div class="item-title">Alamat saat ini sama dengan KTP?</div>
+            </div>
+          </label>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Alamat Sekarang*</div>
+            <div class="item-input-wrap">
+              <textarea class="resizable" name="alamat_sekarang" id="alamat_sekarang" required validate></textarea>
+            </div>
+          </div>
+        </li>
+        <div class="row">
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">RT*</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="alamat_rt_sekarang" id="alamat_rt_sekarang" required validate>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">RW*</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="alamat_rw_sekarang" id="alamat_rw_sekarang" required validate>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Provinsi*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="provinsi_sekarang" id="provinsi_sekarang">
+                <option value="">- Pilih Provinsi -</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kabupaten*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kabupaten_sekarang" id="kabupaten_sekarang">
+                <option value="">- Pilih Kabupaten -</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kecamatan*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kecamatan_sekarang" id="kecamatan_sekarang">
+                <option value="">- Pilih Kecamatan -</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Desa/Kelurahan*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kelurahan_sekarang" id="kelurahan_sekarang">
+                <option value="">- Pilih Kelurahan -</option>
+              </select>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>

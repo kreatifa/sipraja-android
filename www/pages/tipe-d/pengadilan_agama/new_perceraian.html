@@ -1,0 +1,914 @@
+<div class="page" data-class="new_perceraian">
+  <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Perceraian</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="new_perceraian" style="margin: 16px 0;">
+      <div class="block-title" style="margin-top: 16px; margin-bottom: 8px;">
+        <div class="chip color-blue" style="width: 100%">
+          <div class="chip-label">Data Penggugat</div>
+        </div>
+      </div>
+      <ul>
+        <div class="chip color-green" style="margin-left: 16px">
+          <div class="chip-label">Data Keluarga</div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">NIK Kepala Keluarga*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nik_kepala_kk_penggugat" id="nik_kepala_kk_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Kepala Keluarga*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="kepala_kk_penggugat" id="kepala_kk_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Alamat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="alamat_kk_penggugat" id="alamat_kk_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <div class="row">
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">RT*</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="rt_penggugat" id="rt_penggugat" required validate>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">RW*</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="rw_penggugat" id="rw_penggugat" required validate>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kode Pos*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="kodepos_kk_penggugat" id="kodepos_kk_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Dusun*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="dusun_penggugat" id="dusun_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">No Telp*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="telepon_kk_penggugat" id="telepon_kk_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+
+        <div class="chip color-green" style="margin-left: 16px">
+          <div class="chip-label">Data Individu</div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">NIK Penggugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nik_penggugat" id="nik_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">No KK Penggugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="no_kk_penggugat" id="no_kk_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Penggugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nama_penggugat" id="nama_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Jenis Kelamin*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="jenis_kelamin_penggugat" id="jenis_kelamin_penggugat">
+                <option value="Laki-Laki">Laki - Laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tempat Lahir Penggugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="tempat_lahir_penggugat" id="tempat_lahir_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tanggal Lahir Penggugat*</div>
+            <div class="item-input-wrap">
+              <input type="date" name="tanggal_lahir_penggugat" id="tanggal_lahir_penggugat" autocomplete="off" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Alamat Penggugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="alamat_penggugat" id="alamat_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kota Penggugat*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kota_penggugat" id="kota_penggugat">
+                <option value="SIDOARJO">SIDOARJO</option>
+                <option value="LUAR SIDOARJO">LUAR SIDOARJO</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kecamatan*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kecamatan" id="kecamatan">
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kelurahan*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kelurahan" id="kelurahan">
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Email Pelapor*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="email_pelapor" id="email_pelapor" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">No Telp Penggugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="no_telp_penggugat" id="no_telp_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">No Paspor</div>
+            <div class="item-input-wrap">
+              <input type="text" name="no_paspor_penggugat" id="no_paspor_penggugat">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tanggal Berakhir Paspor</div>
+            <div class="item-input-wrap">
+              <input type="date" name="tgl_berakhir_paspor_penggugat" id="tgl_berakhir_paspor_penggugat" autocomplete="off">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Gol. Darah</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="gol_darah_penggugat" id="gol_darah_penggugat">
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Jam Kelahiran</div>
+            <div class="item-input-wrap">
+              <input type="text" name="jam_kelahiran_penggugat" id="jam_kelahiran_penggugat" class="bs-timepicker">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">No Akta Kelahiran*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="no_akta_lahir_penggugat" id="no_akta_lahir_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <div class="row">
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Agama</div>
+                <div class="item-input-wrap input-dropdown-wrap">
+                  <select name="agama_penggugat" id="agama_penggugat">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katholik">Katholik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Konghucu">Konghucu</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">SHBKEL</div>
+                <div class="item-input-wrap input-dropdown-wrap">
+                  <select name="hubungan_kel_penggugat" id="hubungan_kel_penggugat">
+                  </select>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Kelainan Fisik dan Mental</div>
+                <div class="item-input-wrap input-dropdown-wrap">
+                  <select name="kelainan_penggugat" id="kelainan_penggugat">
+                  </select>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Penyandang Cacat</div>
+                <div class="item-input-wrap input-dropdown-wrap">
+                  <select name="penyandang_cacat_penggugat" id="penyandang_cacat_penggugat">
+                  </select>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Pendidikan Terakhir</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="pendidikan_terakhir_penggugat" id="pendidikan_terakhir_penggugat">
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Pekerjaan</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="jenis_pekerjaan_penggugat" id="jenis_pekerjaan_penggugat">
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <div class="chip color-green" style="margin-left: 16px">
+          <div class="chip-label">Data Orang Tua</div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">NIK Ibu*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nik_ibu_penggugat" id="nik_ibu_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Lengkap Ibu*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nama_ibu_penggugat" id="nama_ibu_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">NIK Ayah*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nik_ayah_penggugat" id="nik_ayah_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Lengkap Ayah*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nama_ayah_penggugat" id="nama_ayah_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+
+        <div class="chip color-green" style="margin-left: 16px">
+          <div class="chip-label">Data Administrasi</div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Ketua RT*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="ketua_rt_penggugat" id="ketua_rt_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Ketua RW*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="ketua_rw_penggugat" id="ketua_rw_penggugat" required validate>
+            </div>
+          </div>
+        </li>
+
+        <div class="chip color-green" style="margin-left: 16px">
+          <div class="chip-label">Catatan</div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Catatan Tambahan</div>
+            <div class="item-input-wrap">
+              <textarea class="resizable" name="keterangan_penggugat" id="keterangan_penggugat" placeholder="Catatan tambahan untuk pengajuan"></textarea>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title" style="margin-bottom: 8px;">
+        <div class="chip color-blue" style="width: 100%">
+          <div class="chip-label">Data Tergugat</div>
+        </div>
+      </div>
+      <ul>
+        <div class="chip color-green" style="margin-left: 16px">
+          <div class="chip-label">Data Keluarga</div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">NIK Kepala Keluarga*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nik_kepala_kk_tergugat" id="nik_kepala_kk_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Kepala Keluarga*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="kepala_kk_tergugat" id="kepala_kk_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Alamat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="alamat_kk_tergugat" id="alamat_kk_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <div class="row">
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">RT*</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="rt_tergugat" id="rt_tergugat" required validate>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">RW*</div>
+                <div class="item-input-wrap">
+                  <input type="text" name="rw_tergugat" id="rw_tergugat" required validate>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kode Pos*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="kodepos_kk_tergugat" id="kodepos_kk_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Dusun*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="dusun_tergugat" id="dusun_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">No Telp*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="telepon_kk_tergugat" id="telepon_kk_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+
+        <div class="chip color-green" style="margin-left: 16px">
+          <div class="chip-label">Data Individu</div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">NIK Tergugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nik_tergugat" id="nik_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">No KK Penggugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="no_kk_tergugat" id="no_kk_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Tergugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nama_tergugat" id="nama_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Jenis Kelamin*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="jenis_kelamin_tergugat" id="jenis_kelamin_tergugat">
+                <option value="Laki-Laki">Laki - Laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tempat Lahir Tergugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="tempat_lahir_tergugat" id="tempat_lahir_tergugat">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tanggal Lahir Tergugat*</div>
+            <div class="item-input-wrap">
+              <input type="date" name="tanggal_lahir_tergugat" id="tanggal_lahir_tergugat" autocomplete="off" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Alamat Tergugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="alamat_tergugat" id="alamat_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kota Tergugat*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kota_tergugat" id="kota_tergugat">
+                <option value="SIDOARJO">SIDOARJO</option>
+                <option value="LUAR SIDOARJO">LUAR SIDOARJO</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kecamatan*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kecamatan_tergugat" id="kecamatan_tergugat">
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Kelurahan*</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="kelurahan_tergugat" id="kelurahan_tergugat">
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Email Tergugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="email_tergugat" id="email_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">No Telp Tergugat*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="no_telp_tergugat" id="no_telp_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">No Paspor</div>
+            <div class="item-input-wrap">
+              <input type="text" name="no_paspor_tergugat" id="no_paspor_tergugat">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tanggal Berakhir Paspor</div>
+            <div class="item-input-wrap">
+              <input type="date" name="tgl_berakhir_paspor_tergugat" id="tgl_berakhir_paspor_tergugat" autocomplete="off">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Gol. Darah</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="gol_darah_tergugat" id="gol_darah_tergugat">
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Jam Kelahiran</div>
+            <div class="item-input-wrap">
+              <input type="text" name="jam_kelahiran_tergugat" id="jam_kelahiran_tergugat" class="bs-timepicker">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">No Akta Kelahiran*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="no_akta_lahir_tergugat" id="no_akta_lahir_tergugat">
+            </div>
+          </div>
+        </li>
+        <div class="row">
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Agama</div>
+                <div class="item-input-wrap input-dropdown-wrap">
+                  <select name="agama_tergugat" id="agama_tergugat">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katholik">Katholik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Konghucu">Konghucu</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">SHBKEL</div>
+                <div class="item-input-wrap input-dropdown-wrap">
+                  <select name="hubungan_kel_tergugat" id="hubungan_kel_tergugat">
+                  </select>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Kelainan Fisik dan Mental</div>
+                <div class="item-input-wrap input-dropdown-wrap">
+                  <select name="kelainan_tergugat" id="kelainan_tergugat">
+                  </select>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="col-50">
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Penyandang Cacat</div>
+                <div class="item-input-wrap input-dropdown-wrap">
+                  <select name="penyandang_cacat_tergugat" id="penyandang_cacat_tergugat">
+                  </select>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Pendidikan Terakhir</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="pendidikan_terakhir_tergugat" id="pendidikan_terakhir_tergugat">
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Pekerjaan</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="jenis_pekerjaan_tergugat" id="jenis_pekerjaan_tergugat">
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <div class="chip color-green" style="margin-left: 16px">
+          <div class="chip-label">Data Orang Tua</div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">NIK Ibu*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nik_ibu_tergugat" id="nik_ibu_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Lengkap Ibu*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nama_ibu_tergugat" id="nama_ibu_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">NIK Ayah*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nik_ayah_tergugat" id="nik_ayah_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Lengkap Ayah*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nama_ayah_tergugat" id="nama_ayah_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+
+        <div class="chip color-green" style="margin-left: 16px">
+          <div class="chip-label">Data Administrasi</div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Ketua RT*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="ketua_rt_tergugat" id="ketua_rt_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Ketua RW*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="ketua_rw_tergugat" id="ketua_rw_tergugat" required validate>
+            </div>
+          </div>
+        </li>
+
+        <div class="chip color-green" style="margin-left: 16px">
+          <div class="chip-label">Catatan</div>
+        </div>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Catatan Tambahan</div>
+            <div class="item-input-wrap">
+              <textarea class="resizable" name="keterangan_tergugat" id="keterangan_tergugat" placeholder="Catatan tambahan untuk pengajuan"></textarea>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title" style="margin-bottom: 8px;">
+        <div class="chip color-blue" style="width: 100%">
+          <div class="chip-label">Data Perceraian</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Yang Mengajukan Cerai</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="yang_mengajukan_cerai" id="yang_mengajukan_cerai">
+                <option value="Suami">Suami</option>
+                <option value="Istri">Istri</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nomor Akta Perkawinan*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nomor_akta_nikah" id="nomor_akta_nikah" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tanggal Pencatatan Perkawinan*</div>
+            <div class="item-input-wrap">
+              <input type="date" name="tanggal_akta_nikah" id="tanggal_akta_nikah" autocomplete="off" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tempat Pencatatan Perkawinan*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="keterangan_kua" id="keterangan_kua" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nama Lembaga Peradilan yang Menerbitkan Putusan Perceraian</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nama_lembaga_yang_menerbitkan" id="nama_lembaga_yang_menerbitkan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Sebab Perceraian</div>
+            <div class="item-input-wrap input-dropdown-wrap">
+              <select name="sebab_perceraian" id="sebab_perceraian">
+                <option value="Berbuat Zina">Berbuat Zina</option>
+                <option value="Pemabuk/Pemadat">Pemabuk/Pemadat</option>
+                <option value="Penjudi">Penjudi</option>
+                <option value="Meninggalkan pasangan lebih 2 thn tanpa izin/alasan yang sah">Meninggalkan pasangan lebih 2 thn tanpa izin/alasan yang sah</option>
+                <option value="Hukuman penjara diatas 5 thn atau lebih berat">Hukuman penjara diatas 5 thn atau lebih berat</option>
+                <option value="Melakukan kekejaman">Melakukan kekejaman</option>
+                <option value="Mendapat cacat badan/penyakit">Mendapat cacat badan/penyakit</option>
+                <option value="Perselisihan/pertengkaran terus menerus">Perselisihan/pertengkaran terus menerus</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tanggal Melapor*</div>
+            <div class="item-input-wrap">
+              <input type="date" name="tanggal_buat" id="tanggal_buat" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Nomor Akta Cerai*</div>
+            <div class="item-input-wrap">
+              <input type="text" name="nomor_akta_cerai" id="nomor_akta_cerai" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Tanggal Akta Cerai*</div>
+            <div class="item-input-wrap">
+              <input type="date" name="tanggal_akta_cerai" id="tanggal_akta_cerai" autocomplete="off" required validate>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title" style="margin-bottom: 8px;">
+        <div class="chip color-blue" style="width: 100%">
+          <div class="chip-label">Keterangan</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Catatan Tambahan</div>
+            <div class="item-input-wrap">
+              <textarea class="resizable" name="keterangan_tambahan" id="keterangan_tambahan" placeholder="Catatan tambahan untuk pengajuan"></textarea>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title" style="margin-bottom: 8px;">
+        <div class="chip color-blue" style="width: 100%">
+          <div class="chip-label">Lampiran</div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul id="formupload-wrapper-list"></ul>
+      </div>
+
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">Syarat & Ketentuan Lampiran</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul>
+                <li>1. Akta Perkawinan
+                  <hr>
+                </li>
+                <li>2. Surat Pengantar dari Pengadilan
+                  <hr>
+                </li>
+                <li>3. KK yang bersangkutan
+                  <hr>
+                </li>
+                <li>4. KTP yang bersangkutan
+                  <hr>
+                </li>
+                <li>5. Pas Foto terbaru
+                  <hr>
+                </li>
+                <li>6. SKTT (untuk orang asing)
+                  <hr>
+                </li>
+                <li>7. Paspor (untuk orang asing)
+                  <hr>
+                </li>
+                <li>8. Lain-lain 1
+                  <hr>
+                </li>
+                <li>9. Lain-lain 2
+                  <hr>
+                </li>
+                <li>10. Lain-lain 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

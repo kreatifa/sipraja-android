@@ -1,0 +1,190 @@
+<div class="page">
+  <div class="navbar no-shadow">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="/saldo_sipraja/index" data-force="true" data-ignore-cache="true" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Detail Transaksi</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="bg-color-blue" style="padding: 60px 0;">
+    </div>
+    <div class="card" style="margin: 0 20px; margin-top: -100px">
+      <div class="card-content card-content-padding">
+        <center>
+          <div id="nominal" style="font-size: 18px">Rp. <span style="font-size: 26px; font-weight: bold;">1.000.000</span></div>
+          <div id="status_transaksi" style="margin: 10px 0;"></div>
+          <div id="tgl_buat">Waktu Transaksi : <span></span></div>
+        </center>
+      </div>
+    </div>
+
+    <div class="card" style="margin: 20px">
+      <div class="card-content">
+        <div class="list accordion-list">
+          <ul>
+            <li class="accordion-item" id="form_pembelian" style="display: none;">
+              <a href="#" class="item-content item-link">
+                <div class="item-inner">
+                  <div class="item-title">DETAIL TRANSAKSI</div>
+                  <div class="item-after">Lihat</div>
+                </div>
+              </a>
+              <div class="accordion-item-content">
+                <div class="list no-hairlines-md">
+                  <ul>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">No. Transaksi</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="no_transaksi" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">No. Referensi</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="no_referensi" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input" id="telp" style="display: none;">
+                      <div class="item-inner">
+                        <div class="item-title item-label">No. Telepon / ID Pelanggan</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="ket_telp" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input" id="jenis_transaksi" style="display: none">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Jenis Transaksi</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="ket_jenis_transaksi" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input" id="nama_produk" style="display: none">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Nama Produk</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="ket_nama_produk" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Metode Pembayaran</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="metode_pembayaran" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input" id="kode_token_listrik" style="display: none;">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Kode Token Listrik</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="ket_kode_token_listrik" disabled>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item" id="form_pembayaran" style="display: none;">
+              <a href="#" class="item-content item-link">
+                <div class="item-inner">
+                  <div class="item-title">DETAIL TRANSAKSI</div>
+                  <div class="item-after">Lihat</div>
+                </div>
+              </a>
+              <div class="accordion-item-content">
+                <div class="list no-hairlines-md">
+                  <ul>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">No. Transaksi</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="no_transaksi" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">No. Referensi</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="no_referensi" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Jenis Transaksi</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="ket_jenis_transaksi" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">ID Pelanggan</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="id_pelanggan" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Nama Pelanggan</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="nama_pelanggan" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Periode</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="periode" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Nominal</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="nominal" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Biaya Admin</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="biaya_admin" disabled>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Metode Pembayaran</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="metode_pembayaran" disabled>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

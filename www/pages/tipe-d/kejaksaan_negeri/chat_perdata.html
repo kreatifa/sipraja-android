@@ -1,0 +1,45 @@
+<div class="page">
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+          <div class="left">
+            <a href="#" class="link back">
+              <i class="icon icon-back"></i>
+              <span class="ios-only">Back</span>
+            </a>
+          </div>
+          <div class="title" id="user-chat-title"></div>
+          <div class="right">
+          </div>
+        </div>
+    </div>
+    <!-- start chat -->
+    <button id="start-consult-perdata" class="link toolbar-inner toolbar toolbar-bottom-md justify-content-center">Minta Konsultasi
+    </button>
+    <!-- toolbar -->
+    <div id="toolbar-chat-perdata" style="display: none;" class="toolbar messagebar" @messagebar:attachmentdelete="deleteAttachment">
+        <div class="toolbar-inner">
+          <div class="messagebar-area">
+            <textarea class="resizable text-input" placeholder="Message"></textarea>
+          </div>
+          <a class="link icon-only demo-send-message-link send">
+            <i style="font-size:24px" class="fas fa-paper-plane"></i>
+            <!-- <i class="icon f7-icons ios-only">arrow_up_fill</i> -->
+            <!-- <i class="icon material-icons md-only">send</i> -->
+          </a>
+        </div>
+        <div class="messagebar-sheet">
+          {{#each images}}
+          <label class="checkbox messagebar-sheet-image" style="background-image:url({{this}})" @change="handleAttachment">
+            <input type="checkbox">
+            <i class="icon icon-checkbox"></i>
+          </label>
+          {{/each}}
+        </div>
+    </div>
+    <!-- chat -->
+    <div id="chat-perdata" class="page-content messages-content">
+      <div class="messages" id="message-perdata">
+      </div>
+    </div>
+</div>

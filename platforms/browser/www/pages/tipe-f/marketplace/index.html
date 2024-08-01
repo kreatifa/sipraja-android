@@ -1,0 +1,160 @@
+<div class="page" data-class="">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left col">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="title">Marketplace</div>
+            <div class="right" style="margin-top: 10px">
+                <a href="/tipe-f/marketplace/keranjang" class="button button-fill color-blue" style="height: 45px">
+                    <i class="icon f7-icons" style="margin-top: 10px">cart_fill</i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="col" style="width: calc(100% - 4px) !important;">
+            <form class="searchbar">
+                <div class="searchbar-inner">
+                    <div class="searchbar-input-wrap">
+                        <input type="search" placeholder="Pencarian Produk / Toko" name="pencarian_produk"
+                            id="pencarian_produk" style="font-size: 15px">
+                        <i class="searchbar-icon"></i>
+                        <!-- <span class="input-clear-button"></span> -->
+                    </div>
+                </div>
+            </form>
+            <div class="col search-results" id="search-results" style="display: none;">
+            </div>
+        </div>
+        <div class="float-right">
+            <a href="/tipe-f/seller_marketplace" class="button button-fill">
+                Toko
+            </a>
+        </div>
+        <div class="block">
+            <div class="block-title">Top Up & Tagihan</div>
+            <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="10" data-slides-per-view="3"
+                class="swiper-container swiper-init demo-swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a class="link" href="/tipe-e/pulsa">
+                            <center>
+                                <div class="card">
+                                    <div class="card-content card-content-padding" style="padding: 8px">
+                                        <img src="images/tipe_e/pulsa.png" width="75%" style="aspect-ratio: 1/1;">
+                                    </div>
+                                </div>
+                                <h5>Pulsa</h5>
+                            </center>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="link" href="/tipe-e/paket_data">
+                            <center>
+                                <div class="card">
+                                    <div class="card-content card-content-padding" style="padding: 8px">
+                                        <img src="images/tipe_e/paket_data.png" width="75%" style="aspect-ratio: 1/1;">
+                                    </div>
+                                </div>
+                                <h5>Paket Data</h5>
+                            </center>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="link" href="/tipe-e/token_listrik">
+                            <center>
+                                <div class="card">
+                                    <div class="card-content card-content-padding" style="padding: 8px">
+                                        <img src="images/tipe_e/token_listrik.png" width="75%"
+                                            style="aspect-ratio: 1/1;">
+                                    </div>
+                                </div>
+                                <h5>Token Listrik</h5>
+                            </center>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="link" href="/tipe-e/paket_telepon_sms">
+                            <center>
+                                <div class="card">
+                                    <div class="card-content card-content-padding" style="padding: 8px">
+                                        <img src="images/tipe_e/tlp_sms.png" width="75%" style="aspect-ratio: 1/1;">
+                                    </div>
+                                </div>
+                                <h5>Paket Telepon dan SMS</h5>
+                            </center>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="link" href="/tipe-e/e_wallet">
+                            <center>
+                                <div class="card">
+                                    <div class="card-content card-content-padding" style="padding: 8px">
+                                        <img src="images/tipe_e/wallet.png" width="75%" style="aspect-ratio: 1/1;">
+                                    </div>
+                                </div>
+                                <h5>E-Wallet</h5>
+                            </center>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="link" href="/tipe-e/listrik_pascabayar">
+                            <center>
+                                <div class="card">
+                                    <div class="card-content card-content-padding" style="padding: 8px">
+                                        <img src="images/tipe_e/pln.png" width="75%" style="aspect-ratio: 1/1;">
+                                    </div>
+                                </div>
+                                <h5>Listrik PLN</h5>
+                            </center>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="link" href="/tipe-e/bpjs">
+                            <center>
+                                <div class="card">
+                                    <div class="card-content card-content-padding" style="padding: 8px">
+                                        <img src="images/tipe_e/bpjs.png" width="74%" style="aspect-ratio: 1/1;">
+                                    </div>
+                                </div>
+                                <h5>BPJS</h5>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" style="background-color: #3EA8ED; color: white; font-size: small;">Kategori
+                    Produk
+                </div>
+                <div class="block">
+                    <div class="kategori_produk" id="kategori_produk" style="display: none;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" style="background-color: #3EA8ED; color: white;">
+                    <div class="col">
+                        <p style="font-size: small;">Produk Rekomendasi</p>
+                    </div>
+                    <div class="col">
+                        <div class="float-right">
+                            <a href="/tipe-f/seller_marketplace/all_produk"
+                                style="color: white; font-size: small;">Lihat Semua</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="rekomendasi-result" id="rekomendasi-result" style="display: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

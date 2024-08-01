@@ -1,0 +1,175 @@
+<div class="page" data-class="new_layanan">
+  <div class="savebutton toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form SK TIDAK MAMPU</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="new_sk_tidak_mampu">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemohon</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK</div>
+              <input required validate type="text" readonly="readonly" name="nik_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama</div>
+              <input required validate type="text" readonly="readonly" name="nama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <input required validate type="text" readonly="readonly" name="alamat_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan</div>
+              <input required validate type="text" readonly="readonly" name="kecamatan_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan</div>
+              <input required validate type="text" readonly="readonly" name="kelurahan_pemohon">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pendukung</div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Jenis Surat</div>
+              <div class="item-input-wrap">
+                <select name="jenis_surat" id="jenis_surat">
+                  <option value="rs">SKTM Rumah Sakit</option>
+                  <option value="sekolah">SKTM Sekolah</option>
+                  <option value="kis">Pengajuan KIS</option>
+                  <option value="lain">Lain-Lain</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Nama Pemohon (Penandatangan)</div>
+              <div class="item-input-wrap">
+                <input required validate  type="text" name="nama_ortu">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Pekerjaan</div>
+              <div class="item-input-wrap">
+                <input required validate  type="text" name="pekerjaan">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="sekolahgroup">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Tujuan</div>
+              <div class="item-input-wrap">
+                <input required validate  type="text" name="tujuan">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="sekolahgroup">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Alamat</div>
+              <div class="item-input-wrap">
+                <input required validate  type="text" name="alamat">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <img src="" id="myImage" height="auto" width="100%">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+          <div class="col-50">
+            <a class="button button-round button-fill color-green" id="addformupload" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>New document</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul class="form-item-wrapper" id="formupload-wrapper-list" data-form-item-wrapper=""></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header">Syarat & Ketentuan Lampiran</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul style="padding-left: 0;">
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Surat pengantar RT/RW (TTD & Stempel)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">2. Surat pernyataan tidak mampu bermaterai ( form bisa didownload <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/SURAT-PERNYATAAN.pdf', '_system');" class="link external">di sini</a>)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">3. Foto Asli KK dan KTP pemohon surat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">4. Berkas 1 sampai 3 diupload ke lampiran sipraja</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">5. Berkas asli nomor 1 sampai 3dibawah  saat pengambilan surat di desa setempat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">6. Surat Kuasa jika pengambilan berkas dikuasakan ke orang lain</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

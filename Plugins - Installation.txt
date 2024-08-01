@@ -1,0 +1,47 @@
+cordova platform rm android
+cordova platform rm browser
+
+cordova plugin rm cordova-plugin-camera
+cordova plugin rm cordova-plugin-file-transfer
+cordova plugin rm cordova-plugin-file
+cordova plugin rm cordova-plugin-downloader
+cordova plugin rm cordova-plugin-zip
+cordova plugin rm cordova-plugin-qrscanner
+cordova plugin rm cordova-sqlite-storage
+cordova plugin rm cordova-plugin-inappbrowser
+cordova plugin rm cordova-plugin-whitelist
+cordova plugin rm cordova-plugin-firebasex
+cordova plugin rm cordova-plugin-androidx-adapter
+cordova plugin rm cordova-plugin-androidx
+
+cordova platform list
+cordova plugin list
+
+npm install
+
+cordova plugin add cordova-plugin-androidx
+cordova plugin add cordova-plugin-androidx-adapter
+cordova plugin add cordova-plugin-camera@4.1.0
+cordova plugin add cordova-plugin-file
+cordova plugin add cordova-plugin-file-transfer
+cordova plugin add cordova-plugin-downloader
+cordova plugin add cordova-plugin-qrscanner
+cordova plugin add cordova-sqlite-storage
+cordova plugin add cordova-plugin-inappbrowser@4.1.0
+cordova plugin add cordova-plugin-whitelist
+cordova plugin add cordova-plugin-firebasex@11.0.3
+
+cordova platform add browser
+cordova platform add android
+cordova platform add android@8.1.0
+
+defaultConfig :
+
+        multiDexEnabled true
+buildTypes :
+                minifyEnabled true
+                shrinkResources true
+gradle.properties :
+android.enableR8.fullMode=true
+
+\n(?!\[)

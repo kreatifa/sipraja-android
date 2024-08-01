@@ -1,0 +1,181 @@
+<div class="page" data-class="detail_lowongan">
+  <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="save"><i class="icon f7-icons">checkmark_circle_fill</i> Ajukan Lamaran</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="/tipe-d/disnaker/cek_lowongan/" data-force="true" data-ignore-cache="true" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form Detail Lowongan</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="form_lowongan">
+      <div class="card" id="card_lowongan">
+        <div class="card-header bg-color-green text-color-white"></div>
+        <div class="card-content card-content-padding">
+          <div class="list">
+            <ul>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Nama Perusahaan</div>
+                    <input type="text" id="company_name" name="company_name" readonly>
+                    <input type="hidden" id="id_job_vacancy" name="id_job_vacancy">
+                    <input type="hidden" id="business_field" name="business_field">
+                    <input type="hidden" id="position_name" name="position_name">
+                    <input type="hidden" id="category" name="category">
+                    <input type="hidden" id="sub_category" name="sub_category">
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Nama HRD</div>
+                    <input type="text" id="nama_HRD" readonly>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Provinsi</div>
+                    <input type="text" id="province" readonly>
+                    <input type="hidden" id="province_id" name="province_id">
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Kota/Kabupaten</div>
+                    <input type="text" id="city" readonly>
+                    <input type="hidden" id="city_id" name="city_id">
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Kecamatan</div>
+                    <input type="text" id="district" readonly>
+                    <input type="hidden" id="district_id" name="district_id">
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Desa/Kelurahan</div>
+                    <input type="text" id="sub_district" readonly>
+                    <input type="hidden" id="sub_district_id" name="sub_district_id">
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Alamat</div>
+                    <input type="text" id="address" name="address" readonly>
+                    <input type="hidden" id="company_branch_address" name="company_branch_address">
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Batasan Umur</div>
+                    <input type="text" id="age" readonly>
+                    <input type="hidden" id="age_min" name="age_min">
+                    <input type="hidden" id="age_max" name="age_max">
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Upah</div>
+                    <input type="text" id="salary" readonly>
+                    <input type="hidden" id="salary_from" name="salary_from">
+                    <input type="hidden" id="salary_to" name="salary_to">
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Buka Sampai</div>
+                    <input type="text" id="open" readonly>
+                    <input type="hidden" id="open_until" name="open_until">
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Deskripsi Pekerjaan</div>
+                    <textarea id="description" readonly style="height: 216px !important"></textarea>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Persyaratan</div>
+                    <textarea id="requirement" readonly style="height: 216px !important"></textarea>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="row">
+                      <button type="button" class="col-50 button button-raised button-fill" id="brochure">Lihat Brosur</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="card_requirement">
+        <div class="card-header bg-color-green text-color-white">Requirements</div>
+        <div class="card-content card-content-padding">
+          <div id="input_requirement" class="list">
+            <ul>
+              <li>
+                <a class="item-link smart-select" id="id_kartu_pencari_kerja">
+                  <select name="id_kartu_pencari_kerja">
+                  </select>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title">Pilih AK-I</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <div class="item-title item-label">Keterangan Lamaran</div>
+                    <textarea id="keterangan" name="keterangan"></textarea>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="upload_requirement" class="list">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

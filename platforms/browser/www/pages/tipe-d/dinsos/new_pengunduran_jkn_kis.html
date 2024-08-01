@@ -1,0 +1,175 @@
+<div class="page" data-class="new_pengunduran_jkn_kis">
+  <div class="savebutton toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form Pengunduran Diri JN KIS PBI</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="new_pengunduran_jkn_kis" style="margin: 0 ">
+      <div class="block-title" style="margin-top: 16px">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemohon</div>
+        </div>
+      </div>
+      <input type="hidden" name="id_kec" id="id_kec" readonly validate>
+      <input type="hidden" name="id_kel" id="id_kel" readonly validate>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Pemohon</div>
+              <input required validate type="text" readonly="readonly" name="nik_pemohon" id="nik_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Pemohon</div>
+              <input required validate type="text" readonly="readonly" name="nama_pemohon" id="nama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Lahir</div>
+              <input required validate type="text" readonly="readonly" name="tempat_lahir" id="tempat_lahir">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir</div>
+              <input required validate type="text" readonly="readonly" name="tanggal_lahir" id="tanggal_lahir">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jenis Kelamin</div>
+              <input required validate type="text" readonly="readonly" name="jenis_kelamin" id="jenis_kelamin">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Telepon</div>
+              <input required validate type="text" readonly="readonly" name="telepon" id="telepon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan</div>
+              <input required validate type="text" readonly="readonly" name="kecamatan" id="kecamatan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan</div>
+              <input required validate type="text" readonly="readonly" name="kelurahan" id="kelurahan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email</div>
+              <input required validate type="text" readonly="readonly" name="email" id="email">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <input required validate type="text" readonly="readonly" name="alamat" id="alamat">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pendukung</div>
+        </div>
+      </div>
+      <div class="block-title" style="margin: 0 16px">
+        <div class="row">
+          <div class="col-100">
+            <div class="data-table card" id="anggota_pengunduran_table">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="label-cell"></th>
+                    <th class="label-cell"></th>
+                    <th class="label-cell">Nomor BPJS</th>
+                    <th class="label-cell">NIK</th>
+                    <th class="label-cell">Nama Lengkap</th>
+                    <th class="label-cell">Alamat lengkap</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a class="button button-round button-fill color-green" id="addpengunduranjkn" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>Tambahkan anggota dinon-aktifkan</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="block-title">
+        <div class="row">
+          <div class="col-100">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul class="form-item-wrapper" id="formupload-wrapper-list" data-form-item-wrapper=""></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">Syarat & Ketentuan Lampiran</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul>
+                <li>1. Fotocopy KK</li><hr>
+                <li>2. Fotocopy KTP (semua anggota yang dinon-aktifkan) / KIA</li><hr>
+                <li>
+                  3. Surat Pernyataan Pengunduran Diri<br>
+                  <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/FORM PENGUDNURAN DIRI JKN KIS PBI.docx', '_system');" class="link external">(Download di Sini)</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

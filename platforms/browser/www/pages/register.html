@@ -1,0 +1,325 @@
+<div class="page" data-class="register">
+  <div class="savebutton toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_shield_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form Pendaftaran User</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="register_form">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pengguna</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK*</div>
+              <input type="number" id="nik" name="nik" maxlength="16" required validate>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email*</div>
+              <input type="email" id="email" name="email" required validate>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nomor KK*</div>
+              <input type="number" id="no_kk" name="no_kk" maxlength="16" required validate>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama*</div>
+              <input type="text" id="nama" name="nama" required validate>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Lahir*</div>
+              <input type="text" id="tempat_lahir" name="tempat_lahir" required validate>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir*</div>
+              <input type="date" id="tanggal_lahir" name="tanggal_lahir" autocomplete="off" required validate>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pekerjaan*</div>
+              <input type="text" id="pekerjaan" name="pekerjaan" required validate>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nomor Telepon*</div>
+              <input type="number" id="no_telp_pendaftar" name="no_telp_pendaftar" maxlength="13" required validate>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan*</div>
+              <select id="kecamatan" name="kecamatan" required validate>
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Desa/Kelurahan*</div>
+              <select id="kode_desa" name="kode_desa" required validate>
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat*</div>
+              <textarea id="alamat" name="alamat" required validate></textarea>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap input-dropdown-wrap">
+              <div class="item-title item-label">Jenis Kelamin*</div>
+              <select id="jenis_kelamin" name="jenis_kelamin" required validate>
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Golongan Darah*</div>
+              <select id="gol_dar" name="gol_dar" required validate>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="AB">AB</option>
+                <option value="O">O</option>
+                <option value="Tidak Tahu">Tidak Tahu</option>
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Agama*</div>
+              <select id="agama" name="agama" required validate>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katholik">Katholik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+                <option value="Konghucu">Konghucu</option>
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Status Perkawinan*</div>
+              <select id="status_kawin" name="status_kawin" required validate>
+                <option value="Kawin">Kawin</option>
+                <option value="Belum Kawin">Belum Kawin</option>
+                <option value="Cerai Mati">Cerai Mati</option>
+                <option value="Cerai Hidup">Cerai Hidup</option>
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kewarganegaraan*</div>
+              <select id="kwn" name="kwn" required validate>
+                <option value="WNI">WNI</option>
+                <option value="WNA">WNA</option>
+              </select>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Titik Koordinat Lokasi Tempat Tinggal</div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <input type="hidden" id="lat" name="lat" required validate>
+          <input type="hidden" id="lng" name="lng" required validate>
+          <div id="mapid" style="height: 256px;"></div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Password yg Diinginkan (Min. 8)</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kata Sandi*</div>
+              <input type="number" id="sandi" name="sandi" minlength="8" style="-webkit-text-security: disc;" required validate>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Ulangi Kata Sandi*</div>
+              <input type="number" id="re_sandi" name="re_sandi" minlength="8" style="-webkit-text-security: disc;" required validate>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="block-title">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Data Lampiran</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul class="form-item-wrapper" id="formupload-wrapper-list" data-form-item-wrapper="">
+          <li data-index="1">
+            <ul>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="row">
+                    <div class="col-60">
+                      <div class="item-inner">
+                        <div class="item-input-wrap">
+                          <input id="fileid1" class="fileid" type="hidden" name="fileid[1]">
+                          <input class="filecode" id="filecode1" type="hidden" readonly="" name="filecode[]" placeholder="">
+                          <input class="fileurl" id="fileurl1" type="text" name="fileurl[1]" placeholder="Nama File" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-20 preview_files"></div>
+                    <div class="col-20">
+                      <a id="1" onclick="upload_file_pindah(this.id)" class="button button-round button-fill" style="margin-top: 10px;">
+                        <i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder</i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="row">
+                    <div class="col-100">
+                      <div class="item-inner">
+                        <div class="item-input-wrap">
+                          <input type="text" name="keteranganid[]" value="Foto Asli KTP" readonly>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li data-index="2">
+            <ul>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="row">
+                    <div class="col-60">
+                      <div class="item-inner">
+                        <div class="item-input-wrap">
+                          <input id="fileid2" class="fileid" type="hidden" name="fileid[2]">
+                          <input class="filecode" id="filecode2" type="hidden" readonly="" name="filecode[]" placeholder="">
+                          <input class="fileurl" id="fileurl2" type="text" name="fileurl[2]" placeholder="Nama File" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-20 preview_files"></div>
+                    <div class="col-20">
+                      <a id="2" onclick="upload_file_pindah(this.id)" class="button button-round button-fill" style="margin-top: 10px;">
+                        <i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder</i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="row">
+                    <div class="col-100">
+                      <div class="item-inner">
+                        <div class="item-input-wrap">
+                          <input type="text" name="keteranganid[]" value="Foto Asli KK" readonly>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</div>

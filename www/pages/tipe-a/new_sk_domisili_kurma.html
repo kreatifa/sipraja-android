@@ -1,0 +1,832 @@
+<div class="page">
+  <!-- <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div> -->
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form SK Domisili Kurma</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="new_sk_domisili_kurma">
+      <div>
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemohon</div>
+        </div>
+        <div id="collapsed-1">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">NIK Pemohon</div>
+                  <input type="text" id="nik_pemohon" name="nik_pemohon" disabled>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Nama</div>
+                  <input type="text" id="nama_pemohon" name="nama_pemohon" disabled>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tempat Lahir</div>
+                  <input type="text" id="tempat_lahir_pemohon" name="tempat_lahir_pemohon" disabled>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Tanggal Lahir</div>
+                  <input type="text" id="tanggal_lahir_pemohon" name="tanggal_lahir_pemohon" disabled>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Jenis Kelamin</div>
+                  <input type="text" id="jenis_kelamin_pemohon" name="jenis_kelamin_pemohon" disabled>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Status Kawin</div>
+                  <input type="text" id="status_kawin_pemohon" name="status_kawin_pemohon" disabled>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Pekerjaan</div>
+                  <input type="text" id="pekerjaan_pemohon" name="pekerjaan_pemohon" disabled>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Kecamatan Pemohon</div>
+                  <input type="text" id="kecamatan_pemohon" name="kecamatan_pemohon" disabled>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Kelurahan Pemohon</div>
+                  <input type="text" id="kelurahan_pemohon" name="kelurahan_pemohon" disabled>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <div class="item-title item-label">Alamat Pemohon</div>
+                  <input type="text" id="alamat_pemohon" name="alamat_pemohon" disabled>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <br>
+          <div class="row">
+            <div class="col-50 button button-fill button-small btc-kurma">Lanjut</div>
+          </div>
+          <br>
+        </div>
+      </div>
+      
+      <div>
+        <div class="chip color-blue">
+          <div class="chip-label">Data Kelompok</div>
+        </div>
+        <div class="collapsed-box" id="collapsed-2" style="display: none;">
+          <ul>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Jenis Surat</div>
+                  <div class="item-input-wrap">
+                    <select id="jenis_surat" name="jenis_surat" required validate>
+                      <option value="usaha_kurma">Domisili Usaha Kurma</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Program Kurma</div>
+                  <div class="item-input-wrap">
+                    <select id="jenis_kurma" name="jenis_kurma" required validate>
+                      <option value="kurma_umum">Kurma Umum</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Nama Kelompok</div>
+                  <div class="item-input-wrap">
+                    <input type="text" id="nama_usaha" name="nama_usaha" placeholder="Nama Kelompok" class="reqf" required validate>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Tanggal Pendirian Kelompok</div>
+                  <div class="item-input-wrap">
+                    <input type="date" id="tgl_berdiri" name="tgl_berdiri" class="reqf" autocomplete="off" required validate>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Kecamatan Kelompok</div>
+                  <div class="item-input-wrap">
+                    <select id="kecamatan" name="kecamatan" required validate>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Kelurahan Kelompok</div>
+                  <div class="item-input-wrap">
+                    <select id="kelurahan" name="kelurahan" required validate>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">RT Kelompok</div>
+                  <div class="item-input-wrap">
+                    <input type="text" class="form-numeric reqf" id="rt_kelompok" name="rt_kelompok" minlength="3" maxlength="3" placeholder="RT Kelompok" required validate>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">RW Kelompok</div>
+                  <div class="item-input-wrap">
+                    <input type="text" class="form-numeric reqf" id="rw_kelompok" name="rw_kelompok" minlength="3" maxlength="3" placeholder="RW Kelompok" required validate>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Alamat Kelompok</div>
+                  <div class="item-input-wrap">
+                    <textarea id="alamat_usaha" name="alamat_usaha" class="reqf" placeholder="Alamat Kelompok" required validate></textarea>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="block-header">Data Anggota</div>
+          <div class="block">
+            <div class="row">
+              <div class="col-100">
+                <div class="data-table card" id="anggota_kurma_table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>NIK</th>
+                        <th>KK</th>
+                        <th>Nama</th>
+                        <th>Telepon</th>
+                        <th>Pekerjaan</th>
+                        <th>Kecamatan</th>
+                        <th>Kelurahan</th>
+                        <th>RT</th>
+                        <th>RW</th>
+                        <th>Alamat</th>
+                        <th>Status</th>
+                        <th>Status Janda</th>
+                        <th>Koperasi</th>
+                        <th>PKK</th>
+                        <th>Disabilitas</th>
+                        <th>Provinsi Domisili</th>
+                        <th>Kabupaten Domisili</th>
+                        <th>Kecamatan Domisili</th>
+                        <th>Kelurahan Domisili</th>
+                        <th>RT Domisili</th>
+                        <th>RW Domisili</th>
+                        <th>Alamat Domisili</th>
+                        <th>FC KTP</th>
+                        <th>FC KK</th>
+                        <th>Surat Domisili</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td>Data Kosong</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-100">
+                <a class="button button-round button-fill color-green" id="add_anggota_kurma" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>Tambah Anggota</span></a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-50 button button-fill button-small color-red btcm-kurma">Kembali</div>
+            <div class="col-50 button button-fill button-small btc-kurma">Lanjut</div>
+          </div>
+          <br>
+        </div>
+      </div>
+
+      <div>
+        <div class="chip color-blue" id="data-3">
+          <div class="chip-label">Jenis Usaha <span id="cek-3"></span></div>
+        </div>
+        <div class="collapsed-box" id="collapsed-3" style="display: none;">
+          <ul>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Jenis Usaha</div>
+                  <div class="item-input-wrap">
+                    <select id="jenis_usaha" name="jenis_usaha" required validate>
+    
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Jangkauan Pemasaran</div>
+                  <div class="item-input-wrap">
+                    <select id="jangkauan_pemasaran" name="jangkauan_pemasaran" required validate>
+    
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Lama Usaha Kelompok Berdiri</div>
+                  <div class="item-input-wrap">
+                    <input type="text" id="lama_usaha_berdiri_input" name="lama_usaha_berdiri_input" class="form-numeric bulan" value="1" required validate>
+                  </div>
+                </div>
+                <div class="item-media">
+                  BULAN
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Modal Usaha</div>
+                  <div class="item-input-wrap">
+                    <input type="text" id="modal_usaha_input" name="modal_usaha_input" class="form-numeric reqf" value="0" required validate>
+                  </div>
+                </div>
+                <div class="item-media">
+                  RUPIAH
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Pejualan</div>
+                  <div class="item-input-wrap">
+                    <input type="text" id="penjualan_bulanan_input" name="penjualan_bulanan_input" class="form-numeric reqf" value="0" required validate>
+                  </div>
+                </div>
+                <div class="item-media">
+                  RUPIAH
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Laba / Keuntungan</div>
+                  <div class="item-input-wrap">
+                    <input type="text" id="laba_usaha_saat_ini_input" name="laba_usaha_saat_ini_input" class="form-numeric reqf" value="0" required validate>
+                  </div>
+                </div>
+                <div class="item-media">
+                  RUPIAH
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Uraikan Dengan Detail Alasan Mengikuti Program</div>
+                  <div class="item-input-wrap">
+                    <textarea id="alasan" name="alasan" class="reqf" required validate></textarea>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="block block-strong">
+                <p>
+                  <label class="checkbox">
+                    <input type="checkbox" name="data3" value="0"><i class="icon-checkbox"></i>
+                  </label> Silahkan centang jika data sudah benar.</p>
+              </div>
+            </li>
+          </ul>
+          <br>
+          <div class="row">
+            <div class="col-50 button button-fill button-small color-red btcm-kurma">Kembali</div>
+            <div class="col-50 button button-fill button-small btc-kurma" data-index="3" data-target="0">Lanjut</div>
+          </div>
+          <br>
+        </div>
+      </div>
+      
+      <div>
+        <div class="chip color-blue" id="data-4">
+          <div class="chip-label">Form Rencana Pembelanjaan Modal Usaha <span id="cek-4"></span></div>
+        </div>
+        <div class="collapsed-box" id="collapsed-4" style="display: none;">
+          <div class="block">
+            <div class="row">
+              <div class="col-100">
+                <div class="data-table card" id="rencana_belanja_table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th colspan="4">Rencana Pembelanjaan Modal Usaha</th>
+                      </tr>
+                      <tr>
+                        <th>No</th>
+                        <th id="aspek_usaha">Aspek/Kriteria</th>
+                        <th colspan="2">Uraian Isian</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td rowspan="2">1</td>
+                        <td>Modal usaha yang dibutuhkan untuk mengembangkan usahanya</td>
+                        <td colspan="2">
+                          <div class="row">
+                            <div class="col-75">
+                              <input type="text" class="form-numeric reqf" id="modal_dibutuhkan" name="modal_dibutuhkan" placeholder="Modal Usaha Dibutuhkan" value="0" required validate>
+                            </div>
+                            <div class="col-25">
+                              <div class="item-media">
+                                RUPIAH
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Modal usaha yang telah tersedia/dimiliki kelompok</td>
+                        <td colspan="2">
+                          <div class="row">
+                            <div class="col-75">
+                              <input type="text" class="form-numeric reqf" id="modal_dimiliki" name="modal_dimiliki" placeholder="Modal Usaha Tersedia" value="0" required validate>
+                            </div>
+                            <div class="col-25">
+                              <div class="item-media">
+                                RUPIAH
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6">2</td>
+                        <td rowspan="6">Alokasi Penggunaan Penghargaan Modal dalam mendukung usaha</td>
+                      </tr>
+                      <tr>
+                        <th>Alokasi</th>
+                        <th id="rincian_usaha">Rincian Pengadaan</th>
+                      </tr>
+                      <tr>
+                        <td>Biaya Produksi</td>
+                        <td>
+                          <div class="row">
+                            <div class="col-75">
+                              <input type="text" class="form-numeric reqf" id="produksi" name="produksi" placeholder="Modal Usaha Tersedia" value="0" required validate>
+                            </div>
+                            <div class="col-25">
+                              <div class="item-media">
+                                RUPIAH
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Biaya Operasional</td>
+                        <td>
+                          <div class="row">
+                            <div class="col-75">
+                              <input type="text" class="form-numeric reqf" id="operasional" name="operasional" placeholder="Modal Usaha Tersedia" value="0" required validate>
+                            </div>
+                            <div class="col-25">
+                              <div class="item-media">
+                                RUPIAH
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Biaya Penunjang</td>
+                        <td>
+                          <div class="row">
+                            <div class="col-75">
+                              <input type="text" class="form-numeric reqf" id="penunjang" name="penunjang" placeholder="Modal Usaha Tersedia" value="0" required validate>
+                            </div>
+                            <div class="col-25">
+                              <div class="item-media">
+                                RUPIAH
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Biaya Lainnya</td>
+                        <td>
+                          <div class="row">
+                            <div class="col-75">
+                              <input type="text" class="form-numeric reqf" id="lainya" name="lainya" placeholder="Modal Usaha Tersedia" value="0" required validate>
+                            </div>
+                            <div class="col-25">
+                              <div class="item-media">
+                                RUPIAH
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <thead>
+                      <tr>
+                        <th colspan="4">Proyeksi Keuntungan</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td rowspan="3">3</td>
+                        <td rowspan="3">Keuntungan saat ini</td>
+                      </tr>
+                      <tr>
+                        <td>Penjualan</td>
+                        <td>
+                          <div class="row">
+                            <div class="col-75">
+                              <input type="text" class="form-numeric reqf" id="penjualan" name="penjualan" placeholder="Penjualan per Bulan" value="0" required validate>
+                            </div>
+                            <div class="col-25">
+                              <div class="item-media">
+                                RUPIAH
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Biaya</td>
+                        <td>
+                          <div class="row">
+                            <div class="col-75">
+                              <input type="text" class="form-numeric reqf" id="biaya" name="biaya" placeholder="Pembiayaan per Bulan" value="0" required validate>
+                            </div>
+                            <div class="col-25">
+                              <div class="item-media">
+                                RUPIAH
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Keuntungan yang Diharapkan</td>
+                        <td colspan="2">
+                          <div class="row">
+                            <div class="col-75">
+                              <input type="text" class="form-numeric reqf" id="keuntungan_diharapkan" name="keuntungan_diharapkan" placeholder="Keuntungan yang Diharapkan per Bulan" value="0" required validate>
+                            </div>
+                            <div class="col-25">
+                              <div class="item-media">
+                                RUPIAH
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-100">
+                <div class="block block-strong">
+                  <p>
+                    <label class="checkbox">
+                      <input type="checkbox" name="data4" value="0"><i class="icon-checkbox"></i>
+                    </label> Silahkan centang jika data sudah benar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-50 button button-fill button-small color-red btcm-kurma">Kembali</div>
+            <div class="col-50 button button-fill button-small btc-kurma" data-index="4" data-target="0">Lanjut</div>
+          </div>
+          <br>
+        </div>
+      </div>
+
+      <div>
+        <div class="chip color-blue" id="data-5">
+          <div class="chip-label">Formulir Rencana Usaha <span id="cek-5"></span></div>
+        </div>
+        <div class="collapsed-box" id="collapsed-5" style="display: none;">
+          <div class="block">
+            <div class="row">
+              <div class="col-100">
+                <div class="data-table card" id="rencana_usaha_table">
+                  <table>
+                    <thead>
+                      <th>No</th>
+                      <th>Instrumen Perencanaan</th>
+                      <th id="uraian_usaha">Uraian</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Deskripsi Usaha</td>
+                        <td><textarea class="form-rencana-usaha reqf" id="deskripsi_usaha" name="deskripsi_usaha" maxlength="333" placeholder="Deskripsi Usaha" required validate></textarea></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Analisa Pesaing</td>
+                        <td><textarea class="form-rencana-usaha reqf" id="analisa_pesaing" name="analisa_pesaing" maxlength="333" placeholder="Analisa Pesaing" required validate></textarea></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Strategi Pemasaran</td>
+                        <td><textarea class="form-rencana-usaha reqf" id="strategi_pemasaran" name="strategi_pemasaran" maxlength="333" placeholder="Strategi Pemasaran" required validate></textarea></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Rencana Pengembangan</td>
+                        <td><textarea class="form-rencana-usaha reqf" id="rencana_pengembangan" name="rencana_pengembangan" maxlength="333" placeholder="Rencana Pengembangan" required validate></textarea></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-100">
+                <div class="block block-strong">
+                  <p>
+                    <label class="checkbox">
+                      <input type="checkbox" name="data5" value="0"><i class="icon-checkbox"></i>
+                    </label> Silahkan centang jika data sudah benar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-50 button button-fill button-small color-red btcm-kurma">Kembali</div>
+            <div class="col-50 button button-fill button-small btc-kurma" data-index="5" data-target="0">Lanjut</div>
+          </div>
+          <br>
+        </div>
+      </div>
+      
+      <div>
+        <div class="chip color-blue">
+          <div class="chip-label">Lampiran</div>
+        </div>
+        <div class="collapsed-box" id="collapsed-6" style="display: none;">
+          <div id="formupload-wrapper">
+            <ul id="formupload-wrapper-list">
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="row">
+                    <div class="col-60">
+                      <div class="item-inner">
+                        <div class="item-input-wrap">
+                          <div class="item-title item-label">Foto Produk</div>
+                          <input type="hidden" id="file_id_foto_produk" name="file_id_foto_produk">
+                          <input type="hidden" class="file_code" id="file_code_foto_produk" name="file_code_foto_produk">
+                          <input type="hidden" class="file_desc" id="file_desc_foto_produk" name="file_desc_foto_produk" value="Foto Produk">
+                          <input type="text" id="file_url_foto_produk" name="file_url_foto_produk" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-20 preview_file_foto_produk">
+                    </div>
+                    <div class="col-20">
+                      <a id="foto_produk" onClick="upload_file_kurma(this.id)" class="button button-round button-fill" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder_fill</i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="row">
+                    <div class="col-60">
+                      <div class="item-inner">
+                        <div class="item-input-wrap">
+                          <div class="item-title item-label">Foto Produksi</div>
+                          <input type="hidden" id="file_id_foto_produksi" name="file_id_foto_produksi">
+                          <input type="hidden" class="file_code" id="file_code_foto_produksi" name="file_code_foto_produksi">
+                          <input type="hidden" class="file_desc" id="file_desc_foto_produksi" name="file_desc_foto_produksi" value="Foto Produksi">
+                          <input type="text" id="file_url_foto_produksi" name="file_url_foto_produksi" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-20 preview_file_foto_produksi">
+                    </div>
+                    <div class="col-20">
+                      <a id="foto_produksi" onClick="upload_file_kurma(this.id)" class="button button-round button-fill" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder_fill</i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="row">
+                    <div class="col-60">
+                      <div class="item-inner">
+                        <div class="item-input-wrap">
+                          <div class="item-title item-label">Foto SPTM</div>
+                          <input type="hidden" id="file_id_foto_sptm" name="file_id_foto_sptm">
+                          <input type="hidden" class="file_code" id="file_code_foto_sptm" name="file_code_foto_sptm">
+                          <input type="hidden" class="file_desc" id="file_desc_foto_sptm" name="file_desc_foto_sptm" value="Foto SPTM">
+                          <input type="text" id="file_url_foto_sptm" name="file_url_foto_sptm" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-20 preview_file_foto_sptm">
+                    </div>
+                    <div class="col-20">
+                      <a id="foto_sptm" onClick="upload_file_kurma(this.id)" class="button button-round button-fill" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder_fill</i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-100">
+              <div class="block block-strong" style="background-color: red; color: white;">
+                <p>
+                  <label class="checkbox">
+                    <input type="checkbox" name="disclaimer" value="0"><i class="icon-checkbox"></i>
+                  </label> Pernyataan : Dengan ini menyatakan yang sebenarnya bahwa data/dokumen/informasi yang kami inputkan sesuai dengan ketentuan dan persyaratan yang ada tanpa menyembunyikan data dan fakta yang sebenarnya. Dan kami siap mempertanggung jawabkan apabila kemudian hari ditemukan ketidaksesuaian data/dokumen/informasi baik disengaja dan tidak disengaja kami bersedia bertanggung jawab sesuai dengan ketentuan hukum yang berlaku.
+                </p>
+              </div>
+            </div>
+            <div class="col-50 button button-fill button-small color-red btcm-kurma">Kembali</div>
+            <a class="col-50 button button-fill button-small color-green" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+          </div>
+          <br>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">Syarat & Ketentuan Kurma</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul>
+                <li>1. Anggota kelompok sudah harus terdaftar dalam Aplikasi SIPRAJA
+                  <hr>
+                </li>
+                <li>2. Usaha telah dilakukan oleh perempuan berbasis kelompok dengan keanggotaan paling sedikit 5 (lima) orang dan paling banyak 10 (sepuluh) orang, tidak berada pada satu keluarga yang sama
+                  <hr>
+                </li>
+                <li>3. Anggota kelompok usaha perempuan mandiri, memiliki KTP sidoarjo dan berdomisili pada 1 (satu) rukun tetangga
+                  <hr>
+                </li>
+                <li>4. Pelaku usaha bukan berstatus sebagai anggota/istri dari ASN, TNI/POLRI, BUMN, BUMD yang masih aktif
+                  <hr>
+                </li>
+                <li>5. Termasuk dalam kriteria usaha mikro, yakni memiliki modal usaha paling banyak 1 (satu) milyar rupiah tidak termasuk tanah dan bangunan tempat usaha atau memiliki hasil penjualan tahunan sampai dengan paling banyak 2 (dua) milyar rupiah
+                  <hr>
+                </li>
+                <li>6. Kelompok usaha telah berbentuk dan melakukan usaha minimal 1 (satu) bulan pada saat melakukan pendaftaran untuk menerima penghargaan
+                  <hr>
+                </li>
+                <li>7. Anggota kelompok usaha belum pernah mendapatkan program KURMA pada periode sebelumnya
+                  <hr>
+                </li>
+                <li>8. Apabila dalam kelompok yang mendaftar terdapat anggota yang telah mendapatkan Program KURMA pada tahun sebelumnya maka kelompok akan didiskualifikasi dari seleksi
+                  <hr>
+                </li>
+                <li>9. Melampirkan SPTM (Surat Pernyataan Tanggung Jawab Mutlak)<br>
+                  <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/KURMA-SURAT-PERNYATAAN-TANGGUNG-JAWAB-MUTLAK.pdf', '_system');" class="link external">(Download di Sini)</a>
+                  <hr>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- <form class="list" id="new_sk_domisili_kurma">
+      <div class="block">
+        <ul>
+          <li class="accordion-item">
+            <a href="#" class="item-content item-link">
+              <div class="item-inner">
+                <div class="item-title">Item 1</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Item 1 content. Lorem ipsum dolor sit amet...</p>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <a href="#" class="item-content item-link">
+              <div class="item-inner">
+                <div class="item-title">Item 2</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <p>Item 2 content. Lorem ipsum dolor sit amet...</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </form> -->
+  </div>
+</div>

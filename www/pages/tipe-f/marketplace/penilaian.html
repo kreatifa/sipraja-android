@@ -1,0 +1,197 @@
+<div class="page" data-class="">
+    <div class="save_button toolbar toolbar-bottom-md">
+        <div class="toolbar-inner">
+          <a class="link green-bg" id="simpan-penilaian"><i class="icon f7-icons">checkmark_circle_fill</i> Beri penilaian</a>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="/tipe-f/marketplace/menu" class="link">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="title" id="title">Nilai Produk</div>
+        </div>
+    </div>
+    <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+        <form class="list" id="marketplace_penilaian_produk">
+            <input type="hidden" name="id_pesanan" id="id_pesanan">
+            <!-- <div class="card" style="background: whitesmoke;">
+                <div class="card-content card-content-padding">
+                    <div class="card-header"> -->
+                        <ul>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="row">
+                                            <div class="col-30">
+                                                <div class="item-title item-label" style="white-space: pre-wrap;">Kualitas Produk</div>
+                                            </div>
+                                            <div class="col-70">
+                                                <div class="item-input-wrap">
+                                                    <select class="kualitas_produk" name="kualitas_produk" required validate>
+                                                        <option value="">Pilih</option>
+                                                        <option value="5">Sangat Baik</option>
+                                                        <option value="4">Baik</option>
+                                                        <option value="3">Biasa</option>
+                                                        <option value="2">Buruk</option>
+                                                        <option value="1">Sangat Buruk</option>
+                                                    </select>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="desc_kualitas" style="display: none;">
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Deskripsi Kualitas Produk</div>
+                                        <div class="item-input-wrap">
+                                            <textarea id="desc_kualitas" name="desc_kualitas"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Kemasan</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" name="kemasan" placeholder="deskripsi kemasan" class="form-control" required validate>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Manfaat</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" name="manfaat" placeholder="Manfaat" class="form-control" required validate>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> -->
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Deskripsi</div>
+                                        <div class="item-input-wrap">
+                                            <textarea id="desc" name="desc" placeholder="Berikan penilaianmu dan bantu pengguna lain membuat pilihan yang lebih baik" required validate></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="row">
+                                            <div class="col-30">
+                                                <div class="item-title item-label" style="white-space: pre-wrap;">Pelayanan Packing Penjual</div>
+                                            </div>
+                                            <div class="col-70">
+                                                <div class="item-input-wrap">
+                                                    <select class="pelayanan_penjual" name="pelayanan_penjual" required validate>
+                                                        <option value="">Pilih</option>
+                                                        <option value="5">Sangat Baik</option>
+                                                        <option value="4">Baik</option>
+                                                        <option value="3">Biasa</option>
+                                                        <option value="2">Buruk</option>
+                                                        <option value="1">Sangat Buruk</option>
+                                                    </select>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="desc_pelayanan" style="display: none;">
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Deskripsi Pelayanan Packing Penjual</div>
+                                        <div class="item-input-wrap">
+                                            <textarea id="desc_pelayanan" name="desc_pelayanan"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="row">
+                                            <div class="col-30">
+                                                <div class="item-title item-label">Pengiriman</div>
+                                            </div>
+                                            <div class="col-70">
+                                                <div class="item-input-wrap">
+                                                    <select class="kecepatan_jasa_kirim" name="kecepatan_jasa_kirim" required validate>
+                                                        <option value="">Pilih</option>
+                                                        <option value="5">Sangat Baik</option>
+                                                        <option value="4">Baik</option>
+                                                        <option value="3">Biasa</option>
+                                                        <option value="2">Buruk</option>
+                                                        <option value="1">Sangat Buruk</option>
+                                                    </select>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="desc_kecepatan" style="display: none;">
+                                <div class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Deskripsi Kecepatan Jasa Kirim</div>
+                                        <div class="item-input-wrap">
+                                            <textarea id="desc_kecepatan" name="desc_kecepatan"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="block-title">
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <div class="chip color-blue">
+                                                <div class="chip-label">Lampiran</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="formupload-wrapper">
+                                    <ul id="formupload-wrapper-list">
+                                        <li class="item-content item-input">
+                                            <div class="item-inner">
+                                                <div class="row">
+                                                    <div class="col-60">
+                                                        <div class="item-inner">
+                                                            <div class="item-input-wrap">
+                                                                <div class="item-title item-label">Foto</div>
+                                                                <input type="hidden" id="file_id_foto_produk" name="file_id_foto_produk">
+                                                                <input type="hidden" class="file_code" id="file_code_foto_produk" name="file_code_foto_produk">
+                                                                <input type="text" class="file_desc" id="file_desc_foto_produk" name="file_desc_foto_produk" value="Foto Produk">
+                                                                <input type="text" id="file_url_foto_produk" name="file_url_foto_produk" readonly>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-20 preview_file_foto_produk"></div>
+                                                    <div class="col-20">
+                                                        <a id="foto_produk" onClick="upload_foto(this.id)" class="button button-round button-fill" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 16pt; margin-top: 7px;">folder_fill</i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    <!-- </div>
+                </div>
+            </div> -->
+        </form>
+    </div>
+</div>

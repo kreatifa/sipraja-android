@@ -1,0 +1,52 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "go.id.sidoarjokab.sipraja"
+    },
+    "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "go.id.sidoarjokab.sipraja"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "go.id.sidoarjokab.sipraja"
+    },
+    "cordova-plugin-downloader": {
+      "PACKAGE_NAME": "go.id.sidoarjokab.sipraja"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "go.id.sidoarjokab.sipraja"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "go.id.sidoarjokab.sipraja"
+    },
+    "cordova-plugin-firebasex": {
+      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
+      "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
+      "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true",
+      "PACKAGE_NAME": "go.id.sidoarjokab.sipraja"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "go.id.sidoarjokab.sipraja"
+    },
+    "cordova-plugin-qrscanner": {
+      "PACKAGE_NAME": "go.id.sidoarjokab.sipraja"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "go.id.sidoarjokab.sipraja"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "go.id.sidoarjokab.sipraja"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-zip": {
+      "PACKAGE_NAME": "go.id.sidoarjokab.sipraja"
+    }
+  }
+}

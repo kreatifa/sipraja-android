@@ -1,0 +1,293 @@
+<div class="page" data-class="edit_waris">
+  <div class="savebutton toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link bg-color-orange" id="print_preview_button" style="display: none;"><i class="icon f7-icons">zoom_in</i> Preview</a>
+      <a class="link bg-color-green" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="checked_approval_button toolbar toolbar-bottom-md" style="display: none;">
+    <div class="toolbar-inner">
+      <a class="link" id="cetak_semua_report"><i class="icon f7-icons">zoom_in</i> Cetak Surat</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Edit Surat Pernyataan Waris</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="form_edit_waris" style="margin: 0 ">
+      <div class="block-title" style="margin-top: 16px">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Data Dokumen</div>
+            </div>
+          </div>
+          <div class="col-50" id="btndeletelayanan">
+            <a class="button button-round button-fill color-red" id="deletelayanan">
+              <i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">xmark_square_fill</i> <span>Hapus Data</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kode Transaksi</div>
+              <input type="text" name="kode_transaksi" id="kode_transaksi" required validate disabled>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Pemilik Waris</div>
+              <input type="text" name="pemilik_waris" id="pemilik_waris" required validate>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title" style="margin-top: 16px">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemohon</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK Pemohon</div>
+              <input required validate disabled type="text" name="nik_pemohon" id="nik_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama Pemohon</div>
+              <input required validate disabled type="text" name="nama_pemohon" id="nama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tempat Lahir</div>
+              <input required validate disabled type="text" name="tempat_lahir" id="tempat_lahir">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Tanggal Lahir</div>
+              <input required validate disabled type="text" name="tanggal_lahir" id="tanggal_lahir">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Jenis Kelamin</div>
+              <input required validate disabled type="text" name="jenis_kelamin" id="jenis_kelamin">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Telepon</div>
+              <input required validate disabled type="text" name="telepon" id="telepon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan</div>
+              <input required validate disabled type="text" name="kecamatan" id="kecamatan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan</div>
+              <input required validate disabled type="text" name="kelurahan" id="kelurahan">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Email</div>
+              <input required validate disabled type="text" name="email" id="email">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <input required validate disabled type="text" name="alamat" id="alamat">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title" style="margin-top: 16px">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Ahli Waris</div>
+        </div>
+      </div>
+      <div class="block-title" style="margin: 0 16px">
+        <div class="row">
+          <div class="col-100">
+            <div class="data-table card" id="ahli_waris_table">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="label-cell aksi-table" style="padding-left: 8px; padding-right: 8px;"></th>
+                    <th class="label-cell hapus-table" style="padding-left: 8px; padding-right: 8px;"></th>
+                    <th class="label-cell" style="text-align: center">NIK Ahli Waris</th>
+                    <th class="label-cell" style="text-align: center">Nama Ahli Waris</th>
+                    <th class="label-cell" style="text-align: center">Alamat Ahli Waris</th>
+                    <th class="label-cell" style="padding-left: 8px; padding-right: 8px; text-align: center">KTP</th>
+                    <th class="label-cell" style="padding-left: 8px; padding-right: 8px; text-align: center">KK</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="label-cell aksi-table"></td>
+                    <td class="label-cell hapus-table"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                    <td class="label-cell"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a class="button button-round button-fill color-green" id="addahliwaris" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>Tambah Ahli Waris</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="block-title" style="margin-top: 16px">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+          <div class="col-50">
+            <a class="button button-round button-fill color-green" id="addformupload" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>New document</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul class="form-item-wrapper" id="formupload-wrapper-list" data-form-item-wrapper=""></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">Syarat & Ketentuan Lampiran</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul>
+                <li>1. Surat pengantar RT dan RW</li><hr>
+                <li>2. Foto copy surat kematian</li><hr>
+                <li>3. Foto copy KTP dan KSK semua ahli waris (KTP dan KSK NIK nya harus sama, cek nama orang tuanya apabila tidak sama dibuatkan surat keterangan)</li><hr>
+                <li>4. Foto copy akte kelahiran apabila ahli waris usia dibawah umur</li><hr>
+                <li>5. Foto copy surat nikah almarhum</li><hr>
+                <li>6. Foto copy obyek</li><hr>
+                <li>7. Pelunasan PBB Tahun berjalan</li><hr>
+                <li>8. Surat keterangan waris, berita acara proses waris 1 dan 2 bermaterai Rp. 10.000,-</li><hr>
+                <li>9. Daftar Hadir (Penandatanganan Berita Acara Proses Waris di tingkat Desa)</li><hr>
+                <li>10. Melampirkan surat Pernyataan Ahli Waris</li><hr>
+                <li>11. Untuk yang di Kecamatan harus dihadirkan perwakilan ahli waris</li><hr>
+                <li>12. Harap disidangkan tingkat Desa/Kelurahan</li><hr>
+                <li>13. Dokumentasi penandatanganan surat keterangan waris</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form class="list" id="approval">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Persetujuan</div>
+        </div>
+      </div>
+
+      <div class="block-title">
+          Status Terakhir Dokumen : <br>
+          <div class="chip color-red">
+            <div class="chip-label" id="std">-</div>
+          </div>
+          <br><br>
+          Posisi Terakhir Dokumen  : <br>
+          <div class="chip color-green">
+            <div class="chip-label" id="ptd">-</div>
+          </div><br><br>
+          Tanda Tangan : <br>
+          <div class="lihat-ttd">
+            <canvas id="signature_pad_static" style="border: 1px solid black; border-radius: 5px; width: 100%"></canvas>
+          </div>
+          <div id="qrcode" style="display: none;"></div>
+      </div>
+      <input required validate type="hidden" name="approve_items_id">
+      <input type="hidden" name="approve_items_id">
+      <input type="hidden" name="type_ttd" id="type_ttd">
+      <input type="hidden" name="base64_ttd" id="base64_ttd">
+       <ul>
+        <li>
+          <a class="item-link smart-select statusaction smart-select-init" data-open-in="sheet">
+            <select name="status" id="statusaction">
+              <option value="2">Disetujui</option> 
+              <option value="3">Ditolak</option>
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Pilih Status</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Keterangan</div>
+              <textarea type="text" name="deskripsi"></textarea>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </form>
+    <div class="data-table card">
+      <div class="card-header">Riwayat Approval</div>
+      <div class="card-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Otoriter</th>
+              <th>Nama Operator</th>
+              <th>Keterangan</th>
+              <th>Tanggal Proses</th>
+            </tr>
+          </thead>
+          <tbody class="table-chron">
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

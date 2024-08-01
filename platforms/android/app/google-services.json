@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "816867990043",
+    "firebase_url": "https://sipraja-pemkab-sidoarjo.firebaseio.com",
+    "project_id": "sipraja-pemkab-sidoarjo",
+    "storage_bucket": "sipraja-pemkab-sidoarjo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816867990043:android:6752e7e664e013218876be",
+        "android_client_info": {
+          "package_name": "go.id.sidoarjokab.sipraja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816867990043-6g4dnecpr0sucurgod9k1oo73g1h1qc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Ql1GBZePJilMR7ZXlTtYbI0GFvqpnuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816867990043-6g4dnecpr0sucurgod9k1oo73g1h1qc0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

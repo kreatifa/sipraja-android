@@ -1,0 +1,432 @@
+<div class="page" data-class="change_pass">
+  <div class="save_button toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_shield_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="/home/" class="link">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="judul" style="font-weight: bold;">Profile</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="change_pass_form">
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pengguna</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK*</div>
+              <input type="text" id="nik" name="nik" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama*</div>
+              <input type="text" id="nama" name="nama" required validate readonly>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No. Telp/Hp*</div>
+              <input type="number" id="no_telp_pendaftar" name="no_telp_pendaftar" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Pendidikan Terakhir</div>
+              <select name="pendidikan_terakhir" id="pendidikan_terakhir">
+                <option value='' hidden selected>Pilih</option>
+                <option value="Tidak/Belum Sekolah">Tidak/Belum Sekolah</option>
+                <option value="Belum Tamat SD">Belum Tamat SD</option>
+                <option value="SD/Sederajat">SD/Sederajat</option>
+                <option value="SLTP/Sederajat">SLTP/Sederajat</option>
+                <option value="SLTA/Sederajat">SLTA/Sederajat</option>
+                <option value="Diploma I">Diploma I</option>
+                <option value="Diploma II">Diploma II</option>
+                <option value="Akademi/Diploma III/S.Muda">Akademi/Diploma III/S.Muda</option>
+                <option value="Diploma IV/Strata I">Diploma IV/Strata I</option>
+                <option value="Strata II">Strata II</option>
+                <option value="Strata III">Strata III</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Aktif Organisasi (Khusus Usia 16-30 Tahun)*</div>
+              <input type="text" id="aktif_organisasi" name="aktif_organisasi" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Status KB</div>
+              <select name="status_kb" id="status_kb">
+                <option value='' hidden selected>Pilih</option>
+                <option value="Tidak Aktif">Tidak Aktif</option>
+                <option value="Aktif">Aktif</option>
+              </select>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kode Pos*</div>
+              <input type="text" id="kode_pos" name="kode_pos" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">RW*</div>
+              <input type="text" id="rw" name="rw" required validate>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">RT*</div>
+              <input type="text" id="rt" name="rt" required validate>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="list accordion-list">
+        <ul>
+          <li class="accordion-item"><a href="#" class="item-content item-link">
+              <div class="item-inner">
+                <div class="item-title">SINKRONISASI APLIKASI SIAP KERJA
+                  (Biarkan bila tidak ingin Sinkronisasi dengan Siap Kerja)</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <ul>
+                  <li>
+                    <label class="item-checkbox item-content">
+                      <input type="checkbox" id="sinkronisasi_siap_kerja">
+                      <i class="icon icon-checkbox"></i>
+                      <div class="item-inner" style="height: 260px !important;">
+                        <div class="item-text" style="color: black; height: 100% !important; max-height: none !important;">
+                          Saya telah mengetahui dan/atau memperoleh informasi terkait pelayanan aplikasi SIAP KERJA, serta telah sepenuhnya memahami tentang tujuan, manfaat, dan risiko yang mungkin dapat timbul di kemudian hari, baik selama maupun setelah selesai menggunakan aplikasi SIAP KERJA.<br>
+                          Maka saya dengan sungguh-sungguh serta penuh rasa sadar menyatakan kesukarelaan untuk setuju terhadap sinkronisasi data saya kepada aplikasi SIAP KERJA tanpa tekanan/paksaan dari pihak manapun.
+                        </div>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+                <div class="block">
+                  <div class="row">
+                    <button class="col-50 button button-raised button-fill color-orange" id="sinkronisasi">Sinkronisasikan</button>
+                  </div>
+                </div>
+                <br>
+                <ul>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Berat Badan</div>
+                        <input type="number" id="berat_badan" name="berat_badan">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Tinggi Badan</div>
+                        <input type="number" id="tinggi_badan" name="tinggi_badan">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Facebook</div>
+                        <input type="text" id="facebook" name="facebook">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Linkedin</div>
+                        <input type="text" id="linkedin" name="linkedin">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Twitter</div>
+                        <input type="text" id="twitter" name="twitter">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Instagram</div>
+                        <input type="text" id="instagram" name="instagram">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Angkatan Kerja</div>
+                        <select name="angkatan_kerja" id="angkatan_kerja">
+                          <option value='' hidden selected>Pilih</option>
+                          <option value="Pelajar/Mahasiswa (Sekolah) bukan angkatan kerja">Pelajar/Mahasiswa (Sekolah) bukan angkatan kerja</option>
+                          <option value="Bekerja (Bekerja) angkatan kerja">Bekerja (Bekerja) angkatan kerja</option>
+                          <option value="Berwirausaha (Bekerja) angkatan kerja">Berwirausaha (Bekerja) angkatan kerja</option>
+                          <option value="Mengurus Rumah Tangga (Mengurus Rumah Tangga) bukan angkatan kerja">Mengurus Rumah Tangga (Mengurus Rumah Tangga) bukan angkatan kerja</option>
+                          <option value="Tidak Bekerja (Penganggur) bukan angkatan kerja">Tidak Bekerja (Penganggur) bukan angkatan kerja</option>
+                          <option value="Lainnya (Lainnya) bukan angkatan kerja">Lainnya (Lainnya) bukan angkatan kerja</option>
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Keahlian/Keterampilan yang anda miliki</div>
+                        <textarea id="slogan" name="slogan" placeholder="keahlian" maxlength="200"></textarea>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Deskripsi Diri (Max. 500 Karakter)</div>
+                        <textarea id="deskripsi_diri" name="deskripsi_diri" placeholder="Deskripsi Diri" maxlength="500"></textarea>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item"><a href="#" class="item-content item-link">
+              <div class="item-inner">
+                <div class="item-title">Info Tagihan</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <ul>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-title item-label"><span>Nomor Meter PDAM</span>
+                        <button class="button button-small button-fill color-green addTagihan" style="width:3vw;float:right;margin-left:4px;" data-attr="pdam">
+                          <i class="f7-icons" style="font-size: 24px;">plus_app_fill</i>
+                        </button>
+                        <button class="button button-small button-fill color-red removeTagihan" style="width:3vw;float:right;" data-attr="pdam">
+                          <i class="f7-icons" style="font-size: 24px;">minus</i>
+                        </button>
+                      </div>
+                      <div class="content-pdam">
+                        <div class="item-input-wrap pdam" data-id="0">
+                          <input type="text" name="pdam[0]" placeholder="PDAM">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-title item-label"><span>Nomor Pelanggan PLN</span>
+                        <button class="button button-small button-fill color-green addTagihan" style="width:3vw;float:right;margin-left:4px;" data-attr="pln">
+                          <i class="f7-icons" style="font-size: 24px;">plus_app_fill</i>
+                        </button>
+                        <button class="button button-small button-fill color-red removeTagihan" style="width:3vw;float:right;" data-attr="pln">
+                          <i class="f7-icons" style="font-size: 24px;">minus</i>
+                        </button>
+                      </div>
+                      <div class="content-pln">
+                        <div class="item-input-wrap pln" data-id="0">
+                          <input type="text" name="pln[0]" placeholder="PLN">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-title item-label"><span>NOP (Nomor Objek Pajak)</span>
+                        <button class="button button-small button-fill color-green addTagihan" style="width:3vw;float:right;margin-left:4px;" data-attr="nop">
+                          <i class="f7-icons" style="font-size: 24px;">plus_app_fill</i>
+                        </button>
+                        <button class="button button-small button-fill color-red removeTagihan" style="width:3vw;float:right;" data-attr="nop">
+                          <i class="f7-icons" style="font-size: 24px;">minus</i>
+                        </button>
+                      </div>
+                      <div class="content-nop">
+                        <div class="item-input-wrap nop" data-id="0">
+                          <input type="text" name="nop[0]" placeholder="NOP">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-title item-label"><span>Nomor STNK</span>
+                        <button class="button button-small button-fill color-green addTagihan" style="width:3vw;float:right;margin-left:4px;" data-attr="stnk">
+                          <i class="f7-icons" style="font-size: 24px;">plus_app_fill</i>
+                        </button>
+                        <button class="button button-small button-fill color-red removeTagihan" style="width:3vw;float:right;" data-attr="stnk">
+                          <i class="f7-icons" style="font-size: 24px;">minus</i>
+                        </button>
+                      </div>
+                      <div class="content-stnk">
+                        <div class="item-input-wrap stnk" data-id="0">
+                          <input type="text" name="stnk[0]" placeholder="STNK">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-title item-label"><span>Nomor BPJS Kesehatan</span>
+                        <button class="button button-small button-fill color-green addTagihan" style="width:3vw;float:right;margin-left:4px;" data-attr="bpjs_kesehatan">
+                          <i class="f7-icons" style="font-size: 24px;">plus_app_fill</i>
+                        </button>
+                        <button class="button button-small button-fill color-red removeTagihan" style="width:3vw;float:right;" data-attr="bpjs_kesehatan">
+                          <i class="f7-icons" style="font-size: 24px;">minus</i>
+                        </button>
+                      </div>
+                      <div class="content-bpjs_kesehatan">
+                        <div class="item-input-wrap bpjs_kesehatan" data-id="0">
+                          <input type="text" name="bpjs_kesehatan[0]" placeholder="Bpjs Kesehatan">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-title item-label"><span>Nomor BPJS Ketenagakerjaan</span>
+                        <button class="button button-small button-fill color-green addTagihan" style="width:3vw;float:right;margin-left:4px;" data-attr="bpjs_ketenagakerjaan">
+                          <i class="f7-icons" style="font-size: 24px;">plus_app_fill</i>
+                        </button>
+                        <button class="button button-small button-fill color-red removeTagihan" style="width:3vw;float:right;" data-attr="bpjs_ketenagakerjaan">
+                          <i class="f7-icons" style="font-size: 24px;">minus</i>
+                        </button>
+                      </div>
+                      <div class="content-bpjs_ketenagakerjaan">
+                        <div class="item-input-wrap bpjs_ketenagakerjaan" data-id="0">
+                          <input type="text" name="bpjs_ketenagakerjaan[0]" placeholder="Bpjs ketenagakerjaan">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-title item-label"><span>Telkom Pascabayar</span>
+                        <button class="button button-small button-fill color-green addTagihan" style="width:3vw;float:right;margin-left:4px;" data-attr="telkom_pascabayar">
+                          <i class="f7-icons" style="font-size: 24px;">plus_app_fill</i>
+                        </button>
+                        <button class="button button-small button-fill color-red removeTagihan" style="width:3vw;float:right;" data-attr="telkom_pascabayar">
+                          <i class="f7-icons" style="font-size: 24px;">minus</i>
+                        </button>
+                      </div>
+                      <div class="content-telkom_pascabayar">
+                        <div class="item-input-wrap telkom_pascabayar" data-id="0">
+                          <input type="text" name="telkom_pascabayar[0]" placeholder="Telkom Pascabayar">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-title item-label"><span>Telkom Indihome</span>
+                        <button class="button button-small button-fill color-green addTagihan" style="width:3vw;float:right;margin-left:4px;" data-attr="telkom_indihome">
+                          <i class="f7-icons" style="font-size: 24px;">plus_app_fill</i>
+                        </button>
+                        <button class="button button-small button-fill color-red removeTagihan" style="width:3vw;float:right;" data-attr="telkom_indihome">
+                          <i class="f7-icons" style="font-size: 24px;">minus</i>
+                        </button>
+                      </div>
+                      <div class="content-telkom_indihome">
+                        <div class="item-input-wrap telkom_indihome" data-id="0">
+                          <input type="text" name="telkom_indihome[0]" placeholder="Telkom Indihome">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item"><a href="#" class="item-content item-link">
+              <div class="item-inner">
+                <div class="item-title">Ganti Sandi SIPRAJA
+                  (Hanya Isi Jika Ingin Mengubah Password Sipraja)</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <ul>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Sandi Lama*</div>
+                        <input type="password" id="password_lama" name="password_lama" placeholder="Biarkan Kosong, Kecuali Ganti Sandi">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Sandi Baru*</div>
+                        <input style="-webkit-text-security: disc;" type="number" id="password" name="password" minlength="8" maxlength="32" placeholder="Biarkan Kosong, Kecuali Ganti Sandi">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <div class="item-title item-label">Konfirmasi Sandi Baru*</div>
+                        <input style="-webkit-text-security: disc;" type="number" id="confirm_password" name="confirm_password" minlength="8" maxlength="32" placeholder="Biarkan Kosong, Kecuali Ganti Sandi">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item"><a href="#" class="item-content item-link">
+              <div class="item-inner">
+                <div class="item-title">Lampiran</div>
+              </div>
+            </a>
+            <div class="accordion-item-content">
+              <div class="block">
+                <div id="formupload-wrapper">
+                  <ul id="formupload-wrapper-list"></ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</div>

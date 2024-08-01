@@ -1,0 +1,96 @@
+<div class="page">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="/tipe-f/marketplace/menu" class="link back">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="title">Rincian Pesanan</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="card">
+            <div class="card-header">
+                <div class="title">Informasi Pengiriman</div>
+                <a class="link" id="informasi_pengiriman">Lihat</a>
+            </div>
+            <div class="card-content card-content-padding">
+                <div id="ekspedisi_pengiriman"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Daftar Pesanan</div>
+            <div class="card-content card-content-padding">
+                <div class="list media-list">
+                    <ul>
+                        <div class="toko_pesanan" id="toko_pesanan" style="display: none;"></div>
+                        <div class="list media-list">
+                            <div class="pesanan" id="pesanan" style="display: none;">
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-50">Harga</div>
+                    <div class="col-50 text-align-right" id="harga"></div>
+                    <div class="col-50">Biaya Service</div>
+                    <div class="col-50 text-align-right" id="biaya_service"></div>
+                    <div class="col-50">Ongkir</div>
+                    <div class="col-50 text-align-right" id="ongkir"></div>
+                    <div class="col-50" style="font-weight: bold;">Total Pembayaran</div>
+                    <div class="col-50 text-align-right" id="total_pembayaran" style="font-weight: bold;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Metode Pembayaran</div>
+            <div class="card-content card-content-padding">
+                <div id="payment"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">Informasi Pesanan</div>
+            <div class="card-content card-content-padding">
+                <div class="row">
+                    <div class="col-50">Kode Transaksi</div>
+                    <div class="col-50" id="kode_transaksi"></div>
+                    <div class="col-50">Waktu Pemesanan</div>
+                    <div class="col-50 text-align-right" id="waktu_pemesanan"></div>
+                    <div class="col-50">Waktu Pengiriman</div>
+                    <div class="col-50 text-align-right" id="waktu_pengiriman"></div>
+                    <div class="col-50">Waktu Pesanan Selesai</div>
+                    <div class="col-50 text-align-right" id="waktu_pesanan_selesai"></div>
+                </div>
+            </div>
+        </div>
+        <form class="list" id="form_bukti" style="margin: 0 ">
+            <div class="card" id="bukti_photo" style="display: none;">
+                <div class="card-header">Bukti Photo</div>
+                <div class="card-content card-content-padding">
+                    <div class="item-inner">
+                        <div class="row">
+                            <div class="col-60">
+                                <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <div class="item-title item-label">Bukti Penerimaan barang</div>
+                                    <input class="fileid" id="fileid_bk_pengiriman" name="fileid_bk_pengiriman" type="hidden">
+                                    <input class="filecode" id="filecode_bk_pengiriman" name="filecode_bk_pengiriman" type="hidden">
+                                    <input class="fileurl" id="fileurl_bk_pengiriman" name="fileurl_bk_pengiriman" type="text" readonly>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-20 preview_file_bk_pengiriman">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

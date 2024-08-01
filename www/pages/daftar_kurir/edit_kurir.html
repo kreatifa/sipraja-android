@@ -1,0 +1,134 @@
+<div class="page" data-class="">
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+          </a>
+        </div>
+        <div class="title">Form Pendaftaran Kurir</div>
+      </div>
+    </div>
+    <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+      <form class="list" id="edit_pendaftaran_kurir" style="margin: 0;">
+        <div class="block-title" style="margin-top: 16px;">
+          <div class="chip color-blue">
+            <div class="chip-label">Data Pendaftar</div>
+          </div>
+        </div>
+        <ul>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">NIK</div>
+                        <input type="number" id="nik" name="nik" required validate readonly>
+                        <input type="hidden" id="bf_users_id" name="bf_users_id" required validate>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Nama</div>
+                        <input type="text" id="nama" name="nama" required validate readonly>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Nama Kecamatan</div>
+                        <input type="text" id="nama_kec" name="nama_kec" required validate readonly>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Nama Kelurahan</div>
+                        <input type="text" id="nama_kel" name="nama_kel" required validate readonly>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="block-title">
+          <div class="chip color-blue">
+            <div class="chip-label">Data Kendaraan</div>
+          </div>
+        </div>
+        <ul>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Jenis Kendaraan</div>
+                        <select name="jenis_kendaraan" id="jenis_kendaraan" readonly>
+                            <option value="sepeda-motor">Sepeda Motor</option>
+                            <option value="mobil">Mobil</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Kepemilikan</div>
+                        <select name="kepemilikan_kendaraan" id="kepemilikan_kendaraan" readonly>
+                            <option value="pribadi">Pribadi</option>
+                            <option value="milik-orang-lain">Milik Orang Lain</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Merk Kendaraan</div>
+                        <input type="text" name="merk_kendaraan" id="merk_kendaraan" required validate readonly>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">No Rangka</div>
+                        <input type="text" name="nomor_rangka" id="nomor_rangka" required validate readonly>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Nomor Registrasi (PLAT)</div>
+                        <input type="text" name="plat_kendaraan" id="plat_kendaraan" required validate readonly>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Nomor Mesin</div>
+                        <input type="text" name="nomor_mesin" id="nomor_mesin" required validate readonly>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <div class="item-title item-label">Tahun</div>
+                        <input type="number" name="tahun" id="tahun" required validate readonly>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="block-title">
+            <div class="chip color-blue">
+              <div class="chip-label">Upload Berkas</div>
+            </div>
+        </div>
+        <ul>
+            <div class="attachment">
+            </div>
+        </ul>
+      </form>
+    </div>
+</div>

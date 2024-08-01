@@ -1,0 +1,281 @@
+<div class="page" data-class="new_layanan">
+  <div class="savebutton toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+      <a class="link green-bg" id="simpan"><i class="icon f7-icons">checkmark_circle_fill</i> Simpan</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Form SKTM KECAMATAN</div>
+    </div>
+  </div>
+  <div class="page-content hide-navbar-on-scroll hide-toolbar-on-scroll">
+    <form class="list" id="new_sktm_kecamatan" style="margin: 0;">
+      <div class="block-title" style="margin-top: 16px;">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pemohon</div>
+        </div>
+      </div>
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">NIK</div>
+              <input required validate type="text" readonly="readonly" name="nik_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Nama</div>
+              <input required validate type="text" readonly="readonly" name="nama_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Alamat</div>
+              <input required validate type="text" readonly="readonly" name="alamat_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kecamatan</div>
+              <input required validate type="text" readonly="readonly" name="kecamatan_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">Kelurahan</div>
+              <input required validate type="text" readonly="readonly" name="kelurahan_pemohon">
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <div class="item-title item-label">No Telp Pemohon</div>
+              <input required validate type="text" id="telp_pemohon" name="telp_pemohon">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="chip color-blue">
+          <div class="chip-label">Data Pendukung</div>
+        </div>
+      </div>
+      <input type="hidden" name="tipe_dtks" id="tipe_dtks" value="1">
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Jenis Surat</div>
+              <div class="item-input-wrap">
+                <select name="jenis_surat" id="jenis_surat">
+                  <option value="sekolah">SKTM Sekolah</option>
+                  <option value="jkmm">Rekomendasi jaminan kesehatan masyarakat miskin (JKMM) (Alur = Desa - Kecamatan – Dinsos)</option>
+                  <option value="skmm">Surat keterangan untuk masyarakat miskin yang membutuhkan perawatan di RSUD Soetomo dan RSJ Menur</option>
+                  <option value="lain">Lain-Lain</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Nama Pemohon (Penandatangan)</div>
+              <div class="item-input-wrap">
+                <input type="text" name="nama_ortu">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="jkmm_skmm_group">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Nama Pasien</div>
+              <div class="item-input-wrap">
+                <input type="text" name="nama_pasien" id="nama_pasien">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="jkmm_skmm_group">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Jenis Layanan</div>
+              <div class="item-input-wrap">
+                <select name="jenis_layanan" id="jenis_layanan">
+                  <option value="Rawat Jalan">Rawat Jalan</option>
+                  <option value="Rawat Inap">Rawat Inap</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="jkmm_group">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Tujuan Rumah Sakit</div>
+              <div class="item-input-wrap">
+                <select name="id_faskes" id="id_faskes">
+                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="skmm_group">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Tujuan Rumah Sakit (SKMM)</div>
+              <div class="item-input-wrap">
+                <select name="tujuan_skmm" id="tujuan_skmm">
+                  <option value="Menur">Menur</option>
+                  <option value="Soetomo">Soetomo</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="sekolahgroup">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Tujuan</div>
+              <div class="item-input-wrap">
+                <input type="text" name="tujuan" id="tujuan">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="sekolahgroup">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Pekerjaan</div>
+              <div class="item-input-wrap">
+                <input type="text" name="pekerjaan">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Alamat</div>
+              <div class="item-input-wrap">
+                <input type="text" name="alamat" id="alamat">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="block-title">
+        <div class="row">
+          <div class="col-50">
+            <div class="chip color-blue">
+              <div class="chip-label">Lampiran</div>
+            </div>
+          </div>
+          <div class="col-50 default_upload">
+            <a class="button button-round button-fill color-green" id="addformupload" style="margin-top: 10px;"><i class="f7-icons" style="font-size: 14pt; margin-top: 7px;">plus_app_fill</i> <span>New document</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="formupload-wrapper">
+        <ul class="form-item-wrapper" id="formupload-wrapper-list" data-form-item-wrapper=""></ul>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">Syarat & Ketentuan Lampiran</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul>
+                <li>1. Surat pengantar RT (TTD & Stempel)<hr></li>
+                <li>2. Surat pernyataan tidak mampu bermaterai 10000 ( form bisa didownload <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/SURAT-PERNYATAAN.pdf', '_system');" class="link external">di sini</a>)<hr></li>
+                <li>3. Foto Asli KK dan KTP pemohon surat<hr></li>
+                <li>4. Berkas 1 sampai 3 diupload ke lampiran sipraja<hr></li>
+                <li>5. Berkas asli nomor 1 sampai 3 dibawah  saat pengambilan surat di kecamatan setempat<hr></li>
+                <li>6. Surat Kuasa jika pengambilan berkas dikuasakan ke orang lain</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">Syarat & Ketentuan Lampiran Rekomendasi Jaminan Kesehatan Masyarakat Miskin (JKMM) untuk RSUD Sidoarjo dan Puskesmas Seluruh Kabupaten Sidoarjo</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul>
+                <li>1. KK<hr></li>
+                <li>2. KTP<hr></li>
+                <li>3. Surat pernyataan miskin (ybs) + (materai 10.000) mengetahui RT ( form bisa didownload <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/SURAT-PERNYATAAN.pdf', '_system');" class="link external">di sini</a>)<hr></li>
+                <li>4. Surat keterangan rawat inap dari rumah sakit<hr></li>
+                <li>5. Surat rujukan dari puskesmas (kalau rawat jalan)<hr></li>
+                <li>6. Bagi pasien yang sakit karena kecelakaan lalu lintas harus disertai surat dari kepolisian (Flexible)</li>
+                <li>7. SKTM sampai Kecamatan (bisa didownload di SIPRAJA ketika sudah di setujui oleh Kecamatan)</li>
+                <!-- <li>
+                  <a style=" font-size:8pt !important;" class="list-button">1. Surat pengantar RT (TTD & Stempel)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">2. Surat pernyataan tidak mampu bermaterai 10000 ( form bisa didownload <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/SURAT-PERNYATAAN.pdf', '_system');" class="link external">di sini</a>)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">3. Foto Asli KK dan KTP pemohon surat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">4. Fotokopi Surat Rawat Inap dari RSUD/Puskesmas dan/atau Fotokopi Rujukan Puskesmas (Kamar Kelas III dan harus jelas masuk tanggal berapa)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">5. Bagi Pasien yang Sakit karna Kecelakaan Lalu Lintas harus dilengkapi Surat Keterangan Kepolisian setempat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">6. Bagi Pasien yang mempunyai tunggakan/premi BPJS Kelas III, dilengkapi surat pernyataan tidak mampu membayar tunggakan (materai 10000)</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">7. Berkas 1 sampai 6 diupload ke lampiran sipraja</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">8. Berkas asli nomor 1 sampai 6 dibawa  saat pengambilan surat di kecamatan setempat</a>
+                </li>
+                <li>
+                  <a style=" font-size:8pt !important;" class="list-button">9. Surat Kuasa jika pengambilan berkas dikuasakan ke orang lain</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="card">
+          <div class="card-header bg-color-red text-color-white">Syarat & Ketentuan Lampiran Surat keterangan untuk masyarakat miskin yang membutuhkan perawatan di RSUD Soetomo dan RSJ Menur.</div>
+          <div class="card-content">
+            <div class="list inset">
+              <ul style="padding-left: 0;">
+                <li>1. KK<hr></li>
+                <li>2. KTP (Pasien) / KIA<hr></li>
+                <li>3. Surat pernyataan miskin (ybs) + (materai 10.000) mengetahui RT ( form bisa didownload <a href="#" onClick="cordova.InAppBrowser.open('https://sipraja.sidoarjokab.go.id/files/SURAT-PERNYATAAN.pdf', '_system');" class="link external">di sini</a>)<hr></li>
+                <li>4. Surat rujukan dari rumah sakit tipe B( 5 Rumah Sakit : RSUD Sidoarjo, Rumah Sakit Anwar Medika, RSI Siti Hajar, Rumah Sakit Siti Khodijah (Taman), Mitra Keluarga Waru)<hr></li>
+                <li>5. Bagi pasien yang sakit karena kecelakaan lalu lintas harus disertai surat dari kepolisian (Flexible)<hr></li>
+                <li>6. SKTM sampai Kecamatan (bisa didownload di SIPRAJA ketika sudah di setujui oleh Kecamatan)<hr></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,143 @@
+<div class="page">
+  <div class="navbar no-shadow">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="/saldo_sipraja/index" data-force="true" data-ignore-cache="true" class="link back">
+          <i class="icon icon-back"></i>
+        </a>
+      </div>
+      <div class="title">Pembayaran</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="bg-color-blue" style="padding-bottom: 50px; padding-top: 20px;">
+      <div class="text-color-white" style="font-size: 20px; font-weight: bold; margin-left: 30px;">Lakukan Transfer Ke Virtual Account Billing</div>
+    </div>
+    <div class="card" style="margin: 0 20px; margin-top: -40px">
+      <div class="card-content card-content-padding">
+        <form id="bayar_saldo_form">
+          <div class="list no-hairlines-md">
+            <ul>
+              <li class="item-content item-input">
+                <div class="item-media">
+                  <img src="images/tipe_e/shopping_bag.svg" width="36">
+                </div>
+                <div class="item-inner">
+                  <div class="item-title item-label">Virtual Account</div>
+                  <div class="item-input-wrap">
+                    <input type="number" name="rekening" id="rekening" required validate disabled>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input" style="padding-top: 20px;">
+                <div class="item-inner">
+                  <div class="item-title item-label">Total Nominal</div>
+                  <div class="item-input-wrap">
+                    <input type="text" name="nominal_transfer" id="nominal_transfer" required validate disabled>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner" id="batas_pembayaran">
+                  <p>Transfer sebelum tanggal atau transaksimu akan dibatalkan otomatis oleh sistem.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="card" style="margin: 20px">
+      <div class="card-content card-content-padding" id="id_transaksi">
+        ID TRANSAKSI #<span></span>
+      </div>
+    </div>
+
+    <div class="card" style="margin: 20px">
+      <div class="card-content">
+        <div class="list accordion-list">
+          <ul>
+            <li class="accordion-item">
+              <a href="#" class="item-content item-link">
+                <div class="item-inner">
+                  <div class="item-title">DETAIL TRANSAKSI</div>
+                  <div class="item-after">Lihat</div>
+                </div>
+              </a>
+              <div class="accordion-item-content">
+                <div class="block list no-hairlines-md">
+                  <ul>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Tanggal Buat</div>
+                        <div class="item-input-wrap">
+                          <input type="text" name="tanggal_buat" id="tanggal_buat" required validate disabled>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-title">Cara Pembayaran</div>
+    <div class="list accordion-list">
+      <ul>
+        <li class="accordion-item">
+          <a href="#" class="item-content item-link">
+            <div class="item-inner">
+              <div class="item-title">Transfer mBanking</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="block list no-hairlines-md">
+              <ul>
+                <li class="item-content">
+                  <div class="item-media" style="min-width: 15px;">1</div>
+                  <div class="item-inner">
+                    <div class="item-title">Deskripsi 1</div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-media" style="min-width: 15px;">2</div>
+                  <div class="item-inner">
+                    <div class="item-title">Deskripsi 2</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="accordion-item">
+          <a href="#" class="item-content item-link">
+            <div class="item-inner">
+              <div class="item-title">Transfer iBanking</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="block">
+              <p>tes 1</p>
+            </div>
+          </div>
+        </li>
+        <li class="accordion-item">
+          <a href="#" class="item-content item-link">
+            <div class="item-inner">
+              <div class="item-title">Transfer ATM</div>
+            </div>
+          </a>
+          <div class="accordion-item-content">
+            <div class="block">
+              <p>tes 1</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
