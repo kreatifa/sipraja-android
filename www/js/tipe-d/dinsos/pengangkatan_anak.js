@@ -225,12 +225,13 @@ var edit_pengangkatan_anak = {
         $$('.table-chron').html(table_chron);
 
         this_user_is_the_last_index = data.this_user_is_the_last_index;
+        if (data.report_pengangkatan_anak != '') {
+          $$('.checked_approval_button').show();
+          $$('.save_button').hide();
+          file_code_report_pengangkatan_anak = data.report_pengangkatan_anak;
+        }
         if (data.check_approved) {
           $$('.save_button').hide();
-          if (data.report_pengangkatan_anak != '') {
-            $$('.checked_approval_button').show();
-            file_code_report_pengangkatan_anak = data.report_pengangkatan_anak;
-          }
         }
       }, function () {
         app.dialog.close();

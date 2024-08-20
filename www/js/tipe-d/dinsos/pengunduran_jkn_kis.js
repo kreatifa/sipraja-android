@@ -199,7 +199,6 @@ var edit_pengunduran_jkn_kis = {
       app.dialog.preloader('Loading...');
       app.request.post(site_url_mobile_layanan + '/pengunduran_jkn_kis/get_id/' + id, iamthedoor, function (callback) {
         app.dialog.close();
-        console.log(callback);
         $$('#nik_pemohon').val(callback.jkn_kis.nik);
         $$('#nama_pemohon').val(callback.jkn_kis.nama);
         $$('#tempat_lahir').val(callback.jkn_kis.tempat_lahir);

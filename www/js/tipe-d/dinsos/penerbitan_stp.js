@@ -228,12 +228,13 @@ var edit_penerbitan_stp = {
         $$('.table-chron').html(table_chron);
 
         this_user_is_the_last_index = callback.this_user_is_the_last_index;
+        if (callback.report_stp != '') {
+          file_code_report_stp = callback.report_stp;
+          $$('.checked_approval_button').show();
+          $$('.save_button').hide();
+        }
         if (callback.check_approved) {
           $$('.save_button').hide();
-          if (callback.report_stp != '') {
-            file_code_report_stp = callback.report_stp;
-            $$('.checked_approval_button').show();
-          }
         }
       }, function () {
         app.dialog.close();
