@@ -199,7 +199,7 @@ var edit_pengunduran_jkn_kis = {
       app.dialog.preloader('Loading...');
       app.request.post(site_url_mobile_layanan + '/pengunduran_jkn_kis/get_id/' + id, iamthedoor, function (callback) {
         app.dialog.close();
-
+        console.log(callback);
         $$('#nik_pemohon').val(callback.jkn_kis.nik);
         $$('#nama_pemohon').val(callback.jkn_kis.nama);
         $$('#tempat_lahir').val(callback.jkn_kis.tempat_lahir);
@@ -252,10 +252,20 @@ var edit_pengunduran_jkn_kis = {
         }
 
         this_user_is_the_last_index = callback.this_user_is_the_last_index;
+        $$('.checked_approval_button').show();
+        $$('#print_button').hide();
+        $$('#print_dinsos_button').hide();
         if (callback.check_approved) {
           $$('.save_button').hide();
-          $$('.checked_approval_button').show();
+          $$('#print_button').show();
           $$("textarea[name='deskripsi']").prop('disabled', true);
+        }
+        if(callback.jkn_kis.file_dinsos != ''){
+          $$('#print_dinsos_button').show();
+          $$('#print_dinsos_button').on('click', function () {
+            app.dialog.preloader('Mohon Tunggu Sebentar...');
+            download_external('layanan', callback.jkn_kis.file_actual_dinsos);
+          });
         }
       }, function () {
         app.dialog.close();

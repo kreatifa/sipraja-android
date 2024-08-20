@@ -123,7 +123,6 @@ var edit_sk_umum_kecamatan = {
       var this_user_is_the_last_index = false;
       var id = mainView.router.currentRoute.params.id;
       var tipe = mainView.router.currentRoute.params.tipe;
-      console.log(iamthedoor)
       if (tipe == 'lihat' && iamthedoor.role_id == 4) {
         $$('#approval').hide();
       }
@@ -177,6 +176,14 @@ var edit_sk_umum_kecamatan = {
             $$("input[name='pekerjaan_pemohon']").val(data.pemohon.pekerjaan);
             $$("select[name='jenis_surat']").val(data.layanan.jenis_surat);
             $$("textarea[name='keterangan']").val(data.layanan.keterangan);
+            if (data.layanan.file_dinsos) {
+              $$('#print_dinsos_button').removeClass('bg-color-gray');
+              $$('#print_dinsos_button').addClass('bg-color-green');
+              $$("#print_dinsos_button").on("click", function () {
+                app.dialog.preloader('Mohon Tunggu Sebentar...');
+                download_external('dinsos', data.layanan.file_actual_dinsos);
+              });
+            }
             table_chron = '';
             if (data.chron.length) {
               $$('#btndeletelayanan').hide();
