@@ -259,11 +259,12 @@ var edit_pengunduran_jkn_kis = {
           $$('#print_button').show();
           $$("textarea[name='deskripsi']").prop('disabled', true);
         }
+        console.log(callback)
         if(callback.jkn_kis.file_dinsos != ''){
           $$('#print_dinsos_button').show();
           $$('#print_dinsos_button').on('click', function () {
             app.dialog.preloader('Mohon Tunggu Sebentar...');
-            download_external('layanan', callback.jkn_kis.file_actual_dinsos);
+            download_external('layanan', callback.file_dinsos.file_actual);
           });
         }
       }, function () {
